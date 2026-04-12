@@ -68,14 +68,14 @@ setup: ## Permet de setup le projet (en supposant que le clone de la DB des cart
 	- @$(SYMFONY) lexik:jwt:generate-keypair
 	@echo " "
 	@echo "———————————————————————————————————————————————————————————————"
+	@echo "   Importing factions"
+	@echo "———————————————————————————————————————————————————————————————"
+	- @$(SYMFONY) app:import:factions
+	@echo " "
+	@echo "———————————————————————————————————————————————————————————————"
 	@echo "   Importing sets"
 	@echo "———————————————————————————————————————————————————————————————"
 	- @$(SYMFONY) app:import:sets
-	@echo " "
-	@echo "———————————————————————————————————————————————————————————————"
-	@echo "   Creating symlink to cards database"
-	@echo "———————————————————————————————————————————————————————————————"
-	- docker compose run --mount type=bind,source=../databases,target=/app/datas/databases,readonly php
 	@echo " "
 	@echo "———————————————————————————————————————————————————————————————"
 	@echo "   Importing cards"
