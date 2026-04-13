@@ -65,6 +65,7 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
     'isBanned', 'isSuspended', 'isErrated',
     'mainCost', 'recallCost', 'oceanPower', 'mountainPower', 'forestPower',
 ])]
+#[ApiFilter(\App\Filter\CardNameFilter::class, properties: ['name'])]
 #[ApiFilter(OrderFilter::class, properties: ['cardNumber'])]
 #[ApiFilter(\App\Filter\EffectTriggerTypeFilter::class, properties: ['effectTriggerType' => 'cardGroup'])]
 #[ApiFilter(\App\Filter\EffectKeywordFilter::class, properties: ['effectKeyword' => 'cardGroup'])]
