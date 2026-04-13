@@ -42,13 +42,19 @@ class ImportCardsCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
+        $io->title('Importing Cards');
+
         $directory = $input->getArgument('directory');
         $setFilter = $input->getOption('set');
+        $fileNameRegex = '*.json';
 
         $rarityFilter = null;
         if ($input->getOption('rarity')) {
             $rarityFilter = array_map('strtoupper', array_map('trim', explode(',', $input->getOption('rarity'))));
             $io->info(sprintf('Rarity filter: %s', implode(', ', $rarityFilter)));
+            // Regex to filter rarity in file names like 'ALT_DUSTER_B_YZ_96_R2.json'
+            $rarityRegexFilter = array_map(fn($r) => ['COMMON'=> 'C', 'RARE' => 'R1|R2', 'EXALTED' => 'E', 'UNIQUE' => 'U'][$r],$rarityFilter);
+            $fileNameRegex = sprintf("/^(?:[^_]+_){5}(%s)(?:_[^.]*)?\.json$/", implode('|', $rarityRegexFilter) );
         }
 
         if (!is_dir($directory)) {
@@ -59,13 +65,13 @@ class ImportCardsCommand extends Command
         $this->em->getConnection()->getConfiguration()->setMiddlewares([]);
 
         $finder = new Finder();
-        $finder->files()->name('*.json')->in($directory);
+        $finder->files()->name($fileNameRegex)->in($directory);
 
         if ($setFilter) {
             $finder->path(sprintf('/^%s\//', preg_quote($setFilter, '/')));
         }
 
-        $io->progressStart();
+        $io->progressStart(iterator_count($finder));
 
         $created  = 0;
         $updated  = 0;
@@ -80,13 +86,6 @@ class ImportCardsCommand extends Command
                 if (!$alteredId) {
                     $errors++;
                     continue;
-                }
-
-                if ($rarityFilter !== null) {
-                    $cardRarity = strtoupper($data['rarity']['reference'] ?? '');
-                    if (!in_array($cardRarity, $rarityFilter, true)) {
-                        continue;
-                    }
                 }
 
                 $batch[$alteredId] = $data;
