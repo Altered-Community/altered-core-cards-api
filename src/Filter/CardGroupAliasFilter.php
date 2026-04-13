@@ -74,7 +74,22 @@ final class CardGroupAliasFilter extends AbstractFilter
 
         if (isset(self::FIELD_MAP[$property])) {
             $field = self::FIELD_MAP[$property];
-            $p     = $queryNameGenerator->generateParameterName($field);
+
+            // Range operators: mainCost[gte]=5 → $value = ['gte' => '5']
+            if (is_array($value)) {
+                $ops = ['gt' => '>', 'gte' => '>=', 'lt' => '<', 'lte' => '<='];
+                foreach ($ops as $key => $op) {
+                    if (isset($value[$key]) && $value[$key] !== '') {
+                        $p = $queryNameGenerator->generateParameterName($field . '_' . $key);
+                        $queryBuilder
+                            ->andWhere("$cgAlias.$field $op :$p")
+                            ->setParameter($p, (int) $value[$key]);
+                    }
+                }
+                return;
+            }
+
+            $p = $queryNameGenerator->generateParameterName($field);
             if ($value === 'true')  $value = true;
             if ($value === 'false') $value = false;
             $queryBuilder

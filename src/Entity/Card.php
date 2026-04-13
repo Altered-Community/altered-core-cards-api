@@ -46,6 +46,8 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
             normalizationContext: ['groups' => ['card:list']],
             cacheHeaders: ['max_age' => 3600, 'shared_max_age' => 3600, 'vary' => ['Accept', 'Accept-Language']],
             paginationFetchJoinCollection: false,
+            paginationClientItemsPerPage: true,
+            paginationMaximumItemsPerPage: 1000,
         ),
     ],
     normalizationContext: ['groups' => ['card:read']],
@@ -67,6 +69,7 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
 ])]
 #[ApiFilter(\App\Filter\CardNameFilter::class, properties: ['name'])]
 #[ApiFilter(OrderFilter::class, properties: ['cardNumber'])]
+#[ApiFilter(\App\Filter\CardGroupOrderFilter::class, properties: ['mainCost', 'recallCost', 'oceanPower', 'mountainPower', 'forestPower'])]
 #[ApiFilter(\App\Filter\EffectTriggerTypeFilter::class, properties: ['effectTriggerType' => 'cardGroup'])]
 #[ApiFilter(\App\Filter\EffectKeywordFilter::class, properties: ['effectKeyword' => 'cardGroup'])]
 #[ApiFilter(\App\Filter\HasNoEffectFilter::class, properties: ['hasNoEffect' => 'cardGroup'])]

@@ -39,6 +39,7 @@ query:
     page: Page
     per_page: Par page
     sort_number: "Tri n°"
+    sort: "Tri"
   placeholder:
     name_search: "Rechercher un nom…"
     all_m: "— tous —"

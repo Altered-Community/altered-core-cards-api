@@ -5,6 +5,8 @@ api_platform:
         stateless: true
         cache_headers:
             vary: ['Accept', 'Accept-Language']
+        pagination_client_items_per_page: true
+        pagination_maximum_items_per_page: 1000
     formats:
         json: ['application/json']
     docs_formats:

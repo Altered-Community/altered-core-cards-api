@@ -39,6 +39,7 @@ query:
     page: Page
     per_page: Per page
     sort_number: "Sort by #"
+    sort: "Sort"
   placeholder:
     name_search: "Search a name…"
     all_m: "— all —"
