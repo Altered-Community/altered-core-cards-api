@@ -35,7 +35,7 @@ final class ReferenceFilter extends AbstractFilter
 
         $queryBuilder
             ->innerJoin(sprintf('%s.%s', $alias, $property), $joinAlias)
-            ->andWhere(sprintf('%s.reference = :%s', $joinAlias, $paramName))
+            ->andWhere(sprintf('%s.reference IN (:%s)', $joinAlias, $paramName))
             ->setParameter($paramName, $value);
     }
 

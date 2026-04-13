@@ -51,7 +51,7 @@
                 </div>
                 <div>
                     <label class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Set</label>
-                    <select data-param="set.reference"
+                    <select data-param="set.reference" multiple
                             class="qb-input w-full bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-xs rounded p-1.5">
                         <option value="">— tous —</option>
                         {% for set in sets %}
@@ -61,7 +61,7 @@
                 </div>
                 <div>
                     <label class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Faction</label>
-                    <select data-param="faction.code"
+                    <select data-param="faction.code" multiple
                             class="qb-input w-full bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-xs rounded p-1.5">
                         <option value="">— toutes —</option>
                         {% for faction in factions %}
@@ -71,7 +71,7 @@
                 </div>
                 <div>
                     <label class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Rareté</label>
-                    <select data-param="rarity"
+                    <select data-param="rarity" multiple
                             class="qb-input w-full bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-xs rounded p-1.5">
                         <option value="">— toutes —</option>
                         {% for rarity in rarities %}
@@ -81,7 +81,7 @@
                 </div>
                 <div>
                     <label class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Type</label>
-                    <select data-param="cardType"
+                    <select data-param="cardType" multiple
                             class="qb-input w-full bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-xs rounded p-1.5">
                         <option value="">— tous —</option>
                         {% for type in cardTypes %}
@@ -91,7 +91,7 @@
                 </div>
                 <div>
                     <label class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Sous-type</label>
-                    <select data-param="subTypes"
+                    <select data-param="subTypes" multiple
                             class="qb-input w-full bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-xs rounded p-1.5">
                         <option value="">— tous —</option>
                         {% for sub in subTypes %}
@@ -101,7 +101,7 @@
                 </div>
                 <div>
                     <label class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Variation</label>
-                    <select data-param="variation"
+                    <select data-param="variation" multiple
                             class="qb-input w-full bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-xs rounded p-1.5">
                         <option value="">— toutes —</option>
                         <option value="standard">Standard</option>
@@ -557,7 +557,15 @@
             const param = el.dataset.param;
             if (param === 'page') return;
             const val = el.value.trim();
-            if (val !== '') params.set(param, val);
+            if (val !== '') 
+            {
+                if (el.multiple) {
+                    console.warn('multiple')
+                    let values = Array.from(el.querySelectorAll('option:checked')).map(option => option.value)
+                    values.forEach(opt => params.append(param+"[]", opt))
+                }
+                else params.set(param, val);
+            }
         });
 
         // Effect slots

@@ -56,7 +56,7 @@ final class CardGroupAliasFilter extends AbstractFilter
             $p      = $queryNameGenerator->generateParameterName('fac_code');
             $queryBuilder
                 ->join("$cgAlias.faction", $fAlias)
-                ->andWhere("$fAlias.code = :$p")
+                ->andWhere("$fAlias.code IN (:$p)")
                 ->setParameter($p, $value);
             return;
         }
@@ -67,7 +67,7 @@ final class CardGroupAliasFilter extends AbstractFilter
             $p      = $queryNameGenerator->generateParameterName($rel . '_ref');
             $queryBuilder
                 ->join("$cgAlias.$rel", $rAlias)
-                ->andWhere("$rAlias.reference = :$p")
+                ->andWhere("$rAlias.reference IN (:$p)")
                 ->setParameter($p, $value);
             return;
         }
