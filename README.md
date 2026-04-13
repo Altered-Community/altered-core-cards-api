@@ -17,7 +17,15 @@ Elle expose les cartes, sets.
 
 ---
 
-## Installation
+## Installation complète via Docker
+
+[Documentation disponible ici !](docs/install-with-docker.md)
+
+Cet installation est recommandé car on est sur d'avoir tous le même environnement de dev (mais peut être plus compliqué pour les personnnes n'ayant aucune connaissance en docker)
+
+## Installation Classic
+
+
 
 ### Prérequis
 

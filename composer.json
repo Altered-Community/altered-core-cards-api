@@ -7,41 +7,45 @@
         "php": ">=8.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "api-platform/core": "^4.3.3",
+        "api-platform/doctrine-orm": "*",
+        "api-platform/symfony": "*",
+        "doctrine/doctrine-bundle": "^3.2.2",
+        "doctrine/doctrine-migrations-bundle": "^4.0",
+        "doctrine/orm": "^3.6.3",
         "lexik/jwt-authentication-bundle": "^3.2",
-        "meilisearch/meilisearch-php": "^1.16",
-        "nyholm/psr7": "^1.8",
-        "stof/doctrine-extensions-bundle": "^1.15",
+        "meilisearch/meilisearch-php": "^1.16.1",
+        "nelmio/cors-bundle": "^2.6.1",
+        "nyholm/psr7": "^1.8.2",
+        "phpdocumentor/reflection-docblock": "^6.0.3",
+        "stof/doctrine-extensions-bundle": "^1.15.3",
         "symfony/asset": "8.0.*",
         "symfony/asset-mapper": "8.0.*",
         "symfony/console": "8.0.*",
         "symfony/dotenv": "8.0.*",
-        "symfony/flex": "^2",
+        "symfony/expression-language": "8.0.*",
+        "symfony/flex": "^2.10",
         "symfony/form": "8.0.*",
         "symfony/framework-bundle": "8.0.*",
         "symfony/http-client": "8.0.*",
         "symfony/property-access": "8.0.*",
+        "symfony/property-info": "8.0.*",
         "symfony/runtime": "8.0.*",
+        "symfony/security-bundle": "8.0.*",
+        "symfony/serializer": "8.0.*",
         "symfony/translation": "8.0.*",
         "symfony/twig-bundle": "8.0.*",
-        "symfony/ux-turbo": "^2.34",
+        "symfony/ux-turbo": "^2.35",
+        "symfony/validator": "8.0.*",
         "symfony/yaml": "8.0.*"
     },
     "require-dev": {
-        "api-platform/core": "*",
-        "api-platform/doctrine-orm": "*",
-        "api-platform/symfony": "*",
-        "doctrine/doctrine-bundle": "*",
-        "doctrine/doctrine-migrations-bundle": "*",
-        "doctrine/orm": "*",
-        "nelmio/cors-bundle": "^2.6",
-        "phpdocumentor/reflection-docblock": "^6.0",
-        "phpstan/phpdoc-parser": "^2.3",
-        "symfony/expression-language": "8.0.*",
-        "symfony/maker-bundle": "*",
-        "symfony/property-info": "8.0.*",
-        "symfony/security-bundle": "8.0.*",
-        "symfony/serializer": "8.0.*",
-        "symfony/validator": "8.0.*"
+        "phpstan/phpdoc-parser": "^2.3.2",
+        "symfony/debug-bundle": "8.0.*",
+        "symfony/maker-bundle": ">=1.67",
+        "symfony/monolog-bundle": "^3.0|^4.0.2",
+        "symfony/stopwatch": "8.0.*",
+        "symfony/web-profiler-bundle": "8.0.*"
     },
     "config": {
         "allow-plugins": {
@@ -93,7 +97,8 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "8.0.*"
+            "require": "8.0.*",
+            "docker": true
         }
     }
 }
