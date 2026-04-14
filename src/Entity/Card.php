@@ -171,7 +171,7 @@ class Card implements TimestampInterface
 
     #[ORM\ManyToMany(targetEntity: Artist::class)]
     #[ORM\JoinTable(name: 'card_artist')]
-    #[Groups(['card:read'])]
+    #[Groups(['card:list', 'card:read'])]
     private Collection $artists;
 
     #[Gedmo\Locale]
