@@ -42,7 +42,7 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
             name: 'get_card_by_reference',
         ),
         new GetCollection(
-            provider: \App\State\CachedCountCollectionProvider::class,
+            provider: \App\State\CardCollectionProvider::class,
             normalizationContext: ['groups' => ['card:list']],
             cacheHeaders: ['max_age' => 3600, 'shared_max_age' => 3600, 'vary' => ['Accept', 'Accept-Language']],
             paginationFetchJoinCollection: false,
@@ -68,7 +68,7 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
     'mainCost', 'recallCost', 'oceanPower', 'mountainPower', 'forestPower',
 ])]
 #[ApiFilter(\App\Filter\CardNameFilter::class, properties: ['name'])]
-#[ApiFilter(OrderFilter::class, properties: ['cardNumber'])]
+#[ApiFilter(OrderFilter::class, properties: ['cardNumber', 'set.date'])]
 #[ApiFilter(\App\Filter\CardGroupOrderFilter::class, properties: ['mainCost', 'recallCost', 'oceanPower', 'mountainPower', 'forestPower'])]
 #[ApiFilter(\App\Filter\EffectTriggerTypeFilter::class, properties: ['effectTriggerType' => 'cardGroup'])]
 #[ApiFilter(\App\Filter\EffectKeywordFilter::class, properties: ['effectKeyword' => 'cardGroup'])]
