@@ -16,6 +16,7 @@ use ApiPlatform\Doctrine\Orm\Filter\OrderFilter;
 use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+use App\Entity\Artist;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Component\Serializer\Attribute\Groups;
@@ -75,6 +76,7 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
 #[ApiFilter(\App\Filter\HasNoEffectFilter::class, properties: ['hasNoEffect' => 'cardGroup'])]
 #[ApiFilter(\App\Filter\SameTriggerCountFilter::class, properties: ['minSameTriggerCount' => 'cardGroup'])]
 #[ApiFilter(\App\Filter\EffectSlotFilter::class, properties: ['effectSlot'])]
+#[ApiFilter(\App\Filter\ArtistFilter::class)]
 class Card implements TimestampInterface
 {
     use TimestampTrait;
@@ -167,6 +169,11 @@ class Card implements TimestampInterface
     #[ORM\OneToMany(targetEntity: CardTranslation::class, mappedBy: 'card', cascade: ['persist'], fetch: 'EAGER')]
     private Collection $translations;
 
+    #[ORM\ManyToMany(targetEntity: Artist::class)]
+    #[ORM\JoinTable(name: 'card_artist')]
+    #[Groups(['card:read'])]
+    private Collection $artists;
+
     #[Gedmo\Locale]
     private ?string $locale = null;
 
@@ -174,6 +181,7 @@ class Card implements TimestampInterface
     {
         $this->creationDate = new \DateTimeImmutable();
         $this->translations = new ArrayCollection();
+        $this->artists      = new ArrayCollection();
     }
 
     #[Groups(['card:list', 'card:read', 'card_group:read'])]
@@ -280,5 +288,21 @@ class Card implements TimestampInterface
             $this->translations->add($t);
             $t->setCard($this);
         }
+    }
+
+    public function getArtists(): Collection { return $this->artists; }
+
+    public function addArtist(Artist $artist): self
+    {
+        if (!$this->artists->contains($artist)) {
+            $this->artists->add($artist);
+        }
+        return $this;
+    }
+
+    public function removeArtist(Artist $artist): self
+    {
+        $this->artists->removeElement($artist);
+        return $this;
     }
 }

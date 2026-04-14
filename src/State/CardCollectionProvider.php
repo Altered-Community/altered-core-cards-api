@@ -46,10 +46,7 @@ final class CardCollectionProvider implements ProviderInterface
             return $result;
         }
 
-        // One query to batch-load all lazy ManyToOne associations for the current page.
-        // OneToMany / EAGER collections (c.translations, cg.translations) are intentionally
-        // excluded — Doctrine loads them automatically via IN() queries, joining them here
-        // would create a Cartesian product and multiply the result set size.
+        // Query 1 — ManyToOne associations (no Cartesian product risk)
         $this->em->createQueryBuilder()
             ->select('c, s, cg, cgf, cgr, cgct, cgchs')
             ->from(Card::class, 'c')
@@ -59,6 +56,16 @@ final class CardCollectionProvider implements ProviderInterface
             ->leftJoin('cg.rarity', 'cgr')
             ->leftJoin('cg.cardType', 'cgct')
             ->leftJoin('cg.cardHistoryStatus', 'cgchs')
+            ->where('c.id IN (:ids)')
+            ->setParameter('ids', $ids)
+            ->getQuery()
+            ->getResult();
+
+        // Query 2 — artists (ManyToMany) — separate query to avoid Cartesian product
+        $this->em->createQueryBuilder()
+            ->select('c, a')
+            ->from(Card::class, 'c')
+            ->leftJoin('c.artists', 'a')
             ->where('c.id IN (:ids)')
             ->setParameter('ids', $ids)
             ->getQuery()
