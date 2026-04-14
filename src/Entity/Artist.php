@@ -32,11 +32,11 @@ class Artist implements TimestampInterface
     private ?int $id = null;
 
     #[ORM\Column(length: 150, unique: true)]
-    #[Groups(['artist:read', 'card:read'])]
+    #[Groups(['artist:read'])]
     private string $reference;
 
     #[ORM\Column(length: 150)]
-    #[Groups(['artist:read', 'card:read'])]
+    #[Groups(['artist:read', 'card:read', 'card:list'])]
     private string $name;
 
     public function __construct()
