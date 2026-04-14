@@ -118,6 +118,12 @@
                            class="qb-input w-full bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-xs rounded p-1.5"
                            placeholder="ALT_CORE_B_AX_04_C">
                 </div>
+                <div class="col-span-2">
+                    <label class="block text-xs text-gray-600 dark:text-gray-400 mb-1">{{ 'query.label.reference'|trans }} (liste, max 200)</label>
+                    <textarea id="ref-list" rows="3"
+                              class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-xs rounded p-1.5 font-mono resize-y"
+                              placeholder="ALT_CORE_B_AX_04_C&#10;ALT_CORE_B_AX_05_R_1&#10;…"></textarea>
+                </div>
                 <div>
                     <label class="block text-xs text-gray-600 dark:text-gray-400 mb-1">{{ 'query.label.set'|trans }}</label>
                     <select data-param="set.reference" multiple
@@ -706,6 +712,8 @@
         const nameVal = (document.getElementById('name-search')?.value ?? '').trim();
         if (nameVal) params.set(`name[${displayLocale}]`, nameVal);
 
+        // Reference list goes via POST batch — not added to GET params
+
         document.querySelectorAll('.qb-input').forEach(el => {
             const param = el.dataset.param;
             if (!param || param === 'page') return;
@@ -948,15 +956,20 @@
         nextBtn.disabled = currentPage >= last;
     }
 
+    function getRefList() {
+        return (document.getElementById('ref-list')?.value ?? '')
+            .split(/[\n,;]+/)
+            .map(r => r.trim().toUpperCase())
+            .filter(Boolean);
+    }
+
     async function fetchPage(page) {
         currentPage = page;
         updatePreview();
 
-        const qs       = buildParams(page).toString();
-        const fetchUrl = qs ? BASE + '?' + qs : BASE;
-        const loading  = document.getElementById('results-loading');
-        const error    = document.getElementById('results-error');
-        const count    = document.getElementById('results-count');
+        const loading = document.getElementById('results-loading');
+        const error   = document.getElementById('results-error');
+        const count   = document.getElementById('results-count');
 
         loading.classList.remove('hidden');
         error.classList.add('hidden');
@@ -964,8 +977,23 @@
         document.getElementById('results-grid').innerHTML = '';
 
         try {
-            const resp = await fetch(fetchUrl, { headers: { Accept: 'application/json' } });
-            const data = await resp.json();
+            const refs = getRefList();
+            let resp, data;
+
+            if (refs.length > 0) {
+                // ── POST batch ──────────────────────────────────────────────
+                resp = await fetch(BASE + '/batch', {
+                    method:  'POST',
+                    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+                    body:    JSON.stringify({ references: refs }),
+                });
+                data = await resp.json();
+            } else {
+                // ── GET collection ──────────────────────────────────────────
+                const qs = buildParams(page).toString();
+                resp = await fetch(qs ? BASE + '?' + qs : BASE, { headers: { Accept: 'application/json' } });
+                data = await resp.json();
+            }
 
             if (!resp.ok) {
                 error.classList.remove('hidden');
@@ -1024,6 +1052,8 @@
         document.querySelectorAll('.qb-input:not([multiple])').forEach(el => el.value = '');
         const nameEl = document.getElementById('name-search');
         if (nameEl) nameEl.value = '';
+        const refListEl = document.getElementById('ref-list');
+        if (refListEl) refListEl.value = '';
         // Reset stat fields
         document.querySelectorAll('.stat-val').forEach(el => el.value = '');
         document.querySelectorAll('.stat-op').forEach(el => el.value = 'exact');
@@ -1051,6 +1081,7 @@
 
     // ── Name search ─────────────────────────────────────────────────────────
     document.getElementById('name-search').addEventListener('input', updatePreview);
+    document.getElementById('ref-list').addEventListener('input', updatePreview);
 
     // Init
     // ── Debug panel ─────────────────────────────────────────────────────────
