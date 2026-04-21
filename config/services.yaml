@@ -3,7 +3,8 @@
 # This file is the entry point to configure your own services.
 # Files in the packages/ subdirectory configure your dependencies.
 # See also https://symfony.com/doc/current/service_container/import.html
-
+imports:
+    - { resource: services/meilisearch.yaml }
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
@@ -39,11 +40,12 @@ services:
     App\Service\MeilisearchService:
         arguments:
             $httpClient: '@app.http_client.meilisearch'
-            $url:        '%env(MEILISEARCH_URL)%'
-            $apiKey:     '%env(MEILISEARCH_KEY)%'
+            $url:        '%meilisearch.url%'
+            $apiKey:     '%meilisearch.key%'
+            $enabled:    '%meilisearch.enabled%'
 
     # Swap this alias to use a different search backend (or NullSearchBackend to disable).
     # NullSearchBackend → CardNameFilter falls back to PostgreSQL LIKE automatically.
     App\Search\SearchBackendInterface:
-        alias: App\Search\MeilisearchBackend
+        alias: App\Search\NullSearchBackend
 

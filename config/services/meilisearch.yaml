@@ -1,0 +1,4 @@
+parameters:
+    meilisearch.enabled: false
+    meilisearch.url: '%env(MEILISEARCH_URL)%'
+    meilisearch.key: '%env(MEILISEARCH_KEY)%'

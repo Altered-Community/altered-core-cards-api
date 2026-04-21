@@ -30,26 +30,43 @@ final class MeilisearchSyncListener
 {
     public function __construct(private readonly MeilisearchService $meilisearch) {}
 
-    public function postPersist(Card $card, PostPersistEventArgs $args): void
+    public function postPersist(Card|CardGroupTranslation $entity, PostPersistEventArgs $args): void
     {
-        $this->meilisearch->indexCard($card);
+        if (!$this->meilisearch->isEnable()) {
+            return;
+        }
+        
+        if ($entity instanceof Card) {
+            $this->meilisearch->indexCard($entity);
+        } else {
+            foreach($entity->getCardGroup()->getCards() as $card) {
+                $this->meilisearch->indexCard($card);
+            }
+        }
     }
 
     public function postUpdate(Card|CardGroup|CardGroupTranslation $entity, PostUpdateEventArgs $args): void
     {
-        if ($entity instanceof Card) {
-            $this->meilisearch->indexCard($entity);
+        if (!$this->meilisearch->isEnable()) {
             return;
         }
 
-        $group = $entity instanceof CardGroup ? $entity : $entity->getCardGroup();
-        foreach ($group->getCards() as $card) {
-            $this->meilisearch->indexCard($card);
+        if ($entity instanceof Card) {
+            $this->meilisearch->indexCard($entity);
+        } else {
+            $group = $entity instanceof CardGroup ? $entity : $entity->getCardGroup();
+            foreach($group->getCards() as $card) {
+                $this->meilisearch->indexCard($card);
+            }
         }
     }
 
     public function preRemove(Card $card, PreRemoveEventArgs $args): void
     {
+        if (!$this->meilisearch->isEnable()) {
+            return;
+        }
+
         $this->meilisearch->deleteCard($card);
     }
 }

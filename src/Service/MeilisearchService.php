@@ -55,8 +55,15 @@ final class MeilisearchService
         private readonly CardDocumentRepository $cardDocumentRepository,
         private readonly string $url,
         private readonly string $apiKey,
+        private readonly bool $enabled,
     ) {
-        $this->client = new Client($url, $apiKey, new Psr18Client($httpClient));
+        if (!$enabled)
+            $this->client = new Client($url, $apiKey, new Psr18Client($httpClient));
+    }
+
+    public function isEnable(): bool
+    {
+        return $this->enabled;
     }
 
     public function getIndex(): Indexes
