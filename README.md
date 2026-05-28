@@ -84,6 +84,12 @@ symfony console lexik:jwt:generate-keypair
 
 ## Import des données
 
+> **Reconstruction complète automatisée** : pour héberger l'app et reconstruire
+> toute la base depuis les dépôts git de données, voir
+> [docs/rebuild-from-scratch.md](docs/rebuild-from-scratch.md)
+> (`python scripts/rebuild_database.py`). Les sections ci-dessous décrivent les
+> imports unitaires.
+
 ### Sets
 
 Un fichier CSV est disponible dans `datas/card_set.csv`.

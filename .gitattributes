@@ -1,0 +1,25 @@
+# Normalisation des fins de ligne.
+# Sans cela, un checkout Windows avec core.autocrlf=true convertit LF -> CRLF,
+# ce qui casse le build Docker (heredoc bash du Dockerfile) et l'entrypoint (#!/bin/sh\r).
+
+# Par défaut : laisser git détecter le texte, mais toujours stocker/checkouter en LF.
+* text=auto eol=lf
+
+# Fichiers exécutés dans des conteneurs / shells Linux : forcer LF explicitement.
+Dockerfile        text eol=lf
+*.sh              text eol=lf
+frankenphp/Caddyfile text eol=lf
+bin/console       text eol=lf
+bin/phpunit       text eol=lf
+
+# Scripts spécifiques Windows : garder CRLF.
+*.bat             text eol=crlf
+*.cmd             text eol=crlf
+*.ps1             text eol=crlf
+
+# Fichiers binaires : pas de conversion.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gz    binary
+*.pem   binary
