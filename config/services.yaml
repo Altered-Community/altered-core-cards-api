@@ -7,6 +7,9 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
+    app.gameplay_formats_manifest_url: 'https://altered-reunion-formats-prod.s3.fr-par.scw.cloud'
+    # Only these manifest format ids are synced into CardGroup.gameplayFormat.
+    app.gameplay_formats_allowlist: ['frontier']
 
 services:
     # default configuration for services in *this* file
@@ -37,6 +40,21 @@ services:
         factory: ['Symfony\Component\HttpClient\HttpClient', 'create']
         arguments:
             - { timeout: 2.0, max_duration: 5.0 }
+
+    app.http_client.gameplay_formats:
+        class: Symfony\Component\HttpClient\HttpClient
+        factory: ['Symfony\Component\HttpClient\HttpClient', 'create']
+        arguments:
+            - { timeout: 5.0, max_duration: 15.0 }
+
+    App\Service\GameplayFormatManifestClient:
+        arguments:
+            $httpClient: '@app.http_client.gameplay_formats'
+            $baseUrl:    '%app.gameplay_formats_manifest_url%'
+
+    App\Service\GameplayFormatSyncService:
+        arguments:
+            $allowedFormatIds: '%app.gameplay_formats_allowlist%'
 
     App\Service\MeilisearchService:
         arguments:
