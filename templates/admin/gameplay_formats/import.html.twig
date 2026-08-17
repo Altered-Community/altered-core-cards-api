@@ -32,6 +32,16 @@
             </p>
         </div>
 
+        <div class="flex items-start gap-2">
+            <input type="checkbox" id="resetPrevious" name="resetPrevious" value="1" {{ resetPrevious ? 'checked' : '' }}
+                   class="mt-0.5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600">
+            <label for="resetPrevious" class="text-xs text-gray-700 dark:text-gray-300">
+                Réinitialiser les anciennes cartes — retire ce format des cartes qui étaient précédemment taguées
+                mais qui ne sont plus dans le fichier importé. Sans cette option, l'import n'est qu'additif :
+                les anciennes cartes gardent le tag même si elles ne sont plus dans le fichier.
+            </label>
+        </div>
+
         <div class="flex gap-2 pt-2 border-t border-gray-100 dark:border-gray-700">
             <button type="submit"
                     class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300">
@@ -78,6 +88,12 @@
                 {{ preview.unmatchedRefs|length }}
             </dd>
         </div>
+        <div class="flex justify-between">
+            <dt class="text-gray-500 dark:text-gray-400">Réinitialiser les anciennes cartes</dt>
+            <dd class="{{ resetPrevious ? 'text-amber-600 dark:text-amber-400 font-semibold' : 'text-gray-400' }}">
+                {{ resetPrevious ? 'Oui' : 'Non' }}
+            </dd>
+        </div>
     </dl>
 
     {% if preview.unmatchedRefs|length %}
@@ -101,6 +117,7 @@
             <input type="hidden" name="_token" value="{{ csrf_token('gameplay_format_import_confirm') }}">
             <input type="hidden" name="formatName" value="{{ formatName }}">
             <input type="hidden" name="url" value="{{ url }}">
+            <input type="hidden" name="resetPrevious" value="{{ resetPrevious ? '1' : '0' }}">
             <button type="submit"
                     class="px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:ring-green-300">
                 Confirmer l'import — appliquer à {{ preview.matchedCardGroupIds|length }} carte(s)

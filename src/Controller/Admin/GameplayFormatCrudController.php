@@ -101,9 +101,10 @@ class GameplayFormatCrudController extends AbstractController
     #[Route('/import', name: 'import', methods: ['GET', 'POST'])]
     public function import(Request $request): Response
     {
-        $formatName = trim((string) $request->request->get('formatName', ''));
-        $url        = trim((string) $request->request->get('url', ''));
-        $preview    = null;
+        $formatName    = trim((string) $request->request->get('formatName', ''));
+        $url           = trim((string) $request->request->get('url', ''));
+        $resetPrevious = $request->request->getBoolean('resetPrevious');
+        $preview       = null;
 
         if ($request->isMethod('POST')) {
             if (!$this->isCsrfTokenValid('gameplay_format_import', $request->request->get('_token'))) {
@@ -121,9 +122,10 @@ class GameplayFormatCrudController extends AbstractController
         }
 
         return $this->render('admin/gameplay_formats/import.html.twig', [
-            'formatName' => $formatName,
-            'url'        => $url,
-            'preview'    => $preview,
+            'formatName'    => $formatName,
+            'url'           => $url,
+            'resetPrevious' => $resetPrevious,
+            'preview'       => $preview,
         ]);
     }
 
@@ -134,8 +136,9 @@ class GameplayFormatCrudController extends AbstractController
             throw $this->createAccessDeniedException('Jeton CSRF invalide.');
         }
 
-        $formatName = trim((string) $request->request->get('formatName', ''));
-        $url        = trim((string) $request->request->get('url', ''));
+        $formatName    = trim((string) $request->request->get('formatName', ''));
+        $url           = trim((string) $request->request->get('url', ''));
+        $resetPrevious = $request->request->getBoolean('resetPrevious');
 
         $result = $this->importService->fetchAndValidate($url);
         if (!$result->ok) {
@@ -143,13 +146,14 @@ class GameplayFormatCrudController extends AbstractController
             return $this->redirectToRoute('admin_gameplay_formats_import');
         }
 
-        $updated = $this->importService->apply($formatName, $result->matchedCardGroupIds);
+        $updated = $this->importService->apply($formatName, $result->matchedCardGroupIds, $resetPrevious);
 
         $this->addFlash('success', sprintf(
-            'Gameplay format "%s" appliqué à %d carte(s) (%d référence(s) non trouvée(s)).',
+            'Gameplay format "%s" appliqué à %d carte(s) (%d référence(s) non trouvée(s))%s.',
             strtoupper($formatName),
             $updated,
             count($result->unmatchedRefs),
+            $resetPrevious ? ', anciennes cartes réinitialisées' : '',
         ));
 
         return $this->redirectToRoute('admin_gameplay_formats_index');
