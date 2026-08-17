@@ -62,6 +62,15 @@ class CardGroupRepository extends ServiceEntityRepository
         );
     }
 
+    /** @return int[] CardGroup ids currently tagged with $format. */
+    public function findIdsByGameplayFormat(string $format): array
+    {
+        return $this->getEntityManager()->getConnection()->fetchFirstColumn(
+            'SELECT id FROM card_group WHERE gameplay_format @> ARRAY[:format]',
+            ['format' => strtoupper(trim($format))]
+        );
+    }
+
     /** @return array<array{trigger_id: int, trigger_text: string|null, nb: int}> */
     public function getTriggerStats(): array
     {

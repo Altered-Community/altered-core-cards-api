@@ -92,9 +92,13 @@ final readonly class GameplayFormatImportService
      * affected groups in two batched calls instead.
      *
      * @param int[] $cardGroupIds
+     * @param bool $resetPrevious When true, CardGroups currently tagged with $formatName
+     *                            but absent from $cardGroupIds have the tag removed —
+     *                            re-importing then reflects the manifest exactly instead
+     *                            of only ever growing the membership.
      * @return int Number of CardGroups actually modified.
      */
-    public function apply(string $formatName, array $cardGroupIds): int
+    public function apply(string $formatName, array $cardGroupIds, bool $resetPrevious = false): int
     {
         $formatName = strtoupper(trim($formatName));
         if ($formatName === '' || empty($cardGroupIds)) {
@@ -113,6 +117,21 @@ final readonly class GameplayFormatImportService
                     $updatedGroupIds[] = $cardGroup->getId();
                 }
             }
+
+            if ($resetPrevious) {
+                $staleIds = array_diff(
+                    $this->cardGroupRepository->findIdsByGameplayFormat($formatName),
+                    $cardGroupIds,
+                );
+                foreach ($this->cardGroupRepository->findBy(['id' => $staleIds]) as $cardGroup) {
+                    $cardGroup->setGameplayFormat(array_values(array_diff(
+                        $cardGroup->getGameplayFormat(),
+                        [$formatName],
+                    )));
+                    $updatedGroupIds[] = $cardGroup->getId();
+                }
+            }
+
             $this->em->flush();
         } finally {
             MeilisearchSyncListener::$disabled = false;
