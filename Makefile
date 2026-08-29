@@ -61,7 +61,7 @@ cc: c=c:c ## Clear the cache
 cc: sf
 
 ## —— Project 🂱 ———————————————————————————————————————————————————————————————
-setup: ## Permet de setup le projet (en supposant que le clone de la DB des cartes soit dans un dossier nommé "databases" à coté du dossier du projet)
+setup: ## Allow you to setup the project (the command is failed proof you can launch it multiple times)
 	@echo "———————————————————————————————————————————————————————————————"
 	@echo "   Creating jwt keypair"
 	@echo "———————————————————————————————————————————————————————————————"
@@ -82,6 +82,11 @@ setup: ## Permet de setup le projet (en supposant que le clone de la DB des cart
 	- @$(SYMFONY) app:import:abilities
 	@echo " "
 	@echo "———————————————————————————————————————————————————————————————"
+	@echo "   Importing artists"
+	@echo "———————————————————————————————————————————————————————————————"
+	- @$(SYMFONY) app:import:artists
+	@echo " "
+	@echo "———————————————————————————————————————————————————————————————"
 	@echo "   Importing sets"
 	@echo "———————————————————————————————————————————————————————————————"
 	- @$(SYMFONY) app:import:sets
@@ -91,3 +96,6 @@ setup: ## Permet de setup le projet (en supposant que le clone de la DB des cart
 	@echo "———————————————————————————————————————————————————————————————"
 	- @$(SYMFONY) app:import:cards datas/databases/ --rarity COMMON,RARE,EXALTED --no-debug
 	@echo " "
+
+import-cards: ## Allow to imports all cards except unique
+	@$(SYMFONY) app:import:cards datas/databases/ --rarity COMMON,RARE,EXALTED --no-debug
