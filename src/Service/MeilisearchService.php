@@ -35,6 +35,9 @@ final class MeilisearchService
         'collector_number_formated_id',
         'main_cost',
         'recall_cost',
+        'reference',
+        'name_fr',
+        'name_en',
     ];
 
     /**
