@@ -12,7 +12,6 @@ use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\Link;
-use ApiPlatform\Doctrine\Orm\Filter\OrderFilter;
 use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -82,9 +81,11 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
     'mainCost', 'recallCost', 'oceanPower', 'mountainPower', 'forestPower',
 ])]
 #[ApiFilter(\App\Filter\CardNameFilter::class, properties: ['name'])]
-#[ApiFilter(OrderFilter::class, properties: ['cardNumber', 'collectorNumberFormatedId', 'setDate', 'random'])]
-#[ApiFilter(\App\Filter\SetDateOrderFilter::class)]
-#[ApiFilter(\App\Filter\CardGroupOrderFilter::class, properties: ['mainCost', 'recallCost', 'oceanPower', 'mountainPower', 'forestPower'])]
+#[ApiFilter(\App\Filter\CardOrderFilter::class, properties: [
+    'reference', 'cardNumber', 'collectorNumberFormatedId', 'set.date',
+    'mainCost', 'recallCost', 'oceanPower', 'mountainPower', 'forestPower',
+    'name.fr', 'name.en', 'name.it', 'name.es', 'name.de',
+])]
 #[ApiFilter(\App\Filter\RandomCardFilter::class)]
 #[ApiFilter(\App\Filter\EffectTriggerTypeFilter::class, properties: ['effectTriggerType' => 'cardGroup'])]
 #[ApiFilter(\App\Filter\EffectKeywordFilter::class, properties: ['effectKeyword' => 'cardGroup'])]
