@@ -1,0 +1,321 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "de_DE": {
+          "text": "Indem Suha das Angebot der Qorgan annahm, konnte sie sehen, was unten im Kaninchenbau war.",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "Accettando l'offerta del Qorgan, Suha è riuscita a scoprire cosa si celava nella tana del coniglio.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "Al aceptar la oferta del Qorgan, Suha pudo ver qué había en el fondo de la madriguera.",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "En acceptant l'offre du Qorgan, Suha vit jusqu'où allait le terrier du lapin.",
+          "locale": "fr_FR"
+        },
+        "en_US": {
+          "text": "By accepting the Qorgan's offer, Suha got to see what was down the rabbit hole.",
+          "locale": "en_US"
+        }
+      },
+      "id": "01JNRGC5DX4KVJVKG2BS9X8EGW",
+      "text": "By accepting the Qorgan's offer, Suha got to see what was down the rabbit hole."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "BUREAUCRAT",
+      "id": "01HKAGVBV23NSWD6EXJXSKK3F8",
+      "name": "Bureaucrat"
+    },
+    {
+      "reference": "MAGE",
+      "id": "01HKAGXDF5A4KJW7GVC25YQS3H",
+      "name": "Mage"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5Y9NK0B71E7KVHC423"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JN9VR17VN3JKAY496YTQNTP1"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9VR1DA2A6ZASM2JGSYQWNP"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JN9VR1JRM2YG9Z6WKPZJTMNC"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9VR1R4AZ8W7D15MD5YPJP7"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JN9VR1XKC5AK6BF6BMTEQZC2"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KGQE3VBRQRJJD37ZXRWEDXQM",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "{H} Je gagne #2 boosts.#",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "{H} I gain #2 boosts.#",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "{H} Ich erhalte #2 Verstärkungen.#",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{H} Ottengo #2 rinforzi.#",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{H} Gano #2 potenciadores.#",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "{H} I gain #2 boosts.#"
+              }
+            ],
+            "reference": "01450"
+          },
+          "sequence": 0,
+          "id": "01KGQE3W2V95B6H961NWT9XSSF"
+        },
+        {
+          "cardElement": "/card_elements/01KGQE3VBRQRJJD37ZXRWEDXQM",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "de_DE": {
+                          "displayWeb": "Sabotage",
+                          "locale": "de_DE",
+                          "description": "Lege bis zu eine Karte deiner Wahl aus einer Reserve ab."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Sabota",
+                          "locale": "it_IT",
+                          "description": "Scarta fino a una carta bersaglio da una Riserva."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Sabotea",
+                          "locale": "es_ES",
+                          "description": "Descarta hasta una carta objetivo de una reserva."
+                        },
+                        "en_US": {
+                          "displayWeb": "Sabotage",
+                          "locale": "en_US",
+                          "description": "Discard up to one target card from a Reserve."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Sabotez",
+                          "locale": "fr_FR",
+                          "description": "Défaussez jusqu'à une carte ciblée d'une Réserve."
+                        }
+                      },
+                      "id": "01HKAGPBPT7GV2ZTYNA7THECKQ",
+                      "reference": "SABOTAGE"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JN9VR45HDGABA8PRJB8SF9TX"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "#Lorsque je vais en Réserve depuis la zone d'Expédition — [SABOTAGE].#",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "#When I go to Reserve from the Expedition zone — [SABOTAGE].#",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "#Wenn ich aus der Expeditionszone in die Reserve gehe — [SABOTAGE].#",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "#Cuando vaya a la reserva desde la zona de expedición — [SABOTAGE].#",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "#Quando vado nella Riserva dall'area delle spedizioni — [SABOTAGE].#",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "#When I go to Reserve from the Expedition zone — [SABOTAGE].#"
+              }
+            ],
+            "reference": "01451"
+          },
+          "sequence": 1,
+          "id": "01KGQE3WPNRCJG8BG7Y29822A7"
+        }
+      ],
+      "value": "{H} I gain 2 boosts.  When I go to Reserve from the Expedition zone — [Sabotage].",
+      "id": "01KGQE3VBRQRJJD37ZXRWEDXQM"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Tristan Bideau"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_YZ_70_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_YZ_70_R1",
+  "translations": {
+    "it_IT": {
+      "name": "Suha, Spia del Qorgan",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Suha, Qorgan-Spionin",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "en_US": {
+      "name": "Suha, Qorgan Operative",
+      "image": null,
+      "locale": "en_US"
+    },
+    "es_ES": {
+      "name": "Suha, enviada del Qorgan",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "fr_FR": {
+      "name": "Suha, Opératrice du Qorgan",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT5YRWP5TXHB7K70Y02T",
+  "mainFaction": {
+    "reference": "YZ",
+    "color": "#764891",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+    "name": "Yzmir"
+  },
+  "allImagePath": null,
+  "name": "Suha, Qorgan Operative",
+  "elements": {
+    "MAIN_COST": "3",
+    "RECALL_COST": "1",
+    "OCEAN_POWER": "0",
+    "FOREST_POWER": "1",
+    "MOUNTAIN_POWER": "#0#",
+    "MAIN_EFFECT": "{H} I gain #2 boosts.#  #When I go to Reserve from the Expedition zone — [Sabotage].#"
+  },
+  "collectorNumberFormatted": "ROCTOP-X-024-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

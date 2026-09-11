@@ -1,0 +1,392 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "es_ES": {
+          "text": "Si te pierdes, presta atención a los anuncios del escenario central.",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "Si vous êtes perdu, prêtez l'oreille aux annonces de la scène centrale.",
+          "locale": "fr_FR"
+        },
+        "it_IT": {
+          "text": "Se non sai dove sei, ascolta bene gli annunci dal palco centrale.",
+          "locale": "it_IT"
+        },
+        "en_US": {
+          "text": "If you're lost, listen out for the announcements from the central stage.",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Wenn du dich verlaufen hast, achte auf die Durchsagen von der Hauptbühne.",
+          "locale": "de_DE"
+        }
+      },
+      "id": "01JBT1A3Y04RX6V6EC2P9REBVJ",
+      "text": "If you're lost, listen out for the announcements from the central stage."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ENGINEER",
+      "id": "01HKAGPA9AS71JN0H9HQZTBNCD",
+      "name": "Engineer"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5HE0X608Y3N9NTKSTF"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JB231F5W38W0N1B24AT3DHH9"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JB231FEJF4N6RZD7Q0W45VR1"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JB231FJRYKJ2FMKGS7H4BHQA"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JB231FPX88WAZ2NFBNMY8RXE"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01K4JNFX3AVP49VZM1ZQXS9GKZ",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "es_ES": {
+                          "displayWeb": "Explorar",
+                          "locale": "es_ES",
+                          "description": "Puedes jugarme desde la mano por {1} con «{h} Envíame a la reserva»."
+                        },
+                        "de_DE": {
+                          "displayWeb": "Spähen",
+                          "locale": "de_DE",
+                          "description": "Du darfst mich für {1} mit „{h} Schicke mich in die Reserve“ aus der Hand spielen."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Repérage",
+                          "locale": "fr_FR",
+                          "description": "Vous pouvez me jouer de votre main pour {1} avec «{h} Envoyez-moi en Réserve »."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Esploratore",
+                          "locale": "it_IT",
+                          "description": "Puoi giocarmi dalla mano per {1} con \"{h} Mandami nella Riserva\"."
+                        },
+                        "en_US": {
+                          "displayWeb": "Scout",
+                          "locale": "en_US",
+                          "description": "You may play me from hand for {1} with \"{h} Send me to Reserve\"."
+                        }
+                      },
+                      "id": "01JB22F341Z4AYBVFE2JB4MP2C",
+                      "reference": "SCOUT_1"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": true,
+                    "id": "01JB22J2VX0PZ1QQ3VF02SK02V"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "it_IT": {
+                    "text": "#$[SCOUT_1] {1}.#",
+                    "locale": "it_IT"
+                  },
+                  "fr_FR": {
+                    "text": "#$[SCOUT_1] {1}.#",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "#$[SCOUT_1] {1}.#",
+                    "locale": "es_ES"
+                  },
+                  "en_US": {
+                    "text": "#$[SCOUT_1] {1}.#",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "#$[SCOUT_1] {1}.#",
+                    "locale": "de_DE"
+                  }
+                },
+                "text": "#$[SCOUT_1] {1}.#"
+              }
+            ],
+            "reference": "00861"
+          },
+          "sequence": 0,
+          "id": "01K4JNFXJE9W5R5K61J97DNJJG"
+        },
+        {
+          "cardElement": "/card_elements/01K4JNFX3AVP49VZM1ZQXS9GKZ",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "#{J}# Target another Character #in play# or in Reserve, then roll a die. On a:",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "#{J}# Scegli come bersaglio un altro personaggio #in gioco# o nella Riserva. Poi tira un dado:",
+                    "locale": "it_IT"
+                  },
+                  "de_DE": {
+                    "text": "#{J}# Wähle einen anderen Charakter #im Spiel# oder in der Reserve. Würfle dann einmal:",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "#{J}# Haz objetivo a otro personaje #en juego# o en reserva. Luego, tira un dado:",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "#{J}# Ciblez un autre Personnage #en jeu# ou en Réserve, puis lancez un dé. Sur :",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "#{J}# Target another Character #in play# or in Reserve, then roll a die. On a:"
+              }
+            ],
+            "reference": "01632"
+          },
+          "sequence": 1,
+          "id": "01K4JNFXY6XRQ3GW41S061YQF0"
+        },
+        {
+          "cardElement": "/card_elements/01K4JNFX3AVP49VZM1ZQXS9GKZ",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "• 4+, we both gain 1 boost.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "• Bei 4+ erhalten wir beide 1 Verstärkung.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "• Con 4+, otteniamo entrambi 1 rinforzo.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "• Si sacas 4 o más, ambos ganamos 1 potenciador.",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "• 4+, nous gagnons tous les deux 1 boost.",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "• 4+, we both gain 1 boost."
+              }
+            ],
+            "reference": "01629"
+          },
+          "sequence": 2,
+          "id": "01K4JNFY9ZA39JS1SMP9T70R91"
+        },
+        {
+          "cardElement": "/card_elements/01K4JNFX3AVP49VZM1ZQXS9GKZ",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "• 1-3, it gains 1 boost.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "• Bei 1–3 erhält er 1 Verstärkung.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "• Con 1-3, ottiene 1 rinforzo.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "• Si sacas 1-3, el objetivo gana 1 potenciador.",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "• 1-3, il gagne 1 boost.",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "• 1-3, it gains 1 boost."
+              }
+            ],
+            "reference": "01630"
+          },
+          "sequence": 3,
+          "id": "01K4JNFYNRSEJAV2Q474ZX8CEK"
+        }
+      ],
+      "value": "[Scout] {1}. (You may play me from hand for {1} with \"{h} Send me to Reserve\".)  {J} Target another Character in play or in Reserve, then roll a die. On a:  • 4+, we both gain 1 boost.  • 1-3, it gains 1 boost.",
+      "id": "01K4JNFX3AVP49VZM1ZQXS9GKZ"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JB231FAAWX3N572AQ21MX8WZ"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "041",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Taras Susak"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_LY_53_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_LY_53_R1",
+  "translations": {
+    "it_IT": {
+      "name": "Dedalo",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "es_ES": {
+      "name": "Dédalo",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "en_US": {
+      "name": "Daedalus",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Dédale",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "de_DE": {
+      "name": "Daidalos",
+      "image": null,
+      "locale": "de_DE"
+    }
+  },
+  "id": "01M28EMT5HQ6Z79SDFT9V6W6AN",
+  "mainFaction": {
+    "reference": "LY",
+    "color": "#cf4171",
+    "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+    "name": "Lyra"
+  },
+  "allImagePath": null,
+  "name": "Daedalus",
+  "elements": {
+    "MAIN_COST": "3",
+    "RECALL_COST": "3",
+    "OCEAN_POWER": "3",
+    "FOREST_POWER": "0",
+    "MOUNTAIN_POWER": "3",
+    "MAIN_EFFECT": "#[Scout] {1}.# (You may play me from hand for {1} with \"{h} Send me to Reserve\".)  #{J}# Target another Character #in play# or in Reserve, then roll a die. On a:  • 4+, we both gain 1 boost.  • 1-3, it gains 1 boost."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-010-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

@@ -1,0 +1,323 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "de_DE": {
+          "text": "Sie wurde von den Axiom repariert und zieht nun wieder als Stolz der Aegis durch die Lüfte.",
+          "locale": "de_DE"
+        },
+        "es_ES": {
+          "text": "ÉgidaReparada por los Axiom, el orgullo de la Égida reemprende el vuelo.",
+          "locale": "es_ES"
+        },
+        "en_US": {
+          "text": "Repaired by the Axiom, the pride of the Aegis takes flight once again.",
+          "locale": "en_US"
+        },
+        "it_IT": {
+          "text": "Riparato dagli Axiom, l'orgoglio degli Aegis spicca di nuovo il volo.",
+          "locale": "it_IT"
+        },
+        "fr_FR": {
+          "text": "Réparée par l'Axiom, la fierté de l'Aegis reprend son envol.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JBT1AABMBP06VZ06YNVQ1K20",
+      "text": "Repaired by the Axiom, the pride of the Aegis takes flight once again."
+    }
+  ],
+  "cardType": {
+    "reference": "LANDMARK_PERMANENT",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Permanente hito"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Permanente Fulcro"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Bleibende Wahrzeichenkarte"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Landmark Permanent"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Repère Permanent"
+      }
+    },
+    "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+    "name": "Landmark Permanent"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "CONSTRUCTION",
+      "id": "01J1SYC159ACKJS202498RAQRR",
+      "name": "Construction"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT4YV4WZBRJPA5JFDE43"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "4",
+      "id": "01JB22WKK0GDKKNDMM5Y9FNCEN"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "4",
+      "id": "01JB22WKQK898F5X3AZ6X250PK"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01K4JP7MR1WXMT75XWZNEZ1FMG",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "es_ES": {
+                          "displayWeb": "Recluta de Ordis 1/1/1",
+                          "locale": "es_ES",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Ordis-Rekrut 1/1/1",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Recluta Ordis 1/1/1",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Ordis Recruit 1/1/1",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "fr_FR": {
+                          "displayWeb": "1/1/1 Recrue Ordis",
+                          "locale": "fr_FR",
+                          "description": ""
+                        }
+                      },
+                      "id": "01HKAGPSQ705KBWY8B8JQME52T",
+                      "reference": "ORDIS_RECRUIT"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JB22WMNYK9M0NCX15CHA02Q9"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "#{J} Créez un jeton Soldat [ORDIS_RECRUIT] dans chacune de vos Expéditions qui est en retard ou à égalité.#",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "#{J} Create an [ORDIS_RECRUIT] Soldier token in each of your Expeditions that's behind or tied.#",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "#{J} Erschaffe eine [ORDIS_RECRUIT]-Soldatenmarke in jeder deiner Expeditionen, die hinten liegt oder gleichauf ist.#",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "#{J} Crea una ficha de soldado [ORDIS_RECRUIT] en cada una de tus expediciones que vaya por detrás o esté empatada.#",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "#{J} Crea una pedina Soldato [ORDIS_RECRUIT] in ogni tua spedizione che è indietro o in situazione di parità.#",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "#{J} Create an [ORDIS_RECRUIT] Soldier token in each of your Expeditions that's behind or tied.#"
+              }
+            ],
+            "reference": "01010"
+          },
+          "sequence": 0,
+          "id": "01K4JP7N9J4T7HGYRA0BS8H2QM"
+        },
+        {
+          "cardElement": "/card_elements/01K4JP7MR1WXMT75XWZNEZ1FMG",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "es_ES": {
+                          "displayWeb": "Recluta de Ordis 1/1/1",
+                          "locale": "es_ES",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Ordis-Rekrut 1/1/1",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Recluta Ordis 1/1/1",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Ordis Recruit 1/1/1",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "fr_FR": {
+                          "displayWeb": "1/1/1 Recrue Ordis",
+                          "locale": "fr_FR",
+                          "description": ""
+                        }
+                      },
+                      "id": "01HKAGPSQ705KBWY8B8JQME52T",
+                      "reference": "ORDIS_RECRUIT"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JB22WNR5KB21AMH84C77R9QE"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "de_DE": {
+                    "text": "Zum Mittag — Erschaffe eine [ORDIS_RECRUIT]-Soldatenmarke in jeder deiner Expeditionen, die hinten liegt oder gleichauf ist.",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "À Midi — Créez un jeton Soldat [ORDIS_RECRUIT] dans chacune de vos Expéditions qui est en retard ou à égalité.",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "Al mediodía — Crea una ficha de soldado [ORDIS_RECRUIT] en cada una de tus expediciones que vaya por detrás o esté empatada.",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "A mezzogiorno — Crea una pedina Soldato [ORDIS_RECRUIT] in ogni tua spedizione che è indietro o in situazione di parità.",
+                    "locale": "it_IT"
+                  },
+                  "en_US": {
+                    "text": "At Noon — Create a [ORDIS_RECRUIT] Soldier token in each of your Expeditions that's behind or tied.",
+                    "locale": "en_US"
+                  }
+                },
+                "text": "At Noon — Create a [ORDIS_RECRUIT] Soldier token in each of your Expeditions that's behind or tied."
+              }
+            ],
+            "reference": "01011"
+          },
+          "sequence": 1,
+          "id": "01K4JP7NRMS549N70SPA2NFZV7"
+        }
+      ],
+      "value": "{J} Create an [Ordis Recruit 1/1/1] Soldier token in each of your Expeditions that's behind or tied.  At Noon — Create a [Ordis Recruit 1/1/1] Soldier token in each of your Expeditions that's behind or tied.",
+      "id": "01K4JP7MR1WXMT75XWZNEZ1FMG"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "085",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Taras Susak"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_OR_62_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_OR_62_R1",
+  "translations": {
+    "it_IT": {
+      "name": "Mesektet",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "es_ES": {
+      "name": "Mesektet",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "de_DE": {
+      "name": "Mesektet",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "en_US": {
+      "name": "Mesektet",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Mesektet",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT4YH9CMTH7ZANKQ172Z",
+  "mainFaction": {
+    "reference": "OR",
+    "color": "#0f6593",
+    "id": "01GE7AC9X78DXSNKNB15KCF69X",
+    "name": "Ordis"
+  },
+  "allImagePath": null,
+  "name": "Mesektet",
+  "elements": {
+    "MAIN_COST": "4",
+    "RECALL_COST": "4",
+    "MAIN_EFFECT": "#{J} Create an [Ordis Recruit 1/1/1] Soldier token in each of your Expeditions that's behind or tied.#  At Noon — Create a [Ordis Recruit 1/1/1] Soldier token in each of your Expeditions that's behind or tied."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-018-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

@@ -1,0 +1,316 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "de_DE": {
+          "text": "Die schnellste Lösung, wenn du mehr Feuerkraft brauchst.",
+          "locale": "de_DE"
+        },
+        "es_ES": {
+          "text": "La solución más rápida cuando necesitas potencia de fuego extra.",
+          "locale": "es_ES"
+        },
+        "it_IT": {
+          "text": "La soluzione più rapida, quando hai bisogno di più potenza di fuoco.",
+          "locale": "it_IT"
+        },
+        "en_US": {
+          "text": "The quickest solution when you need extra firepower.",
+          "locale": "en_US"
+        },
+        "fr_FR": {
+          "text": "La solution la plus rapide pour décupler votre puissance de feu.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JBT1A518MYRZT41DKQ0E68SG",
+      "text": "The quickest solution when you need extra firepower."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ELEMENTAL",
+      "id": "01HKAGPA0G5NVDVVXS31BBX2AS",
+      "name": "Elemental"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5EG96XC3RHKER1V08G"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "6",
+      "id": "01JB22J7SX2XSY1YNA9Z51K448"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "6",
+      "id": "01JB22J7WPY5G924X82YC5N71B"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "5",
+      "id": "01JB22J7ZNV243TXTKQ5AF8M3W"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "5",
+      "id": "01JB22J82EVFA4F2ZW0FRJVT3D"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "5",
+      "id": "01JB22J85AVDJ3XBR4X2MBYC85"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01K4JNRGMZS2EVQG34CX4EQ83M",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Repérage",
+                          "locale": "fr_FR",
+                          "description": "Vous pouvez me jouer de votre main pour {3} avec «{h} Envoyez-moi en Réserve »."
+                        },
+                        "en_US": {
+                          "displayWeb": "Scout",
+                          "locale": "en_US",
+                          "description": "You may play me from hand for {3} with \"{h} Send me to Reserve\"."
+                        },
+                        "de_DE": {
+                          "displayWeb": "Spähen",
+                          "locale": "de_DE",
+                          "description": "Du darfst mich für {3} mit „{h} Schicke mich in die Reserve“ aus der Hand spielen."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Esploratore",
+                          "locale": "it_IT",
+                          "description": "Puoi giocarmi dalla mano per {3} con \"{h} Mandami nella Riserva\"."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Explorar",
+                          "locale": "es_ES",
+                          "description": "Puedes jugarme desde la mano por {3} con «{h} Envíame a la reserva»."
+                        }
+                      },
+                      "id": "01JB22J68TFQ176K1VBGTCYDW2",
+                      "reference": "SCOUT_3"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": true,
+                    "id": "01JB22J6CCMWBE7BV8QTRT3V9J"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "$[SCOUT_3] {3}.",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "$[SCOUT_3] {3}.",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "$[SCOUT_3] {3}.",
+                    "locale": "it_IT"
+                  },
+                  "en_US": {
+                    "text": "$[SCOUT_3] {3}.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "$[SCOUT_3] {3}.",
+                    "locale": "de_DE"
+                  }
+                },
+                "text": "$[SCOUT_3] {3}."
+              }
+            ],
+            "reference": "00862"
+          },
+          "sequence": 0,
+          "id": "01K4JNRH554FE14C5ZBZEJ0YWN"
+        },
+        {
+          "cardElement": "/card_elements/01K4JNRGMZS2EVQG34CX4EQ83M",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "{J} Vous pouvez mettre une carte de votre Réserve dans votre zone de Mana en tant qu'Orbe de Mana #redressé.#",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "{J} You may put a card from your Reserve in your Mana zone as a #ready# Mana Orb.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "{J} Du darfst eine Karte aus deiner Reserve als #bereitgestellte# Manakugel in deine Manazone legen.",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "{J} Puedes colocar una carta de tu reserva en la zona de maná como orbe de maná #preparado.#",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "{J} Puoi mettere una carta dalla tua Riserva nella tua area del mana come una sfera di mana #ripristinata.#",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "{J} You may put a card from your Reserve in your Mana zone as a #ready# Mana Orb."
+              }
+            ],
+            "reference": "00865"
+          },
+          "sequence": 1,
+          "id": "01K4JNRHHZZ8MYJZSJ51JG6Y8S"
+        }
+      ],
+      "value": "[Scout] {3}. (You may play me from hand for {3} with \"{h} Send me to Reserve\".)  {J} You may put a card from your Reserve in your Mana zone as a ready Mana Orb.",
+      "id": "01K4JNRGMZS2EVQG34CX4EQ83M"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "029",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Justice Wong"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_BR_57_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_BR_57_R1",
+  "translations": {
+    "de_DE": {
+      "name": "Flinker Dschinn",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "it_IT": {
+      "name": "Jinn Rapido",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "es_ES": {
+      "name": "Jinn veloz",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "en_US": {
+      "name": "Swift Jinn",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Djinn Fulgurant",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT5ETXB0K2ZRPSA52GQD",
+  "mainFaction": {
+    "reference": "BR",
+    "color": "#c32637",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+    "name": "Bravos"
+  },
+  "allImagePath": null,
+  "name": "Swift Jinn",
+  "elements": {
+    "MAIN_COST": "6",
+    "RECALL_COST": "6",
+    "OCEAN_POWER": "#5#",
+    "FOREST_POWER": "5",
+    "MOUNTAIN_POWER": "5",
+    "MAIN_EFFECT": "[Scout] {3}. (You may play me from hand for {3} with \"{h} Send me to Reserve\".)  {J} You may put a card from your Reserve in your Mana zone as a #ready# Mana Orb."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-006-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

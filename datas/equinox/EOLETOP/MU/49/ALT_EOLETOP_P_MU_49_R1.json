@@ -1,0 +1,283 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "de_DE": {
+          "text": "Wurzeln brauchen Jahre, um sich durch den härtesten Stein zu graben, er hingegen braucht nur ein paar Stunden.",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "Le radici hanno bisogno di anni per farsi strada attraverso la pietra più dura, ma loro ci mettono solo qualche ora.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "Las raíces tardan años en atravesar la piedra más dura, pero estos excavadores solo tardan unas horas.",
+          "locale": "es_ES"
+        },
+        "en_US": {
+          "text": "It takes years for roots to punch their way through the hardest stone, but for them it only takes a few hours.",
+          "locale": "en_US"
+        },
+        "fr_FR": {
+          "text": "Là où il faut des années aux racines pour perforer la plus solide des pierres, il ne leur faut qu'une poignée d'heures.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JBT1A6W5Q6S3FTYYRT5VHXAT",
+      "text": "It takes years for roots to punch their way through the hardest stone, but for them it only takes a few hours."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ANIMAL",
+      "id": "01HKAGQS36Z3DP166MZW8KRAEK",
+      "name": "Animal"
+    },
+    {
+      "reference": "PLANT",
+      "id": "01HKAGSB49H24XWW17AAY441MT",
+      "name": "Plant"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5WJF84341P08BNNWVC"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JB22PK75S2DY0AA6KJZWRT5D"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JB22PKAFD3EV1MFNJ45B110D"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JB22PKDR0KMKMXMM5W76S5HT"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JB22PKGZ3E63WE4NTA4R23D0"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JB22PKM81TN5T91DBS86QHZE"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01K4JNYXKG40PMECJS1HTMDMZ2",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "en_US": {
+                          "displayWeb": "Resupplies",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Ravitaille",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "reabastece",
+                          "locale": "es_ES",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Nachschub",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Rifornisce",
+                          "locale": "it_IT",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JB22PMAWKFHM9YCE44WE12XZ",
+                      "reference": "RESUPPLIES"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JB22PMEW8PH50DP8X1YVE3H3"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "#Lorsqu'un adversaire pioche au moins une carte ou [RESUPPLIES] — Je gagne 1 boost.#",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "#When an opponent draws one or more cards or [RESUPPLIES] — I gain 1 boost.#",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "#Quando un avversario pesca una o più carte o [RESUPPLIES] — Ottengo 1 rinforzo.#",
+                    "locale": "it_IT"
+                  },
+                  "de_DE": {
+                    "text": "#Wenn ein Gegner eine oder mehrere Karten zieht oder [RESUPPLIES] nutzt — Ich erhalte 1 Verstärkung.#",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "#Cuando un oponente robe una o más cartas o [RESUPPLIES] — Gano 1 potenciador.#",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "#When an opponent draws one or more cards or [RESUPPLIES] — I gain 1 boost.#"
+              }
+            ],
+            "reference": "00937"
+          },
+          "sequence": 0,
+          "id": "01K4JNYY3SVNN1F9981AA9ZS2R"
+        }
+      ],
+      "value": "When an opponent draws one or more cards or [Resupplies] — I gain 1 boost.",
+      "id": "01K4JNYXKG40PMECJS1HTMDMZ2"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "054",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Ba Vo"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_MU_49_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_MU_49_R1",
+  "translations": {
+    "de_DE": {
+      "name": "Nuusch-Wühler",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "es_ES": {
+      "name": "Noosh excavador",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "fr_FR": {
+      "name": "Fouisseur Nouch",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "en_US": {
+      "name": "Burrowing Noosh",
+      "image": null,
+      "locale": "en_US"
+    },
+    "it_IT": {
+      "name": "Noosh Scavabuche",
+      "image": null,
+      "locale": "it_IT"
+    }
+  },
+  "id": "01M28EMT5W98X1X2T0PX66TN3N",
+  "mainFaction": {
+    "reference": "MU",
+    "color": "#3d6b42",
+    "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+    "name": "Muna"
+  },
+  "allImagePath": null,
+  "name": "Burrowing Noosh",
+  "elements": {
+    "MAIN_COST": "1",
+    "RECALL_COST": "1",
+    "OCEAN_POWER": "0",
+    "FOREST_POWER": "#1#",
+    "MOUNTAIN_POWER": "0",
+    "MAIN_EFFECT": "#When an opponent draws one or more cards or [Resupplies] — I gain 1 boost.#"
+  },
+  "collectorNumberFormatted": "ROCTOP-X-014-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

@@ -1,0 +1,192 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "Who better than a groundhog to wind their way through these hanging rice fields?",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Wer könnte sich besser durch diese hängenden Reisfelder schlängeln als ein Murmeltier?",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "Chi meglio di una marmotta può farsi strada tra queste risaie sospese?",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "¿Quién mejor que una marmota para abrirse camino entre estos campos de arroz colgantes?",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "Pas mieux qu'une marmotte pour crapahuter dans ces rizières suspendues !",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JNRGBY1FMB23QWKQ42VB6Y0K",
+      "text": "Who better than a groundhog to wind their way through these hanging rice fields?"
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ANIMAL",
+      "id": "01HKAGQS36Z3DP166MZW8KRAEK",
+      "name": "Animal"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5F7XSWV930XMNYYVJ5"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9V9H3F49D044Z371W7792T"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9V9H7RKH73QHNQQGBR46H9"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JN9V9HC17BZXJ1D5SSYK24BN"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JN9V9HGFQB32EK51H5G59AXN"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V9HNP0CP21E37M25JTTW1"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "038",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Ba Vo"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_LY_66_C",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_LY_66_C",
+  "translations": {
+    "de_DE": {
+      "name": "Bergführer",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "it_IT": {
+      "name": "Guida di Montagna",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "es_ES": {
+      "name": "Guía de montaña",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "en_US": {
+      "name": "Mountain Guide",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Guide de Montagne",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT5F5P6K0YNN5Y1AR94P",
+  "mainFaction": {
+    "reference": "LY",
+    "color": "#cf4171",
+    "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+    "name": "Lyra"
+  },
+  "allImagePath": null,
+  "name": "Mountain Guide",
+  "elements": {
+    "MAIN_COST": "1",
+    "RECALL_COST": "1",
+    "OCEAN_POWER": "0",
+    "FOREST_POWER": "0",
+    "MOUNTAIN_POWER": "2"
+  },
+  "collectorNumberFormatted": "ROCTOP-X-011-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

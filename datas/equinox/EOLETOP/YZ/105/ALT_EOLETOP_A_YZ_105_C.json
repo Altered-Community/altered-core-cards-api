@@ -1,0 +1,283 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "\"Finally! I think we're going to have some fun!\"",
+          "locale": "en_US"
+        },
+        "fr_FR": {
+          "text": "« Enfin ! Je crois qu'on va bien s'amuser ! »",
+          "locale": "fr_FR"
+        },
+        "de_DE": {
+          "text": "„Endlich! Das wird bestimmt Spaß machen!“",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"Finalmente! Penso che ci divertiremo!\"",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«¡Por fin! Creo que nos lo vamos a pasar muy bien».",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HX9VFXSPGJ676QVCPVA1",
+      "text": "\"Finally! I think we're going to have some fun!\""
+    }
+  ],
+  "cardType": {
+    "reference": "HERO",
+    "translations": {
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Held"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Hero"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Héros"
+      },
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Héroe de"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Eroe"
+      }
+    },
+    "id": "01GE7AC9WGQTNRP28T63FH8TZD",
+    "name": "Hero"
+  },
+  "cardSubTypes": [],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT4VY50G0K3VDFE8SVXK"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "PERMANENT",
+        "id": "01HGG84FWN1B2ZZ2MKMAV0EYR6"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YWHYA2N3JQA6C71X1C974H"
+    },
+    {
+      "cardElementType": {
+        "reference": "RESERVE",
+        "id": "01HGG84RC3BAGK8ZB60PVCGWGJ"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YWHYA2N3JQA6C71X1C974J"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5Q3EB5KYSARG9H3Y3751WR",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "Placeholder",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "{T} : Draw a card, then discard a card from your hand. You can only activate this if you are first player.",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "{T}: pesca una carta, poi scarta una carta dalla tua mano. Puoi eseguire questa azione solo se sei il primo giocatore.",
+                    "locale": "it_IT"
+                  },
+                  "de_DE": {
+                    "text": "{T} : Ziehe eine Karte, dann lege eine Karte aus deiner Hand ab. Du kannst dies nur aktivieren, falls du der Startspieler bist.",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "{T} : Roba una carta y luego descarta una carta de tu mano. Solo puedes activar esto si eres el primer jugador.",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "{T} : Draw a card, then discard a card from your hand. You can only activate this if you are first player."
+              }
+            ],
+            "reference": "02997"
+          },
+          "sequence": 0,
+          "id": "01KJ5Q3G9BQEB20F0100RC0RN9"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5Q3EB5KYSARG9H3Y3751WR",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "As soon as six cards or more are in your discard pile, I permanently gain:",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "Dès qu'il y a au moins six cartes dans votre défausse, je gagne de façon permanente :",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "Sobald sich mindestens sechs Karten auf deinem Ablagestapel befinden, erhalte ich dauerhaft:",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "Non appena ci sono sei o più carte nella tua pila degli scarti, ottengo in modo permanente:",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "En cuanto haya seis o más cartas en tu pila de descartes, gano permanentemente:",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "As soon as six cards or more are in your discard pile, I permanently gain:"
+              }
+            ],
+            "reference": "03013"
+          },
+          "sequence": 1,
+          "id": "01KJ5Q3J099M2570P6JSSW6KT4"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5Q3EB5KYSARG9H3Y3751WR",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "« Lorsque vous défaussez une carte de votre main — Renvoyez-la dans votre Réserve. »",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "\"When you discard a card from your hand — Return it to your Reserve.\"",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "„Wenn du eine Karte aus deiner Hand ablegst — Lege sie in deine Reserve zurück.“",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "\"Quando scarti una carta dalla tua mano — Falla tornare nella tua Riserva.\"",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "\"Cuando descartes una carta de tu mano — Devuélvela a la reserva\".",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "\"When you discard a card from your hand — Return it to your Reserve.\""
+              }
+            ],
+            "reference": "02738"
+          },
+          "sequence": 2,
+          "id": "01KJ5Q3KPSKKMTAVQJXBD4A5KY"
+        }
+      ],
+      "value": "{T} : Draw a card, then discard a card from your hand. You can only activate this if you are first player.  As soon as six cards or more are in your discard pile, I permanently gain:  \"When you discard a card from your hand — Return it to your Reserve.\"",
+      "id": "01KJ5Q3EB5KYSARG9H3Y3751WR"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "094",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "A",
+    "name": "AltArt"
+  },
+  "illustrator": {
+    "nickName": "Zero Wen"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_A_YZ_105_C",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLETOP_A_YZ_105_C",
+  "translations": {
+    "fr_FR": {
+      "name": "Sam & Spook",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "de_DE": {
+      "name": "Sam & Spuk",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "it_IT": {
+      "name": "Sam e Spettro",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "es_ES": {
+      "name": "Sam y Susto",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "en_US": {
+      "name": "Sam & Spook",
+      "image": null,
+      "locale": "en_US"
+    }
+  },
+  "id": "01M28EMT4VW0CE33CTJZBQQG82",
+  "mainFaction": {
+    "reference": "YZ",
+    "color": "#764891",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+    "name": "Yzmir"
+  },
+  "allImagePath": null,
+  "name": "Sam & Spook",
+  "elements": {
+    "MAIN_COST": "0",
+    "RECALL_COST": "0",
+    "PERMANENT": "2",
+    "RESERVE": "2",
+    "MAIN_EFFECT": "{T} : Draw a card, then discard a card from your hand. You can only activate this if you are first player.  As soon as six cards or more are in your discard pile, I permanently gain:  \"When you discard a card from your hand — Return it to your Reserve.\""
+  },
+  "collectorNumberFormatted": "ROCTOP-XA-030-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

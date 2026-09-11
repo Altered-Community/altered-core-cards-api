@@ -1,0 +1,295 @@
+{
+  "loreEntries": [],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "DEITY",
+      "id": "01HKAGPAJFS4YDQVKY6AB16614",
+      "name": "Deity"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT39GSKPHS2E0CTZW3SG"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYQKRDE4HS0RM7TR2JSJ7E"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYQKZ94ZJT0WE9N32B6BWX"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYQM5ZHE08TAJN9DYHSNBH"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYQMKHM6YN11DG8PHXKPA4"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYQMCQRH1D3XV1G6AWD2J6"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5NNVZCV2NF9YG2D0VFEZGC",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "de_DE": {
+                    "text": "(Ein Charakter mit Verankert geht während der Ruhepause nicht in die Reserve und verliert Verankert.)",
+                    "locale": "de_DE"
+                  },
+                  "en_US": {
+                    "text": "(An Anchored Character doesn't go to Reserve during Rest and loses Anchored.)",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "(Un personaggio con Ancorato non va nella Riserva durante il riposo e perde Ancorato.)",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "(Un personaje con anclaje no va a la reserva durante el descanso y pierde anclaje.)",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "(Au Repos, un Personnage Ancré ne va pas en Réserve et il perd Ancré.)",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "(An Anchored Character doesn't go to Reserve during Rest and loses Anchored.)"
+              }
+            ],
+            "reference": "02843"
+          },
+          "sequence": 0,
+          "id": "01KJ5NNXX1PAJFTJEEHG3DMVYT"
+        }
+      ],
+      "value": "(An Anchored Character doesn't go to Reserve during Rest and loses Anchored.)",
+      "id": "01KJ5NNVZCV2NF9YG2D0VFEZGC"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5NNZTHARTE7VSP3T825B8V",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "en_US": {
+                          "displayWeb": "Anchored",
+                          "locale": "en_US",
+                          "description": "During Rest, I don't go to Reserve and I lose Anchored."
+                        },
+                        "de_DE": {
+                          "displayWeb": "Verankert",
+                          "locale": "de_DE",
+                          "description": "Während der Ruhepause gehe ich nicht in die Reserve und verliere Verankert."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Anclaje",
+                          "locale": "es_ES",
+                          "description": "Durante el descanso, no voy a la reserva y pierdo anclaje."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Ancorato",
+                          "locale": "it_IT",
+                          "description": "Durante il riposo, non vado nella Riserva e perdo Ancorato."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Ancré",
+                          "locale": "fr_FR",
+                          "description": "Au Repos, je ne vais pas en Réserve et je perds Ancré."
+                        }
+                      },
+                      "id": "01HKAGQQK91PRVXQ5ARQWWQQ9T",
+                      "reference": "ANCHORED"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7KGPF39J6F0M3DHDQ2YRKA"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{D} : The next Character with Base Cost {3} or less you play this turn gains [ANCHORED]. (Discard me from Reserve to do this.)",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "{D}: il prossimo personaggio con costo base pari o inferiore a {3} che giochi in questo turno ottiene [ANCHORED]. (Scartami dalla Riserva per eseguire questa azione.)",
+                    "locale": "it_IT"
+                  },
+                  "de_DE": {
+                    "text": "{D} : Der nächste Charakter, den du in dieser Runde mit Basiskosten {3} oder weniger spielst, erhält [ANCHORED]. (Lege mich aus der Reserve ab, um diese Aktion auszuführen.)",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "{D} : Le prochain Personnage de Coût de Base {3} ou moins que vous jouez ce tour-ci gagne [ANCHORED]. (Défaussez-moi de la Réserve pour ça.)",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "{D} : El siguiente personaje que juegues este turno con coste base de {3} o menos gana [ANCHORED]. (Descártame de la reserva para hacer esto.)",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "{D} : The next Character with Base Cost {3} or less you play this turn gains [ANCHORED]. (Discard me from Reserve to do this.)"
+              }
+            ],
+            "reference": "02844"
+          },
+          "sequence": 0,
+          "id": "01KJ5NP1QX8V3Y140837DJCJJH"
+        }
+      ],
+      "value": "{D} : The next Character with Base Cost {3} or less you play this turn gains [[Anchored]]. (Discard me from Reserve to do this.)",
+      "id": "01KJ5NNZTHARTE7VSP3T825B8V"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "045",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "A",
+    "name": "AltArt"
+  },
+  "illustrator": {
+    "nickName": "Khoa Viet"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_A_LY_111_C",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_A_LY_111_C",
+  "translations": {
+    "it_IT": {
+      "name": "Bastet",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Bastet",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "es_ES": {
+      "name": "Bastet",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "en_US": {
+      "name": "Bastet",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Bastet",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT39PXZ17W1GR8TC8SSS",
+  "mainFaction": {
+    "reference": "LY",
+    "color": "#cf4171",
+    "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+    "name": "Lyra"
+  },
+  "allImagePath": null,
+  "name": "Bastet",
+  "elements": {
+    "MAIN_COST": "3",
+    "RECALL_COST": "3",
+    "OCEAN_POWER": "3",
+    "MOUNTAIN_POWER": "3",
+    "FOREST_POWER": "2",
+    "MAIN_EFFECT": "(An Anchored Character doesn't go to Reserve during Rest and loses Anchored.)",
+    "ECHO_EFFECT": "{D} : The next Character with Base Cost {3} or less you play this turn gains [[Anchored]]. (Discard me from Reserve to do this.)"
+  },
+  "collectorNumberFormatted": "ROCOP-A-045-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

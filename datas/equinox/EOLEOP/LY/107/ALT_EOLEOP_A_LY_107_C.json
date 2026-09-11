@@ -1,0 +1,358 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "\"Are you sure you want to follow me into hell, Fen?\"",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "„Willst du mir wirklich in die Hölle folgen, Fen?“",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"Vuoi davvero seguirmi fino all'inferno, Fen?\"",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«¿Estás segura de querer seguirme al infierno, Fen?».",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "« Veux-tu vraiment me suivre en enfer, Fen ? »",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01KC94HQWYEHBD4825JC62QWPV",
+      "text": "\"Are you sure you want to follow me into hell, Fen?\""
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ARTIST",
+      "id": "01HKAGQTJ167DYCKKGR8MCESNT",
+      "name": "Artist"
+    },
+    {
+      "reference": "CORRUPTION",
+      "id": "01KA0YFDBT5GF5YYW6RP9VJ0GB",
+      "name": "Corruption"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT34PV7XJ0JNA85BHEWY"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYP0XWDQBHAEHVREM5Q5H0"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYP14H2ASTE3TN7CNBJZKJ"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYP1BBEE16K98P6FANP1BT"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01K9YYP1J011FJZ3WET8W7X6K6"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYP1RRJYZTJWWRDJ0CRFP4"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5NFDNTF9YPEBBMBQHEYPAQ",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "en_US": {
+                          "displayWeb": "Fleeting",
+                          "locale": "en_US",
+                          "description": "Send me to Discard instead of Reserve after my effect resolves."
+                        },
+                        "de_DE": {
+                          "displayWeb": "Vergänglich",
+                          "locale": "de_DE",
+                          "description": "Lege mich auf die Ablage statt in die Reserve, nachdem mein Effekt abgeklungen ist."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Fugace",
+                          "locale": "it_IT",
+                          "description": "Mandami negli Scarti invece che nella Riserva dopo che il mio effetto si è risolto."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Fugacidad",
+                          "locale": "es_ES",
+                          "description": "Una vez resuelto mi efecto, envíame a la pila de descartes en lugar de a la reserva."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Fugace",
+                          "locale": "fr_FR",
+                          "description": "Envoyez-moi à la Défausse plutôt qu'en Réserve une fois mon effet résolu."
+                        }
+                      },
+                      "id": "01HKAGPHBY4EPW8TR9VTCHZG5Q",
+                      "reference": "FLEETING"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7KEDE1QK9P2BHPQ8BXZSY0"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{H} I gain [FLEETING] unless a {D} ability was activated this turn.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "{H} Ich erhalte [FLEETING], es sei denn, eine {D} Fähigkeit wurde in dieser Runde aktiviert.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{H} Ottengo [FLEETING] a meno che non sia stata attivata un'abilità {D} in questo turno.",
+                    "locale": "it_IT"
+                  },
+                  "fr_FR": {
+                    "text": "{H} Je gagne [FLEETING], sauf si une capacité {D} a été activée ce tour-ci.",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "{H} Gano [FLEETING] a menos que se haya activado una habilidad {D} este turno.",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "{H} I gain [FLEETING] unless a {D} ability was activated this turn."
+              }
+            ],
+            "reference": "02834"
+          },
+          "sequence": 0,
+          "id": "01KJ5NFF8YDSVMYQK191XWPXY8"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5NFDNTF9YPEBBMBQHEYPAQ",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "de_DE": {
+                          "displayWeb": "Nachschub",
+                          "locale": "de_DE",
+                          "description": "Lege die oberste Karte deines Decks in die Reserve."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Ravitaillez",
+                          "locale": "fr_FR",
+                          "description": "Mettez la première carte de votre deck en Réserve."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Reabastece",
+                          "locale": "es_ES",
+                          "description": "Coloca la primera carta de tu mazo en la reserva."
+                        },
+                        "en_US": {
+                          "displayWeb": "Resupply",
+                          "locale": "en_US",
+                          "description": "Put the top card of your deck in Reserve."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Rifornisci",
+                          "locale": "it_IT",
+                          "description": "Metti la prima carta del tuo mazzo nella Riserva."
+                        }
+                      },
+                      "id": "01HKAGPBBK4NKWK6G9447WTAWK",
+                      "reference": "RESUPPLY"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01K9YYP51XS9TYRWNNNM36VHQE"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{H} [RESUPPLY].",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "{H} [RESUPPLY].",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "{H} [RESUPPLY].",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{H} [RESUPPLY].",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{H} [RESUPPLY].",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "{H} [RESUPPLY]."
+              }
+            ],
+            "reference": "02216"
+          },
+          "sequence": 1,
+          "id": "01KJ5NFGWW54YNY271FK0DWNRG"
+        }
+      ],
+      "value": "{H} I gain [[Fleeting]] unless a {D} ability was activated this turn.  {H} [Resupply].",
+      "id": "01KJ5NFDNTF9YPEBBMBQHEYPAQ"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "039",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "A",
+    "name": "AltArt"
+  },
+  "illustrator": {
+    "nickName": "Zaeliven"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_A_LY_107_C",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_A_LY_107_C",
+  "translations": {
+    "it_IT": {
+      "name": "Esmeralda Corrotta",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Verderbte Esmeralda",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "en_US": {
+      "name": "Corrupted Esmeralda",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Esmeralda Corrompue",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "es_ES": {
+      "name": "Esmeralda corrompida",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT34Q3PBH3J11XFQSPXA",
+  "mainFaction": {
+    "reference": "LY",
+    "color": "#cf4171",
+    "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+    "name": "Lyra"
+  },
+  "allImagePath": null,
+  "name": "Corrupted Esmeralda",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "3",
+    "FOREST_POWER": "0",
+    "MOUNTAIN_POWER": "3",
+    "MAIN_EFFECT": "{H} I gain [[Fleeting]] unless a {D} ability was activated this turn.  {H} [Resupply]."
+  },
+  "collectorNumberFormatted": "ROCOP-A-039-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

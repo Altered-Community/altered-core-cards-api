@@ -1,0 +1,407 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "\"I know they will all be driven out, except for those who die.\" — Jeanne",
+          "locale": "en_US"
+        },
+        "fr_FR": {
+          "text": "« Je sais qu'ils seront tous boutés, excepté ceux qui périront. » — Jeanne",
+          "locale": "fr_FR"
+        },
+        "de_DE": {
+          "text": "„Sie werden alle vertrieben, bis auf jene, die sterben.“ — Jeanne",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"So che saranno tutti scacciati, eccetto coloro che periranno.\" — Giovanna",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«Sé que todos serán expulsados, excepto los que mueran». —Jeanne",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HVV6GDEPPC9B4E5WTF5S",
+      "text": "\"I know they will all be driven out, except for those who die.\" — Jeanne"
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "SOLDIER",
+      "id": "01HKAGQ5CZVEX15T5KTM40KQSA",
+      "name": "Soldier"
+    },
+    {
+      "reference": "CORRUPTION",
+      "id": "01KA0YFDBT5GF5YYW6RP9VJ0GB",
+      "name": "Corruption"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT3JFSJBVX73D9QSTNA8"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YZ877SG8XD6WDG5WDGY0D2"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YZ87FNTTX4SGKHHAG3M77G"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZ87QSNMNGH8ZDREBT7YVM"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZ87ZPEYYH1HJ2SKZ1T04P"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZ887RXART9SFXZ62PKWAX"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5PTCNBZC3KTF01XN8XD3QG",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "#I can't be played# unless there's another Character in each of your Expeditions.",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "#Non puoi giocarmi# a meno che non ci sia un altro personaggio in ciascuna delle tue spedizioni.",
+                    "locale": "it_IT"
+                  },
+                  "de_DE": {
+                    "text": "#Ich kann nicht gespielt werden,# es sei denn, es befindet sich ein anderer Charakter in jeder deiner Expeditionen.",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "#Je ne peux pas être jouée,# sauf s'il y a un autre Personnage dans chacune de vos Expéditions.",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "#No puedes jugarme# a menos que haya otro personaje en cada una de tus expediciones.",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "#I can't be played# unless there's another Character in each of your Expeditions."
+              }
+            ],
+            "reference": "02927"
+          },
+          "sequence": 0,
+          "id": "01KJ5PTEHHPJS4EXXA794A4YT2"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5PTCNBZC3KTF01XN8XD3QG",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Dotouffu 1/1/1",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Woollyback 1/1/1",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Wollrücken 1/1/1",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Lanuvola 1/1/1",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Lanudo 1/1/1",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JN9V1RZ960JE3XMHMM4G1Y3D",
+                      "reference": "WOOLLYBACK"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7M75GJZ4PD651DJFD4TQ7M"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "When I leave the Expedition zone — Create a #[WOOLLYBACK] Animal# token in each of your Expeditions.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "Wenn ich die Expeditionszone verlasse — Erschaffe eine #[WOOLLYBACK]-Tiermarke# in jeder deiner Expeditionen.",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "Lorsque je quitte la zone d'Expédition — Créez un jeton #Animal [WOOLLYBACK]# dans chacune de vos Expéditions.",
+                    "locale": "fr_FR"
+                  },
+                  "it_IT": {
+                    "text": "Quando lascio l'area delle spedizioni — Crea una pedina #Animale [WOOLLYBACK]# in ciascuna delle tue spedizioni.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "Cuando abandone la zona de expedición — Crea una ficha de #animal [WOOLLYBACK]# en cada una de tus expediciones.",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "When I leave the Expedition zone — Create a #[WOOLLYBACK] Animal# token in each of your Expeditions."
+              }
+            ],
+            "reference": "02947"
+          },
+          "sequence": 1,
+          "id": "01KJ5PTGB48SYDX5K7T6AGC968"
+        }
+      ],
+      "value": "I can't be played unless there's another Character in each of your Expeditions.  When I leave the Expedition zone — Create a [Woollyback 1/1/1] Animal token in each of your Expeditions.",
+      "id": "01KJ5PTCNBZC3KTF01XN8XD3QG"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5PTJ8GT6T7G60P8BMNJ70F",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Dotouffu 1/1/1",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Woollyback 1/1/1",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Wollrücken 1/1/1",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Lanuvola 1/1/1",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Lanudo 1/1/1",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JN9V1RZ960JE3XMHMM4G1Y3D",
+                      "reference": "WOOLLYBACK"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7M79D85DN89HB6P1Z29VX4"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "#{D} : Create a [WOOLLYBACK] Animal token in target Expedition.#",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "#{D}: crea una pedina Animale [WOOLLYBACK] in una spedizione bersaglio.#",
+                    "locale": "it_IT"
+                  },
+                  "de_DE": {
+                    "text": "#{D} : Erschaffe eine [WOOLLYBACK]-Tiermarke in einer Expedition deiner Wahl.#",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "#{D} : Créez un jeton Animal [WOOLLYBACK] dans une Expédition ciblée.#",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "#{D} : Crea una ficha de animal [WOOLLYBACK] en una expedición objetivo.#",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "#{D} : Create a [WOOLLYBACK] Animal token in target Expedition.#"
+              }
+            ],
+            "reference": "02947"
+          },
+          "sequence": 0,
+          "id": "01KJ5PTM1RMCCYG4J7YQJ0GCDD"
+        }
+      ],
+      "value": "{D} : Create a [Woollyback 1/1/1] Animal token in target Expedition.",
+      "id": "01KJ5PTJ8GT6T7G60P8BMNJ70F"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "084",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "A",
+    "name": "AltArt"
+  },
+  "illustrator": {
+    "nickName": "Jean-Baptiste Andrier"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_A_OR_114_R2",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_A_OR_114_R2",
+  "translations": {
+    "fr_FR": {
+      "name": "Jeanne Corrompue",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "de_DE": {
+      "name": "Verderbte Jeanne",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "it_IT": {
+      "name": "Giovanna Corrotta",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "en_US": {
+      "name": "Corrupted Jeanne",
+      "image": null,
+      "locale": "en_US"
+    },
+    "es_ES": {
+      "name": "Jeanne corrompida",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT3JEHDH6KTMFFG90ZJR",
+  "mainFaction": {
+    "reference": "MU",
+    "color": "#3d6b42",
+    "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+    "name": "Muna"
+  },
+  "allImagePath": null,
+  "name": "Corrupted Jeanne",
+  "elements": {
+    "MAIN_COST": "3",
+    "RECALL_COST": "3",
+    "OCEAN_POWER": "#2#",
+    "FOREST_POWER": "#2#",
+    "MOUNTAIN_POWER": "#2#",
+    "MAIN_EFFECT": "#I can't be played# unless there's another Character in each of your Expeditions.  When I leave the Expedition zone — Create a #[Woollyback 1/1/1] Animal# token in each of your Expeditions.",
+    "ECHO_EFFECT": "#{D} : Create a [Woollyback 1/1/1] Animal token in target Expedition.#"
+  },
+  "collectorNumberFormatted": "ROCOP-A-084-F-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

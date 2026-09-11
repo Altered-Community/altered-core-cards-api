@@ -1,0 +1,408 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "\"If you want them, you'll have to go through me first!\" — Kebba",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "„Wenn ihr sie haben wollt, müsst ihr erst an mir vorbei!“ — Kebba",
+          "locale": "de_DE"
+        },
+        "fr_FR": {
+          "text": "« Pour les atteindre, vous devrez me passer sur le corps ! » — Kebba",
+          "locale": "fr_FR"
+        },
+        "es_ES": {
+          "text": "«¡Para alcanzarlos, tendrás que pasar por encima de mi cadáver!». ―Kebba",
+          "locale": "es_ES"
+        },
+        "it_IT": {
+          "text": "\"Se li vuoi, dovrai prima passare sul mio cadavere!\" — Kebba",
+          "locale": "it_IT"
+        }
+      },
+      "id": "01KC94HQEZD9NCDGFA5DRE7GXX",
+      "text": "\"If you want them, you'll have to go through me first!\" — Kebba"
+    }
+  ],
+  "cardType": {
+    "reference": "LANDMARK_PERMANENT",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Permanente hito"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Permanente Fulcro"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Bleibende Wahrzeichenkarte"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Landmark Permanent"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Repère Permanent"
+      }
+    },
+    "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+    "name": "Landmark Permanent"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "FEAT",
+      "id": "01KA0Z8VM97X93CWTMFTM976E4",
+      "name": "Feat"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT3XFTP56VZ8D81VJ1ZF"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01K9YYKM4SWQMJSE4X9YHVR1PK"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01K9YYKMBGXZMHK4G2RMAG9YTQ"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5N95KMBMN0N8Y8DFKXPPZH",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "en_US": {
+                          "displayWeb": "Fleeting",
+                          "locale": "en_US",
+                          "description": "Send me to Discard instead of Reserve after my effect resolves."
+                        },
+                        "de_DE": {
+                          "displayWeb": "Vergänglich",
+                          "locale": "de_DE",
+                          "description": "Lege mich auf die Ablage statt in die Reserve, nachdem mein Effekt abgeklungen ist."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Fugace",
+                          "locale": "it_IT",
+                          "description": "Mandami negli Scarti invece che nella Riserva dopo che il mio effetto si è risolto."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Fugacidad",
+                          "locale": "es_ES",
+                          "description": "Una vez resuelto mi efecto, envíame a la pila de descartes en lugar de a la reserva."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Fugace",
+                          "locale": "fr_FR",
+                          "description": "Envoyez-moi à la Défausse plutôt qu'en Réserve une fois mon effet résolu."
+                        }
+                      },
+                      "id": "01HKAGPHBY4EPW8TR9VTCHZG5Q",
+                      "reference": "FLEETING"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7KB63CYFP7CP11P2WYB2HK"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{J} Up to one target Character #gains 1 boost# and loses [FLEETING].",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "{J} Bis zu ein Charakter deiner Wahl #erhält 1 Verstärkung# und verliert [FLEETING].",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "{J} Hasta un personaje objetivo #gana 1 potenciador# y pierde [FLEETING].",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "{J} Fino a un personaggio bersaglio #ottiene 1 rinforzo# e perde [FLEETING].",
+                    "locale": "it_IT"
+                  },
+                  "fr_FR": {
+                    "text": "{J} Jusqu'à un Personnage ciblé #gagne 1 boost# et perd [FLEETING].",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "{J} Up to one target Character #gains 1 boost# and loses [FLEETING]."
+              }
+            ],
+            "reference": "02817"
+          },
+          "sequence": 0,
+          "id": "01KJ5N97DCEY7WWMP3FZ0CD3RS"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5N95KMBMN0N8Y8DFKXPPZH",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "At Noon — If there are two or more cards in your Reserve, complete me.",
+                    "locale": "en_US"
+                  },
+                  "es_ES": {
+                    "text": "Al mediodía — Si tienes dos o más cartas en reserva, complétame.",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "A mezzogiorno — Se ci sono due o più carte nella tua Riserva, eseguimi.",
+                    "locale": "it_IT"
+                  },
+                  "de_DE": {
+                    "text": "Zum Mittag — Falls sich mindestens zwei Karten in deiner Reserve befinden, vollbringe mich.",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "À Midi — S'il y a au moins deux cartes dans votre Réserve, accomplissez-moi.",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "At Noon — If there are two or more cards in your Reserve, complete me."
+              }
+            ],
+            "reference": "02815"
+          },
+          "sequence": 1,
+          "id": "01KJ5N98YJBAB0CAPNP61NXM6B"
+        }
+      ],
+      "value": "{J} Up to one target Character gains 1 boost and loses [[Fleeting]].  At Noon — If there are two or more cards in your Reserve, complete me.",
+      "id": "01KJ5N95KMBMN0N8Y8DFKXPPZH"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5N9ACSRZD2SYFP6MTE4XGM",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Coriaces 1",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Tough 1",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Robust 1",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Tenace 1",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Resistencia 1",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JN9V93R4X2QDP6CPHFSR8DWC",
+                      "reference": "TOUGH_CHA_P_1"
+                    },
+                    "sequence": 1,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7KBAS1B95DWDRK9NEPDZZB"
+                  },
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Accomplie",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Completed",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Eseguita",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Vollbracht",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Completada",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01K9YYDGN54D4PHVKNMQW4R9NQ",
+                      "reference": "COMPLETED"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7KBA5RK38B4H6ZMNGDH3NS"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "[COMPLETED]: Characters in your Reserve are [TOUGH_CHA_P_1].",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "[COMPLETED]: Charaktere in deiner Reserve sind [TOUGH_CHA_P_1].",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "[COMPLETED]: Los personajes en tu reserva tienen [TOUGH_CHA_P_1].",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "[COMPLETED]: i personaggi nella tua Riserva hanno [TOUGH_CHA_P_1].",
+                    "locale": "it_IT"
+                  },
+                  "fr_FR": {
+                    "text": "[COMPLETED] : Les Personnages dans votre Réserve sont [TOUGH_CHA_P_1].",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "[COMPLETED]: Characters in your Reserve are [TOUGH_CHA_P_1]."
+              }
+            ],
+            "reference": "02818"
+          },
+          "sequence": 0,
+          "id": "01KJ5N9BBMW0EK3BSA07YZNE88"
+        }
+      ],
+      "value": "[[Completed]]: Characters in your Reserve are [Tough 1].",
+      "id": "01KJ5N9ACSRZD2SYFP6MTE4XGM"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "032",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Zero Wen"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_P_BR_119_R1",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_P_BR_119_R1",
+  "translations": {
+    "it_IT": {
+      "name": "Proteggere le Risorse",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Sichert die Ressourcen",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "en_US": {
+      "name": "Protect the Assets",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Protéger les Actifs",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "es_ES": {
+      "name": "Proteger los recursos",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT3X1XQT346B9QFCQRTR",
+  "mainFaction": {
+    "reference": "BR",
+    "color": "#c32637",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+    "name": "Bravos"
+  },
+  "allImagePath": null,
+  "name": "Protect the Assets",
+  "elements": {
+    "MAIN_COST": "1",
+    "RECALL_COST": "1",
+    "MAIN_EFFECT": "{J} Up to one target Character #gains 1 boost# and loses [[Fleeting]].  At Noon — If there are two or more cards in your Reserve, complete me.",
+    "ECHO_EFFECT": "[[Completed]]: Characters in your Reserve are [Tough 1]."
+  },
+  "collectorNumberFormatted": "ROCOP-S-032-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

@@ -1,0 +1,244 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "fr_FR": {
+          "text": "Le langage de la nature n'a que faire des mots.",
+          "locale": "fr_FR"
+        },
+        "en_US": {
+          "text": "The language of nature has no use for words",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Die Sprache der Natur kennt keine Worte.",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "Il linguaggio della natura non ha bisogno di parole.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "El lenguaje de la naturaleza no necesita palabras.",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HTMX8C10J4DNT8E2TVHB",
+      "text": "The language of nature has no use for words"
+    }
+  ],
+  "cardType": {
+    "reference": "HERO",
+    "translations": {
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Held"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Hero"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Héros"
+      },
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Héroe de"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Eroe"
+      }
+    },
+    "id": "01GE7AC9WGQTNRP28T63FH8TZD",
+    "name": "Hero"
+  },
+  "cardSubTypes": [],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT4QQKP55GH1315JAMYN"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "PERMANENT",
+        "id": "01HGG84FWN1B2ZZ2MKMAV0EYR6"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YWHY9EKNEVK83WSWCBB90N"
+    },
+    {
+      "cardElementType": {
+        "reference": "RESERVE",
+        "id": "01HGG84RC3BAGK8ZB60PVCGWGJ"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YWHY9EKNEVK83WSWCBB90P"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5P014ECQRR9SBC7SH4C6MJ",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Dotouffu 1/1/1",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Woollyback 1/1/1",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Wollrücken 1/1/1",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Lanuvola 1/1/1",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Lanudo 1/1/1",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JN9V1RZ960JE3XMHMM4G1Y3D",
+                      "reference": "WOOLLYBACK"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JN9VDB50VBAD2FZSTVB66B0C"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "At Noon — If you are first player, create a [WOOLLYBACK] Animal token in target opponent's Companion Expedition, then draw a card.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "Zum Mittag — Falls du der Startspieler bist, erschaffe eine [WOOLLYBACK]-Tiermarke in der Gefährten-Expedition eines Gegners deiner Wahl, ziehe dann eine Karte.",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "À Midi — Si vous êtes le premier joueur, créez un jeton Animal [WOOLLYBACK] dans l'Expédition Compagnon d'un adversaire ciblé, puis piochez une carte.",
+                    "locale": "fr_FR"
+                  },
+                  "it_IT": {
+                    "text": "A mezzogiorno — Se sei il primo giocatore, crea una pedina Animale [WOOLLYBACK] nella spedizione del compagno di un avversario bersaglio, poi pesca una carta.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "Al mediodía — Si eres el primer jugador, crea una ficha de animal [WOOLLYBACK] en la expedición del compañero del oponente objetivo y luego roba una carta.",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "At Noon — If you are first player, create a [WOOLLYBACK] Animal token in target opponent's Companion Expedition, then draw a card."
+              }
+            ],
+            "reference": "01357"
+          },
+          "sequence": 0,
+          "id": "01KJ5P02T6Y4JQN792W8D90P4H"
+        }
+      ],
+      "value": "At Noon — If you are first player, create a [Woollyback 1/1/1] Animal token in target opponent's Companion Expedition, then draw a card.",
+      "id": "01KJ5P014ECQRR9SBC7SH4C6MJ"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "056",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "A",
+    "name": "AltArt"
+  },
+  "illustrator": {
+    "nickName": "Justice Wong"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_A_MU_65_C",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLETOP_A_MU_65_C",
+  "translations": {
+    "it_IT": {
+      "name": "Kauri e Batuffolo",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "en_US": {
+      "name": "Kauri & Puff",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Kauri & Puff",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "de_DE": {
+      "name": "Kauri & Flausch",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "es_ES": {
+      "name": "Kauri y Pompón",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT4Q1HZPZ4X605D1W9MH",
+  "mainFaction": {
+    "reference": "MU",
+    "color": "#3d6b42",
+    "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+    "name": "Muna"
+  },
+  "allImagePath": null,
+  "name": "Kauri & Puff",
+  "elements": {
+    "MAIN_COST": "0",
+    "RECALL_COST": "0",
+    "PERMANENT": "2",
+    "RESERVE": "2",
+    "MAIN_EFFECT": "At Noon — If you are first player, create a [Woollyback 1/1/1] Animal token in target opponent's Companion Expedition, then draw a card."
+  },
+  "collectorNumberFormatted": "ROCTOP-XA-028-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

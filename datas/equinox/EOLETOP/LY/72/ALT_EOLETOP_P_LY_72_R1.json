@@ -1,0 +1,241 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "The Cloth Dancers' great talent is to use every rough spot to adapt to their environment.",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Das große Talent der Schleiertänzerinnen besteht darin, jede Unebenheit auszunutzen, um sich an ihre Umgebung anzupassen.",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "Le danzatrici di tessuti hanno il grande talento di sfruttare ogni asperità per adattarsi all'ambiente.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "El gran talento de los danzatelas es utilizar cada superficie para adaptarse a su entorno.",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "Le talent des Danseurs d'Étoffe, c'est d'utiliser chaque aspérité pour s'adapter à leur environnement.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JNRGBYJ7W8GPJAZ091A481AJ",
+      "text": "The Cloth Dancers' great talent is to use every rough spot to adapt to their environment."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ARTIST",
+      "id": "01HKAGQTJ167DYCKKGR8MCESNT",
+      "name": "Artist"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT53X46KXFWQ6V6SWKDG"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JN9VB03S5AZ631JB2AP9PRZG"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JN9VB0865335DH6AYNH0YPKV"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JN9VB0CH1M0MHEJ0YH2XJFSJ"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JN9VB0GYB4T7CD24ZNTZVMS9"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "5",
+      "id": "01JN9VB0NB14M0D6V7GNJZ7NYW"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KGQDH71BBGAXR933BNCQQ2DD",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "#If three or more single-terrain regions are visible, my {V}, {M}, and {O} are equal to my highest statistic.#",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "#Falls mindestens drei Regionen mit einem Geländetyp sichtbar sind, sind meine {V}, {M} und {O} so hoch wie meine höchste Statistik.#",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "#Se sono visibili tre o più regioni con un unico tipo di terreno, ho {V}, {M} e {O} pari alla mia statistica più alta.#",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "#Si tres o más regiones monoterreno son visibles, mis {V}, {M} y {O} son iguales a mi estadística más alta.#",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "#Si au moins trois régions mono-terrain sont visibles, mes {V}, {M} et {O} sont égales à ma statistique la plus élevée.#",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "#If three or more single-terrain regions are visible, my {V}, {M}, and {O} are equal to my highest statistic.#"
+              }
+            ],
+            "reference": "01503"
+          },
+          "sequence": 0,
+          "id": "01KGQDH7PWBX80RZ3GJX2MPD80"
+        }
+      ],
+      "value": "If three or more single-terrain regions are visible, my {V}, {M}, and {O} are equal to my highest statistic.",
+      "id": "01KGQDH71BBGAXR933BNCQQ2DD"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Jefrey Yonathan"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_LY_72_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_LY_72_R1",
+  "translations": {
+    "de_DE": {
+      "name": "Lyra-Akrobatin",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "fr_FR": {
+      "name": "Acrobate Aérienne Lyra",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "es_ES": {
+      "name": "Aerialista de Lyra",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "en_US": {
+      "name": "Lyra Aerialist",
+      "image": null,
+      "locale": "en_US"
+    },
+    "it_IT": {
+      "name": "Acrobata Lyra",
+      "image": null,
+      "locale": "it_IT"
+    }
+  },
+  "id": "01M28EMT536VPR00TD71JJT62T",
+  "mainFaction": {
+    "reference": "LY",
+    "color": "#cf4171",
+    "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+    "name": "Lyra"
+  },
+  "allImagePath": null,
+  "name": "Lyra Aerialist",
+  "elements": {
+    "MAIN_COST": "3",
+    "RECALL_COST": "3",
+    "OCEAN_POWER": "3",
+    "FOREST_POWER": "0",
+    "MOUNTAIN_POWER": "5",
+    "MAIN_EFFECT": "#If three or more single-terrain regions are visible, my {V}, {M}, and {O} are equal to my highest statistic.#"
+  },
+  "collectorNumberFormatted": "ROCTOP-X-012-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

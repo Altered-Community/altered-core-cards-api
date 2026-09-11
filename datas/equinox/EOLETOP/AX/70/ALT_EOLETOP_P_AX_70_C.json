@@ -1,0 +1,278 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "\"Look, Paju. Wandering unknown skies was our dream, and now we've achieved it.\" - Treyst",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "„Schau, Paju. Es war unser Traum, unbekannte Himmel zu durchstreifen, und jetzt haben wir ihn verwirklicht.“ – Treyst",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"Guarda, Paju. Errare per cieli sconosciuti era il nostro sogno e ora l'abbiamo realizzato.\" - Treyst",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«Mira, Paju. Hemos cumplido nuestro sueño de volar por cielos ignotos». — Treyst",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "« Regarde, Paju. Arpenter ensemble des ciels inconnus était notre rêve. Et c'est désormais chose faite. » - Treyst",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JNRGBW1JN4SM8YQ2SPANCFPK",
+      "text": "\"Look, Paju. Wandering unknown skies was our dream, and now we've achieved it.\" - Treyst"
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ADVENTURER",
+      "id": "01HKAGPC92CGHANVSRSC8R8ES6",
+      "name": "Adventurer"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT4W7M6HPYXN805PVDN1"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V35JQQNQ2QCBKRT3RP191"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V35P6JSWR5DTXTMCQ3CAK"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V35SNM06Q2KRKEWXK8BZ4"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V35X7QBE488HWNXY1G41P"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V360SQXDKJXPD8QQG84GS"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KGQD4MX1RSHH860DTR9PKR6W",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Aérolithe",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Aerolith",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Aerolit",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Aerolite",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Aerolito",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JN9V2BFTDBEPJRRHWC5YM548",
+                      "reference": "AEROLITH"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JN9V36RBRXX09QP1PC000YQ8"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "it_IT": {
+                    "text": "{D}: crea una pedina [AEROLITH] nei fulcri di un giocatore bersaglio. (Scartami dalla Riserva per eseguire questa azione.)",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{D} : Crea una ficha de [AEROLITH] en los hitos del jugador objetivo. (Descártame de la reserva para hacer esto.)",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "{D} : Créez un jeton [AEROLITH] dans les Repères d'un joueur ciblé. (Défaussez-moi de la Réserve pour ça.)",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "{D} : Create an [AEROLITH] token in target player's Landmarks. (Discard me from Reserve to do this.)",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "{D} : Erschaffe eine [AEROLITH]-Marke im Wahrzeichen-Bereich eines Spielers deiner Wahl. (Lege mich aus der Reserve ab, um diese Aktion auszuführen.)",
+                    "locale": "de_DE"
+                  }
+                },
+                "text": "{D} : Create an [AEROLITH] token in target player's Landmarks. (Discard me from Reserve to do this.)"
+              }
+            ],
+            "reference": "01244"
+          },
+          "sequence": 0,
+          "id": "01KGQD4NGP84QGQYB8SHNCA15N"
+        }
+      ],
+      "value": "{D} : Create an [Aerolith] token in target player's Landmarks. (Discard me from Reserve to do this.)",
+      "id": "01KGQD4MX1RSHH860DTR9PKR6W"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "005",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Victor Canton"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_AX_70_C",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_AX_70_C",
+  "translations": {
+    "es_ES": {
+      "name": "Paju, piloto de Axiom",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "de_DE": {
+      "name": "Paju, Pilot der Axiom",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "it_IT": {
+      "name": "Paju, Pilota Axiom",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "en_US": {
+      "name": "Paju, Axiom Pilot",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Paju, Pilote Axiom",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT4WX5AM8H53AV5MNEV5",
+  "mainFaction": {
+    "reference": "AX",
+    "color": "#8c432a",
+    "id": "01GE7AC9XBG707G19F03A95TH1",
+    "name": "Axiom"
+  },
+  "allImagePath": null,
+  "name": "Paju, Axiom Pilot",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "2",
+    "FOREST_POWER": "2",
+    "MOUNTAIN_POWER": "2",
+    "ECHO_EFFECT": "{D} : Create an [Aerolith] token in target player's Landmarks. (Discard me from Reserve to do this.)"
+  },
+  "collectorNumberFormatted": "ROCTOP-X-003-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

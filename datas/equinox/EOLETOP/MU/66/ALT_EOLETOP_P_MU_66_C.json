@@ -1,0 +1,241 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "Despite their small size, Rhodopean robins will defend their territory with beak and claw.",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Trotz ihrer kleinen Statur verteidigen Rhodopes-Rotkehlchen ihr Territorium mit Schnäbeln und Krallen.",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "Nonostante le piccole dimensioni, i pettirossi rodopei difendono il loro territorio con tenacia.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "A pesar de su pequeño tamaño, los petirrojos rhodopenses defienden su territorio con pico y garras.",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "Malgré leur petite taille, les rouges-gorges rhodopéens n'hésitent pas à défendre leur territoire bec et ongles.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JNRGBZQ68QQT7F641C5WVNHM",
+      "text": "Despite their small size, Rhodopean robins will defend their territory with beak and claw."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ANIMAL",
+      "id": "01HKAGQS36Z3DP166MZW8KRAEK",
+      "name": "Animal"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5JGHH589WW05XJ2GDS"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9VDCEA03N1W7AWZ7APQB8P"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9VDCKM559NRKHD93F93XC4"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JN9VDCRGNFAG6SSPQYWPT0FB"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9VDCX77X65G6K46SSBD2F9"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JN9VDD1VHB3A0ZP9GPXDXYGN"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KGQDN07778QQ7AVBJQGY6ZJR",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{J} If I'm facing a Character, I gain 1 boost.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "{J} Falls ich einem Charakter gegenüberstehe, erhalte ich 1 Verstärkung.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{J} Se sto affrontando un personaggio, ottengo 1 rinforzo.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{J} Si hay un personaje enfrentado a mí, gano 1 potenciador.",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "{J} Si je suis face à un Personnage, je gagne 1 boost.",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "{J} If I'm facing a Character, I gain 1 boost."
+              }
+            ],
+            "reference": "01510"
+          },
+          "sequence": 0,
+          "id": "01KGQDN0XAAT4478F6T7TBMTTC"
+        }
+      ],
+      "value": "{J} If I'm facing a Character, I gain 1 boost.",
+      "id": "01KGQDN07778QQ7AVBJQGY6ZJR"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "056",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Anh Tung"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_MU_66_C",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_MU_66_C",
+  "translations": {
+    "de_DE": {
+      "name": "Gereiztes Rotkehlchen",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "es_ES": {
+      "name": "Petirrojo resentido",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "it_IT": {
+      "name": "Pettirosso Indispettito",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "en_US": {
+      "name": "Resentful Robin",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Rouge-gorge Rancunier",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT5J94JFHN6TRMHG0A3K",
+  "mainFaction": {
+    "reference": "MU",
+    "color": "#3d6b42",
+    "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+    "name": "Muna"
+  },
+  "allImagePath": null,
+  "name": "Resentful Robin",
+  "elements": {
+    "MAIN_COST": "1",
+    "RECALL_COST": "1",
+    "OCEAN_POWER": "0",
+    "FOREST_POWER": "1",
+    "MOUNTAIN_POWER": "0",
+    "MAIN_EFFECT": "{J} If I'm facing a Character, I gain 1 boost."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-015-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

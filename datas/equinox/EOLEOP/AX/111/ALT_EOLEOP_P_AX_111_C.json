@@ -1,0 +1,278 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "Building walls, to keep the monsters at bay.",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Wir errichten Mauern, um Monster fernzuhalten.",
+          "locale": "de_DE"
+        },
+        "fr_FR": {
+          "text": "Ériger des murs, pour garder les monstres au-dehors.",
+          "locale": "fr_FR"
+        },
+        "it_IT": {
+          "text": "Erigiamo mura per respingere i mostri.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "Para mantener a raya a los monstruos, se han de erigir muros.",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HPG2MDWW5BJAM68J0FFE",
+      "text": "Building walls, to keep the monsters at bay."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ENGINEER",
+      "id": "01HKAGPA9AS71JN0H9HQZTBNCD",
+      "name": "Engineer"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT3V4XSBTZEKEVVGHC2B"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYAPWE0C14YEFX6649STZQ"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYAQ2DGD27E9QN6P9Z0RSF"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYAQ8ANCGJ3GGSV7H62TTQ"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYAQEA86XBE8WM3Q4X4BKV"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYAQMBJQ75VW42DK2EA5D2"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5MMMA7KGYCJCV9YAFDZVJT",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "de_DE": {
+                          "displayWeb": "Sabotage",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Sabotare",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Sabotear",
+                          "locale": "es_ES",
+                          "description": ""
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Saboter",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Sabotage",
+                          "locale": "en_US",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JB22EQVNW1H84FFR1R8V4964",
+                      "reference": "SABOTAGE_INF"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KJ5KNJRPQPBSHW6FV9AVQEMH"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{H} You may put a card from your hand in Reserve to [SABOTAGE_INF]. (Discard up to one target card from a Reserve.)",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "{H} Du darfst eine Karte aus deiner Hand in die Reserve legen, um [SABOTAGE_INF] zu nutzen. (Lege bis zu eine Karte aus einer Reserve ab.)",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "{H} Vous pouvez mettre une carte de votre main en Réserve pour [SABOTAGE_INF]. (Défausser jusqu'à une carte ciblée d'une Réserve.)",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "{H} Puedes colocar una carta de tu mano en la reserva para [SABOTAGE_INF]. (Descarta hasta una carta de una reserva.)",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "{H} Puoi mettere una carta dalla tua mano nella Riserva per [SABOTAGE_INF]. (Scarta fino a una carta da una Riserva.)",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "{H} You may put a card from your hand in Reserve to [SABOTAGE_INF]. (Discard up to one target card from a Reserve.)"
+              }
+            ],
+            "reference": "03020"
+          },
+          "sequence": 0,
+          "id": "01KJ5MMNTDA6J4T8J9YDQ6EZZX"
+        }
+      ],
+      "value": "{H} You may put a card from your hand in Reserve to [Sabotage]. (Discard up to one target card from a Reserve.)",
+      "id": "01KJ5MMMA7KGYCJCV9YAFDZVJT"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "007",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Tristan Bideau"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_P_AX_111_C",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_P_AX_111_C",
+  "translations": {
+    "it_IT": {
+      "name": "Shiramun, Monaco Tecnologico",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Shiramun, Tech-Mönch",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "fr_FR": {
+      "name": "Shiramun, Techno-moine",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "en_US": {
+      "name": "Shiramun, Tech Monk",
+      "image": null,
+      "locale": "en_US"
+    },
+    "es_ES": {
+      "name": "Shiramun, tecnomonje",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT3V329A0TX751NMJDJH",
+  "mainFaction": {
+    "reference": "AX",
+    "color": "#8c432a",
+    "id": "01GE7AC9XBG707G19F03A95TH1",
+    "name": "Axiom"
+  },
+  "allImagePath": null,
+  "name": "Shiramun, Tech Monk",
+  "elements": {
+    "MAIN_COST": "3",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "3",
+    "FOREST_POWER": "2",
+    "MOUNTAIN_POWER": "2",
+    "MAIN_EFFECT": "{H} You may put a card from your hand in Reserve to [Sabotage]. (Discard up to one target card from a Reserve.)"
+  },
+  "collectorNumberFormatted": "ROCOP-S-007-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

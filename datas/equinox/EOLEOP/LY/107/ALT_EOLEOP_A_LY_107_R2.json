@@ -1,0 +1,370 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "\"Are you sure you want to follow me into hell, Fen?\"",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "„Willst du mir wirklich in die Hölle folgen, Fen?“",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"Vuoi davvero seguirmi fino all'inferno, Fen?\"",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«¿Estás segura de querer seguirme al infierno, Fen?».",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "« Veux-tu vraiment me suivre en enfer, Fen ? »",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01KC94HQWYEHBD4825JC62QWPV",
+      "text": "\"Are you sure you want to follow me into hell, Fen?\""
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ARTIST",
+      "id": "01HKAGQTJ167DYCKKGR8MCESNT",
+      "name": "Artist"
+    },
+    {
+      "reference": "CORRUPTION",
+      "id": "01KA0YFDBT5GF5YYW6RP9VJ0GB",
+      "name": "Corruption"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT2YGSX4JFBZP1JX3BS8"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYPENZTP7JRHFYVTYC5Z91"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYPEWQFQ57YJ5YQF2ZRHAC"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYPF3CWS9DCETBQ01SJAAH"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01K9YYPFA1Z0G3C1M8CYDZ1N5R"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYPFGT64QR167XKP6R08Z6"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5NG732NERPA7616WVBK09D",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "#I can't be played# unless a {D} ability was activated this turn.",
+                    "locale": "en_US"
+                  },
+                  "es_ES": {
+                    "text": "#No puedes jugarme# a menos que se haya activado una habilidad {D} este turno.",
+                    "locale": "es_ES"
+                  },
+                  "de_DE": {
+                    "text": "#Ich kann nicht gespielt werden,# es sei denn, eine {D} Fähigkeit wurde in dieser Runde aktiviert.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "#Non puoi giocarmi# a meno che non sia stata attivata un'abilità {D} in questo turno.",
+                    "locale": "it_IT"
+                  },
+                  "fr_FR": {
+                    "text": "#Je ne peux pas être jouée,# sauf si une capacité {D} a été activée ce tour-ci.",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "#I can't be played# unless a {D} ability was activated this turn."
+              }
+            ],
+            "reference": "02835"
+          },
+          "sequence": 0,
+          "id": "01KJ5NG8V85C439JDVWQ349KYH"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5NG732NERPA7616WVBK09D",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "de_DE": {
+                          "displayWeb": "Nachschub",
+                          "locale": "de_DE",
+                          "description": "Lege die oberste Karte deines Decks in die Reserve."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Ravitaillez",
+                          "locale": "fr_FR",
+                          "description": "Mettez la première carte de votre deck en Réserve."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Reabastece",
+                          "locale": "es_ES",
+                          "description": "Coloca la primera carta de tu mazo en la reserva."
+                        },
+                        "en_US": {
+                          "displayWeb": "Resupply",
+                          "locale": "en_US",
+                          "description": "Put the top card of your deck in Reserve."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Rifornisci",
+                          "locale": "it_IT",
+                          "description": "Metti la prima carta del tuo mazzo nella Riserva."
+                        }
+                      },
+                      "id": "01HKAGPBBK4NKWK6G9447WTAWK",
+                      "reference": "RESUPPLY"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01K9YYPAQ7EWT8S0VY3PHGW197"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "#{J}# [RESUPPLY].",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "#{J}# [RESUPPLY].",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "#{J}# [RESUPPLY].",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "#{J}# [RESUPPLY].",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "#{J}# [RESUPPLY].",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "#{J}# [RESUPPLY]."
+              }
+            ],
+            "reference": "02218"
+          },
+          "sequence": 1,
+          "id": "01KJ5NGAFF9R1FTNVSB0XM3EG9"
+        }
+      ],
+      "value": "I can't be played unless a {D} ability was activated this turn.  {J} [Resupply].",
+      "id": "01KJ5NG732NERPA7616WVBK09D"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5NGBXBX953H45B83VR1WMD",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "#{D} : Pay {1} less for the next Character you play this turn, down to a minimum of {1}.#",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "#{D} : Zahle {1} weniger für den nächsten Charakter, den du in dieser Runde spielst, aber mindestens {1}.#",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "#{D}: paga {1} in meno per il prossimo personaggio che giochi in questo turno, fino a un minimo di {1}.#",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "#{D} : Paga {1} menos por el siguiente personaje que juegues este turno, hasta un mínimo de {1}.#",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "#{D} : Payez {1} de moins pour le prochain Personnage que vous jouez ce tour-ci, jusqu'à un minimum de {1}.#",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "#{D} : Pay {1} less for the next Character you play this turn, down to a minimum of {1}.#"
+              }
+            ],
+            "reference": "02836"
+          },
+          "sequence": 0,
+          "id": "01KJ5NGDNJPNYYCCCGWWMCPD34"
+        }
+      ],
+      "value": "{D} : Pay {1} less for the next Character you play this turn, down to a minimum of {1}.",
+      "id": "01KJ5NGBXBX953H45B83VR1WMD"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "039",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "A",
+    "name": "AltArt"
+  },
+  "illustrator": {
+    "nickName": "Zaeliven"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_A_LY_107_R2",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_A_LY_107_R2",
+  "translations": {
+    "fr_FR": {
+      "name": "Esmeralda Corrompue",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "it_IT": {
+      "name": "Esmeralda Corrotta",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Verderbte Esmeralda",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "es_ES": {
+      "name": "Esmeralda corrompida",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "en_US": {
+      "name": "Corrupted Esmeralda",
+      "image": null,
+      "locale": "en_US"
+    }
+  },
+  "id": "01M28EMT2YFP3VTM64M8HCFTPN",
+  "mainFaction": {
+    "reference": "AX",
+    "color": "#8c432a",
+    "id": "01GE7AC9XBG707G19F03A95TH1",
+    "name": "Axiom"
+  },
+  "allImagePath": null,
+  "name": "Corrupted Esmeralda",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "3",
+    "FOREST_POWER": "0",
+    "MOUNTAIN_POWER": "3",
+    "MAIN_EFFECT": "#I can't be played# unless a {D} ability was activated this turn.  #{J}# [Resupply].",
+    "ECHO_EFFECT": "#{D} : Pay {1} less for the next Character you play this turn, down to a minimum of {1}.#"
+  },
+  "collectorNumberFormatted": "ROCOP-A-039-F-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

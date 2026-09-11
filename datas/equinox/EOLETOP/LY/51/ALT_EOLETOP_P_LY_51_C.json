@@ -1,0 +1,241 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "es_ES": {
+          "text": "Los Lyra del clan Tisdhera se parten el lomo por su comunidad.",
+          "locale": "es_ES"
+        },
+        "en_US": {
+          "text": "The Lyra from the Tisdhera clan will bend over backwards for their community.",
+          "locale": "en_US"
+        },
+        "it_IT": {
+          "text": "I Lyra del clan Tisdhera si piegano in quattro per la loro comunità.",
+          "locale": "it_IT"
+        },
+        "fr_FR": {
+          "text": "Les Lyra du clan Tisdhera sont prêts à se plier en quatre pour la communauté.",
+          "locale": "fr_FR"
+        },
+        "de_DE": {
+          "text": "Für ihre Gemeinschaft sind die Lyra vom Tisdhera-Clan äußerst flexibel.",
+          "locale": "de_DE"
+        }
+      },
+      "id": "01JBT1A5PXCVVBBN9ZBMGJ82G6",
+      "text": "The Lyra from the Tisdhera clan will bend over backwards for their community."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ARTIST",
+      "id": "01HKAGQTJ167DYCKKGR8MCESNT",
+      "name": "Artist"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT4ZDBXYYKJDGNB2YQD1"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22M7M203WB4VRWSNP294AP"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22M7Q0EY9KT1F62EKY3AZ2"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JB22M7TAZ07DNW95NWZH7AT1"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22M7X79MWT37FHGP2G82MQ"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JB22M80G0DM614W6PDJ7CJ5M"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01K4JNTXBADBQT90D5AQZ37C6T",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "de_DE": {
+                    "text": "{I} Ich zähle nicht für dein Reserve-Limit.",
+                    "locale": "de_DE"
+                  },
+                  "en_US": {
+                    "text": "{I} I don't count towards your Reserve limit.",
+                    "locale": "en_US"
+                  },
+                  "es_ES": {
+                    "text": "{I} No cuento para el límite de tu reserva.",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "{I} Non conto per il limite della tua Riserva.",
+                    "locale": "it_IT"
+                  },
+                  "fr_FR": {
+                    "text": "{I} Je ne compte pas dans la limite de votre Réserve.",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "{I} I don't count towards your Reserve limit."
+              }
+            ],
+            "reference": "00896"
+          },
+          "sequence": 0,
+          "id": "01K4JNTXVB334BTK3VC15CFH3N"
+        }
+      ],
+      "value": "{I} I don't count towards your Reserve limit.",
+      "id": "01K4JNTXBADBQT90D5AQZ37C6T"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "039",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Khoa Viet"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_LY_51_C",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_LY_51_C",
+  "translations": {
+    "es_ES": {
+      "name": "Contorsionista de Lyra",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "de_DE": {
+      "name": "Lyra-Verrenkungskünstlerin",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "it_IT": {
+      "name": "Contorsionista Lyra",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "en_US": {
+      "name": "Lyra Contortionist",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Contorsionniste Lyra",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT4ZNSTAJT1DCV19BDYR",
+  "mainFaction": {
+    "reference": "LY",
+    "color": "#cf4171",
+    "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+    "name": "Lyra"
+  },
+  "allImagePath": null,
+  "name": "Lyra Contortionist",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "0",
+    "FOREST_POWER": "2",
+    "MOUNTAIN_POWER": "3",
+    "ECHO_EFFECT": "{I} I don't count towards your Reserve limit."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-009-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

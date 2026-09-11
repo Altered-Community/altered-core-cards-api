@@ -1,0 +1,278 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "At the slightest sign of intrusion, these stone lookouts come to life and sound the alarm.",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Beim geringsten Anzeichen eines Eindringlings erwachen diese steinernen Wächter zum Leben und schlagen Alarm.",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "Al minimo segno di intrusione, queste vedette di pietra prendono vita e danno l'allarme.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "A la menor señal de intrusos, estos centinelas de piedra cobran vida y hacen sonar la alarma.",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "Au moindre signe d'intrusion, ces vigies de pierre prennent vie et donnent l'alerte.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JNRGC2MDHDBPVWK2JJJ8CYE5",
+      "text": "At the slightest sign of intrusion, these stone lookouts come to life and sound the alarm."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ELEMENTAL",
+      "id": "01HKAGPA0G5NVDVVXS31BBX2AS",
+      "name": "Elemental"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5VG1FQDQBK1F840EDG"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9VKC0MX59F47XK5S18XM58"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9VKC5MHB40EYRJXVQ01M3B"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JN9VKCAK48MZYA5HPKWX2G6E"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9VKCG596Z501P34AS11J87"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JN9VKCN7PESN8YJKSYTB8910"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KGQDXCJKEXG89P24R5H8QTFV",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "s'Élève",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Ascends",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Aufsteigend",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Ascende",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Asciende",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JN9V6RJTMG7BZB84M6HA21S4",
+                      "reference": "ASCENDS"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JPYFSTSJ96T8AR3FG5RYMK5E"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "de_DE": {
+                    "text": "{H} Eine Expedition deiner Wahl ist [ASCENDS]. (Kann sich bis zur Ruhepause vorwärts bewegen, selbst falls beide über gleich viele Gelände in den Regionen verfügen.)",
+                    "locale": "de_DE"
+                  },
+                  "en_US": {
+                    "text": "{H} Target Expedition [ASCENDS]. (Until Rest, it can move forward even if matched in its region's terrains by the opponent's Expedition.)",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "{H} Una spedizione bersaglio [ASCENDS]. (Fino al riposo, può avanzare anche se i terreni della sua regione eguagliano quelli della spedizione dell'avversario.)",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{H} La expedición objetivo [ASCENDS]. (Hasta el descanso, puede avanzar aunque los terrenos de su región estén igualados con los de la expedición del oponente.)",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "{H} Une Expédition ciblée [ASCENDS]. (Jusqu'au Repos, elle peut avancer même en cas de stats égales à l'Expédition adverse sur les terrains de sa région.)",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "{H} Target Expedition [ASCENDS]. (Until Rest, it can move forward even if matched in its region's terrains by the opponent's Expedition.)"
+              }
+            ],
+            "reference": "01532"
+          },
+          "sequence": 0,
+          "id": "01KGQDXD9FPM4YAGYYNZNV5G1M"
+        }
+      ],
+      "value": "{H} Target Expedition [Ascends]. (Until Rest, it can move forward even if matched in its region's terrains by the opponent's Expedition.)",
+      "id": "01KGQDXCJKEXG89P24R5H8QTFV"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "077",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Taras Susak"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_OR_71_C",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_OR_71_C",
+  "translations": {
+    "de_DE": {
+      "name": "Gargoyle",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "en_US": {
+      "name": "Gargoyle",
+      "image": null,
+      "locale": "en_US"
+    },
+    "it_IT": {
+      "name": "Gargoyle",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "es_ES": {
+      "name": "Gárgola",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "fr_FR": {
+      "name": "Gargouille",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT5VBFS1V7MBCXRWAYMM",
+  "mainFaction": {
+    "reference": "OR",
+    "color": "#0f6593",
+    "id": "01GE7AC9X78DXSNKNB15KCF69X",
+    "name": "Ordis"
+  },
+  "allImagePath": null,
+  "name": "Gargoyle",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "0",
+    "FOREST_POWER": "2",
+    "MOUNTAIN_POWER": "3",
+    "MAIN_EFFECT": "{H} Target Expedition [Ascends]. (Until Rest, it can move forward even if matched in its region's terrains by the opponent's Expedition.)"
+  },
+  "collectorNumberFormatted": "ROCTOP-X-019-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

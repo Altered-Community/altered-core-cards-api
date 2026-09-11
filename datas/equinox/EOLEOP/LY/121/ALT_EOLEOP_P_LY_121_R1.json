@@ -1,0 +1,335 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "fr_FR": {
+          "text": "« S'il n'y a pas de fumée sans feu, avec nous, vous allez être servis ! »",
+          "locale": "fr_FR"
+        },
+        "en_US": {
+          "text": "\"Where there's smoke, there's fire… and we're proof of that!\"",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "„Wo Rauch ist, ist Feuer … wir sind der Beweis!“",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"Dove c'è fumo c'è fuoco... e noi ne siamo la prova!\"",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«No hay humo sin fuego. ¡Os lo vamos a demostrar!».",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HRV3FERJ1T8WTDXEFMA7",
+      "text": "\"Where there's smoke, there's fire… and we're proof of that!\""
+    }
+  ],
+  "cardType": {
+    "reference": "LANDMARK_PERMANENT",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Permanente hito"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Permanente Fulcro"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Bleibende Wahrzeichenkarte"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Landmark Permanent"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Repère Permanent"
+      }
+    },
+    "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+    "name": "Landmark Permanent"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "FEAT",
+      "id": "01KA0Z8VM97X93CWTMFTM976E4",
+      "name": "Feat"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT4DRYC4AAZ7YJXME2XJ"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYW5BZ7ZKSEXGF90BZVXZB"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYW5K80X1F62SW8D8YR923"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5NZ8R5SN7VNN3Y2JVP20HG",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{J} #Draw a card, then put a card from your hand in Reserve.#",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "{J} #Piochez une carte, puis mettez une carte de votre main en Réserve.#",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "{J} #Ziehe eine Karte, dann lege eine Karte aus deiner Hand in die Reserve.#",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{J} #Pesca una carta, poi metti una carta dalla tua mano nella Riserva.#",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{J} #Roba una carta y luego coloca una carta de tu mano en reserva.#",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "{J} #Draw a card, then put a card from your hand in Reserve.#"
+              }
+            ],
+            "reference": "02870"
+          },
+          "sequence": 0,
+          "id": "01KJ5NZANG53928VEZ884N4QDY"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5NZ8R5SN7VNN3Y2JVP20HG",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "When two {D} abilities are activated on one of your turns — Complete me.",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "Lorsque deux capacités {D} sont activées pendant l'un de vos tours — Accomplissez-moi.",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "Wenn zwei {D} Fähigkeiten in einer deiner Runden aktiviert werden — Vollbringe mich.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "Quando due abilità {D} sono attivate in uno dei tuoi turni — Eseguimi.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "Cuando dos habilidades {D} se activen en uno de tus turnos — Complétame.",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "When two {D} abilities are activated on one of your turns — Complete me."
+              }
+            ],
+            "reference": "02869"
+          },
+          "sequence": 1,
+          "id": "01KJ5NZC9FWWNEMF6FK87BRD6G"
+        }
+      ],
+      "value": "{J} Draw a card, then put a card from your hand in Reserve.  When two {D} abilities are activated on one of your turns — Complete me.",
+      "id": "01KJ5NZ8R5SN7VNN3Y2JVP20HG"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5NZDVGMJHJEV09X4080N45",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Accomplie",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Completed",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Eseguita",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Vollbracht",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Completada",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01K9YYDGN54D4PHVKNMQW4R9NQ",
+                      "reference": "COMPLETED"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KHBEM4JAX51X3C18ZE7TA8ZJ"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "[COMPLETED], {T} : The next time a {D} ability is activated this turn, target Character #in play or in Reserve# gains 1 boost.",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "[COMPLETED], {T} : La prochaine fois qu'une capacité {D} est activée ce tour-ci, un Personnage ciblé #en jeu ou en Réserve# gagne 1 boost.",
+                    "locale": "fr_FR"
+                  },
+                  "it_IT": {
+                    "text": "[COMPLETED], {T}: la prossima volta che un'abilità {D} viene attivata in questo turno, un personaggio bersaglio #in gioco o nella Riserva# ottiene 1 rinforzo.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "[COMPLETED], {T} : La siguiente vez que una habilidad {D} se active este turno, un personaje objetivo #en juego o en reserva# gana 1 potenciador.",
+                    "locale": "es_ES"
+                  },
+                  "de_DE": {
+                    "text": "[COMPLETED], {T} : Das nächste Mal, wenn eine {D} Fähigkeit in dieser Runde aktiviert wird, erhält ein Charakter deiner Wahl #im Spiel oder in der Reserve# 1 Verstärkung.",
+                    "locale": "de_DE"
+                  }
+                },
+                "text": "[COMPLETED], {T} : The next time a {D} ability is activated this turn, target Character #in play or in Reserve# gains 1 boost."
+              }
+            ],
+            "reference": "03007"
+          },
+          "sequence": 0,
+          "id": "01KJ5NZFGNEHXMCY8RN3GESP6N"
+        }
+      ],
+      "value": "[[Completed]], {T} : The next time a {D} ability is activated this turn, target Character in play or in Reserve gains 1 boost.",
+      "id": "01KJ5NZDVGMJHJEV09X4080N45"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "054",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Justice Wong"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_P_LY_121_R1",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_P_LY_121_R1",
+  "translations": {
+    "de_DE": {
+      "name": "Räuchert sie aus",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "fr_FR": {
+      "name": "Enfumez-les",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "en_US": {
+      "name": "Smoke Them Out",
+      "image": null,
+      "locale": "en_US"
+    },
+    "it_IT": {
+      "name": "Stanare col Fumo",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "es_ES": {
+      "name": "Expulsar con humo",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT4DP9Z3WRCB3CVNXQ4J",
+  "mainFaction": {
+    "reference": "LY",
+    "color": "#cf4171",
+    "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+    "name": "Lyra"
+  },
+  "allImagePath": null,
+  "name": "Smoke Them Out",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "MAIN_EFFECT": "{J} #Draw a card, then put a card from your hand in Reserve.#  When two {D} abilities are activated on one of your turns — Complete me.",
+    "ECHO_EFFECT": "[[Completed]], {T} : The next time a {D} ability is activated this turn, target Character #in play or in Reserve# gains 1 boost."
+  },
+  "collectorNumberFormatted": "ROCOP-S-054-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

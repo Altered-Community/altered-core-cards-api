@@ -1,0 +1,241 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "When the horn sounds, the hunters gather to track the Leviathan.",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Beim Klang des Horns versammeln sich die Jäger, um den Leviathan zu finden.",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "Al suono del corno, i cacciatori si riuniscono per inseguire il Leviatano.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "Cuando suena el cuerno, los cazadores se reúnen para rastrear al leviatán.",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "Lorsque le cor sonne, les chasseurs se rassemblent pour traquer le Léviathan.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JNRGBWYMS7H1Y416N8ZJJ6WW",
+      "text": "When the horn sounds, the hunters gather to track the Leviathan."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "MESSENGER",
+      "id": "01HKAGPRRNK7X4TZEBYSPK6DDC",
+      "name": "Messenger"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5QDD0524J8HYJDF14Z"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V6J9K9BKMGHNRW4VEKYVD"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V6JDNS3JZ9DZJ1WHFD7JQ"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V6JHMCYN2P3NVBH61WZG4"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JN9V6JNMC34KH9DX3DYNJZNF"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V6JSH0SWCGGQ82M38FQ9X"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KGQDA1B32YB0KH4SQ1FHAE3E",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{R} You may reveal a Character with Hand Cost {4} or more from your hand. If you do, draw a card.",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "{R} Puoi rivelare un personaggio con costo dalla mano pari o superiore a {4} dalla tua mano. Se lo fai, pesca una carta.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{R} Puedes revelar un personaje de tu mano con coste desde la mano de {4} o más. Si lo haces, roba una carta.",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "{R} Vous pouvez révéler un Personnage de Coût de Main {4} ou plus de votre main. Si vous le faites, piochez une carte.",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "{R} Du darfst einen Charakter mit Handkosten {4} oder mehr aus deiner Hand aufdecken. Falls du das tust, ziehe eine Karte.",
+                    "locale": "de_DE"
+                  }
+                },
+                "text": "{R} You may reveal a Character with Hand Cost {4} or more from your hand. If you do, draw a card."
+              }
+            ],
+            "reference": "01288"
+          },
+          "sequence": 0,
+          "id": "01KGQDA206FKP0YJFXPJ6BK6MM"
+        }
+      ],
+      "value": "{R} You may reveal a Character with Hand Cost {4} or more from your hand. If you do, draw a card.",
+      "id": "01KGQDA1B32YB0KH4SQ1FHAE3E"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Justice Wong"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_BR_69_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_BR_69_R1",
+  "translations": {
+    "fr_FR": {
+      "name": "Guetteur de Léviathans",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "en_US": {
+      "name": "Leviathan Spotter",
+      "image": null,
+      "locale": "en_US"
+    },
+    "de_DE": {
+      "name": "Leviathan-Aufklärer",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "it_IT": {
+      "name": "Vedetta dei Leviatani",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "es_ES": {
+      "name": "Avistador de leviatanes",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT5QSC7F9E8YWMCM0PYR",
+  "mainFaction": {
+    "reference": "BR",
+    "color": "#c32637",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+    "name": "Bravos"
+  },
+  "allImagePath": null,
+  "name": "Leviathan Spotter",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "2",
+    "FOREST_POWER": "3",
+    "MOUNTAIN_POWER": "#2#",
+    "MAIN_EFFECT": "{R} You may reveal a Character with Hand Cost {4} or more from your hand. If you do, draw a card."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-008-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

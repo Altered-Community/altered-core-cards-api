@@ -1,0 +1,278 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "He fills his basket and retorts by thumbing his nose.",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Er dreht eine Nase und füllt seinen Korb.",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "Riempie il suo cestino e ribatte con un gesto di scherno.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "Llena su canasto mientras hace gestos de desprecio.",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "Il remplit son panier, et riposte avec des pieds de nez.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JNRGBVVFEXHW9Q682TKGCGRA",
+      "text": "He fills his basket and retorts by thumbing his nose."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "CITIZEN",
+      "id": "01HKAGQWDFDGS8YVZGW98BVV9D",
+      "name": "Citizen"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT51CB1H9KBWAME8MVY8"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9V2ERQAWMNFYKYFZWSXWX4"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9V2EW7ZJTQQ92PMCRFHXEQ"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9V2EZPSCDG1V3NYD6P89J0"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JN9V2F37AER3A4NYQNPJV333"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9V2F6PCB51K7RAE84B1QAN"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KGQD3EGSKZRK47KBB3HTAENV",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Aérolithe",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Aerolith",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Aerolit",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Aerolite",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Aerolito",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JN9V2BFTDBEPJRRHWC5YM548",
+                      "reference": "AEROLITH"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JRA95T3MMBHK6VAQS5FA0Y08"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{R} #You may sacrifice a Permanent to# create an [AEROLITH] token in your Landmarks.",
+                    "locale": "en_US"
+                  },
+                  "es_ES": {
+                    "text": "{R} #Puedes sacrificar un permanente para# crear una ficha de [AEROLITH] en tus hitos.",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "{R} #Vous pouvez sacrifier un Permanent pour# créer un jeton [AEROLITH] dans vos Repères.",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "{R} #Du darfst eine Bleibende Karte opfern, um# eine [AEROLITH]-Marke in deinem Wahrzeichen-Bereich zu erschaffen.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{R} #Puoi sacrificare un permanente per# creare una pedina [AEROLITH] nei tuoi fulcri.",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "{R} #You may sacrifice a Permanent to# create an [AEROLITH] token in your Landmarks."
+              }
+            ],
+            "reference": "01550"
+          },
+          "sequence": 0,
+          "id": "01KGQD3F4HGP8B977ZGQ4ZKC58"
+        }
+      ],
+      "value": "{R} You may sacrifice a Permanent to create an [Aerolith] token in your Landmarks.",
+      "id": "01KGQD3EGSKZRK47KBB3HTAENV"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Anh Tung"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_AX_66_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_AX_66_R1",
+  "translations": {
+    "es_ES": {
+      "name": "Gavroche",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "it_IT": {
+      "name": "Gavroche",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "fr_FR": {
+      "name": "Gavroche",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "de_DE": {
+      "name": "Gavroche",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "en_US": {
+      "name": "Gavroche",
+      "image": null,
+      "locale": "en_US"
+    }
+  },
+  "id": "01M28EMT51949PM2PZX6JARNEW",
+  "mainFaction": {
+    "reference": "AX",
+    "color": "#8c432a",
+    "id": "01GE7AC9XBG707G19F03A95TH1",
+    "name": "Axiom"
+  },
+  "allImagePath": null,
+  "name": "Gavroche",
+  "elements": {
+    "MAIN_COST": "1",
+    "RECALL_COST": "#1#",
+    "OCEAN_POWER": "1",
+    "FOREST_POWER": "0",
+    "MOUNTAIN_POWER": "1",
+    "MAIN_EFFECT": "{R} #You may sacrifice a Permanent to# create an [Aerolith] token in your Landmarks."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-004-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

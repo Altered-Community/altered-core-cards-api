@@ -1,0 +1,372 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "fr_FR": {
+          "text": "« Ne rompez pas les rangs ! »",
+          "locale": "fr_FR"
+        },
+        "en_US": {
+          "text": "\"Don't break ranks!\"",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "„Formation halten!“",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"Non rompete i ranghi!\"",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«¡No rompáis filas!».",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HWQKWXMKS0MZ5FCAV5N4",
+      "text": "\"Don't break ranks!\""
+    }
+  ],
+  "cardType": {
+    "reference": "LANDMARK_PERMANENT",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Permanente hito"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Permanente Fulcro"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Bleibende Wahrzeichenkarte"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Landmark Permanent"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Repère Permanent"
+      }
+    },
+    "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+    "name": "Landmark Permanent"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "FEAT",
+      "id": "01KA0Z8VM97X93CWTMFTM976E4",
+      "name": "Feat"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT4EQ7K3SBAPCD2RHEH2"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZBPVCEJGF20C0J4ATT3MA"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZBQ3K5TWNWJ4MTFKBKQ8K"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5Q1AQPA1N1JDG7NS5CM0V7",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "es_ES": {
+                          "displayWeb": "Recluta de Ordis 1/1/1",
+                          "locale": "es_ES",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Ordis-Rekrut 1/1/1",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Recluta Ordis 1/1/1",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Ordis Recruit 1/1/1",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "fr_FR": {
+                          "displayWeb": "1/1/1 Recrue Ordis",
+                          "locale": "fr_FR",
+                          "description": ""
+                        }
+                      },
+                      "id": "01HKAGPSQ705KBWY8B8JQME52T",
+                      "reference": "ORDIS_RECRUIT"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7MBHR6RZCPGNCZQQXMFR2V"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{J} Create two [ORDIS_RECRUIT] Soldier tokens #distributed among any Expeditions.#",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "{J} Créez deux jetons Soldat [ORDIS_RECRUIT], #distribués dans n'importe quel nombre d'Expéditions.#",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "{J} Crea dos fichas de soldado [ORDIS_RECRUIT] #distribuidas entre cualquier número de expediciones.#",
+                    "locale": "es_ES"
+                  },
+                  "de_DE": {
+                    "text": "{J} Erschaffe zwei [ORDIS_RECRUIT]-Soldatenmarken #und verteile sie auf beliebige Expeditionen.#",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{J} Crea due pedine Soldato [ORDIS_RECRUIT] #distribuite tra qualsiasi spedizione.#",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "{J} Create two [ORDIS_RECRUIT] Soldier tokens #distributed among any Expeditions.#"
+              }
+            ],
+            "reference": "02966"
+          },
+          "sequence": 0,
+          "id": "01KJ5Q1CYW4MDV4SNSCYB23NC8"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5Q1AQPA1N1JDG7NS5CM0V7",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "When you pass — If #six# or more Characters are in your Expeditions, complete me.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "Wenn du passt — Falls mindestens #sechs# Charaktere in deinen Expeditionen sind, vollbringe mich.",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "Lorsque vous passez — S'il y a au moins #six# Personnages dans vos Expéditions, accomplissez-moi.",
+                    "locale": "fr_FR"
+                  },
+                  "it_IT": {
+                    "text": "Quando passi — Se ci sono #sei# o più personaggi nelle tue spedizioni, eseguimi.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "Cuando pases — Si hay #seis# o más personajes en tus expediciones, complétame.",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "When you pass — If #six# or more Characters are in your Expeditions, complete me."
+              }
+            ],
+            "reference": "02967"
+          },
+          "sequence": 1,
+          "id": "01KJ5Q1EXX0GK1BJN7RR77KRJB"
+        }
+      ],
+      "value": "{J} Create two [Ordis Recruit 1/1/1] Soldier tokens distributed among any Expeditions.  When you pass — If six or more Characters are in your Expeditions, complete me.",
+      "id": "01KJ5Q1AQPA1N1JDG7NS5CM0V7"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5Q1GS0XZ16J817PGBJK1RH",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Accomplie",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Completed",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Eseguita",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Vollbracht",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Completada",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01K9YYDGN54D4PHVKNMQW4R9NQ",
+                      "reference": "COMPLETED"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7MBC2GHGJGWKCBFFH2J4J4"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "[COMPLETED]: When you create a token Character — You may exhaust me ({T}) to give it 1 boost. ",
+                    "locale": "en_US"
+                  },
+                  "es_ES": {
+                    "text": "[COMPLETED]: Cuando crees una ficha de personaje — Puedes agotarme ({T}) para darle 1 potenciador.",
+                    "locale": "es_ES"
+                  },
+                  "de_DE": {
+                    "text": "[COMPLETED]: Wenn du einen Marken-Charakter erschaffst — Du darfst mich erschöpfen ({T}), um ihm 1 Verstärkung zu geben.",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "[COMPLETED] : Lorsque vous créez un jeton Personnage — Vous pouvez m'épuiser ({T}) pour lui donner 1 boost.",
+                    "locale": "fr_FR"
+                  },
+                  "it_IT": {
+                    "text": "[COMPLETED]: quando crei una pedina personaggio — Puoi consumarmi ({T}) per conferirle 1 rinforzo.",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "[COMPLETED]: When you create a token Character — You may exhaust me ({T}) to give it 1 boost. "
+              }
+            ],
+            "reference": "02965"
+          },
+          "sequence": 0,
+          "id": "01KJ5Q1JP92KKB2WQ75BAQ6MV9"
+        }
+      ],
+      "value": "[[Completed]]: When you create a token Character — You may exhaust me ({T}) to give it 1 boost.",
+      "id": "01KJ5Q1GS0XZ16J817PGBJK1RH"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "092",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Kevin Sidharta"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_P_OR_121_R1",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_P_OR_121_R1",
+  "translations": {
+    "it_IT": {
+      "name": "Coprire la Ritirata",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Sichert den Rückzug",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "es_ES": {
+      "name": "Cubrir la retirada",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "en_US": {
+      "name": "Cover the Retreat",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Couvrir la Retraite",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT4EM1K7KK1N4XZS12PZ",
+  "mainFaction": {
+    "reference": "OR",
+    "color": "#0f6593",
+    "id": "01GE7AC9X78DXSNKNB15KCF69X",
+    "name": "Ordis"
+  },
+  "allImagePath": null,
+  "name": "Cover the Retreat",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "MAIN_EFFECT": "{J} Create two [Ordis Recruit 1/1/1] Soldier tokens #distributed among any Expeditions.#  When you pass — If #six# or more Characters are in your Expeditions, complete me.",
+    "ECHO_EFFECT": "[[Completed]]: When you create a token Character — You may exhaust me ({T}) to give it 1 boost."
+  },
+  "collectorNumberFormatted": "ROCOP-S-092-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

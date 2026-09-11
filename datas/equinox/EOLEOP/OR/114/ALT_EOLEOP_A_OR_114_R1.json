@@ -1,0 +1,407 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "\"I know they will all be driven out, except for those who die.\" — Jeanne",
+          "locale": "en_US"
+        },
+        "fr_FR": {
+          "text": "« Je sais qu'ils seront tous boutés, excepté ceux qui périront. » — Jeanne",
+          "locale": "fr_FR"
+        },
+        "de_DE": {
+          "text": "„Sie werden alle vertrieben, bis auf jene, die sterben.“ — Jeanne",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"So che saranno tutti scacciati, eccetto coloro che periranno.\" — Giovanna",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«Sé que todos serán expulsados, excepto los que mueran». —Jeanne",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HVV6GDEPPC9B4E5WTF5S",
+      "text": "\"I know they will all be driven out, except for those who die.\" — Jeanne"
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "SOLDIER",
+      "id": "01HKAGQ5CZVEX15T5KTM40KQSA",
+      "name": "Soldier"
+    },
+    {
+      "reference": "CORRUPTION",
+      "id": "01KA0YFDBT5GF5YYW6RP9VJ0GB",
+      "name": "Corruption"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT3H9N2HNFC2V4AQY3ST"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YZ829PKF65628W9J6X4M3B"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YZ82HVF609NJJF7PJY41BW"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZ82SRSFCYBZGBCB7DQD4X"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZ831PZ3P01HKXP8C9895F"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZ83BJ2BQJGMY9G0KNZVK7"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5PSWNJ8BHMRS4C242EN975",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "#I can't be played# unless there's another Character in each of your Expeditions.",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "#Non puoi giocarmi# a meno che non ci sia un altro personaggio in ciascuna delle tue spedizioni.",
+                    "locale": "it_IT"
+                  },
+                  "de_DE": {
+                    "text": "#Ich kann nicht gespielt werden,# es sei denn, es befindet sich ein anderer Charakter in jeder deiner Expeditionen.",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "#Je ne peux pas être jouée,# sauf s'il y a un autre Personnage dans chacune de vos Expéditions.",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "#No puedes jugarme# a menos que haya otro personaje en cada una de tus expediciones.",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "#I can't be played# unless there's another Character in each of your Expeditions."
+              }
+            ],
+            "reference": "02927"
+          },
+          "sequence": 0,
+          "id": "01KJ5PSYM8YA6GE98KFM6H32RH"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5PSWNJ8BHMRS4C242EN975",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "es_ES": {
+                          "displayWeb": "Recluta de Ordis 1/1/1",
+                          "locale": "es_ES",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Ordis-Rekrut 1/1/1",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Recluta Ordis 1/1/1",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Ordis Recruit 1/1/1",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "fr_FR": {
+                          "displayWeb": "1/1/1 Recrue Ordis",
+                          "locale": "fr_FR",
+                          "description": ""
+                        }
+                      },
+                      "id": "01HKAGPSQ705KBWY8B8JQME52T",
+                      "reference": "ORDIS_RECRUIT"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7M6QTBT3SG3PQCK9J1Y2SD"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "When I leave the Expedition zone — Create an [ORDIS_RECRUIT] Soldier token in each of your Expeditions.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "Wenn ich die Expeditionszone verlasse — Erschaffe eine [ORDIS_RECRUIT]-Soldatenmarke in jeder deiner Expeditionen.",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "Cuando abandone la zona de expedición — Crea una ficha de soldado [ORDIS_RECRUIT] en cada una de tus expediciones.",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "Lorsque je quitte la zone d'Expédition — Créez un jeton Soldat [ORDIS_RECRUIT] dans chacune de vos Expéditions.",
+                    "locale": "fr_FR"
+                  },
+                  "it_IT": {
+                    "text": "Quando lascio l'area delle spedizioni — Crea una pedina Soldato [ORDIS_RECRUIT] in ciascuna delle tue spedizioni.",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "When I leave the Expedition zone — Create an [ORDIS_RECRUIT] Soldier token in each of your Expeditions."
+              }
+            ],
+            "reference": "02946"
+          },
+          "sequence": 1,
+          "id": "01KJ5PT0DD0VR0QXQ1ATV24WE1"
+        }
+      ],
+      "value": "I can't be played unless there's another Character in each of your Expeditions.  When I leave the Expedition zone — Create an [Ordis Recruit 1/1/1] Soldier token in each of your Expeditions.",
+      "id": "01KJ5PSWNJ8BHMRS4C242EN975"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5PT25PG0PP227Z5MTK992A",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "es_ES": {
+                          "displayWeb": "Recluta de Ordis 1/1/1",
+                          "locale": "es_ES",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Ordis-Rekrut 1/1/1",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Recluta Ordis 1/1/1",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Ordis Recruit 1/1/1",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "fr_FR": {
+                          "displayWeb": "1/1/1 Recrue Ordis",
+                          "locale": "fr_FR",
+                          "description": ""
+                        }
+                      },
+                      "id": "01HKAGPSQ705KBWY8B8JQME52T",
+                      "reference": "ORDIS_RECRUIT"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01HTS9HM5VZAXX9MH2QB40RTD3"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "#{D} : Create an [ORDIS_RECRUIT] Soldier token in target Expedition.#",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "#{D} : Créez un jeton Soldat [ORDIS_RECRUIT] dans une Expédition ciblée.#",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "#{D} : Erschaffe eine [ORDIS_RECRUIT]-Soldatenmarke in einer Expedition deiner Wahl.#",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "#{D}: crea una pedina Soldato [ORDIS_RECRUIT] in una spedizione bersaglio.#",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "#{D} : Crea una ficha de soldado [ORDIS_RECRUIT] en una expedición objetivo.#",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "#{D} : Create an [ORDIS_RECRUIT] Soldier token in target Expedition.#"
+              }
+            ],
+            "reference": "09761"
+          },
+          "sequence": 0,
+          "id": "01KJ5PT4A6A491W41G3CNCA94X"
+        }
+      ],
+      "value": "{D} : Create an [Ordis Recruit 1/1/1] Soldier token in target Expedition.",
+      "id": "01KJ5PT25PG0PP227Z5MTK992A"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "084",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "A",
+    "name": "AltArt"
+  },
+  "illustrator": {
+    "nickName": "Jean-Baptiste Andrier"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_A_OR_114_R1",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_A_OR_114_R1",
+  "translations": {
+    "fr_FR": {
+      "name": "Jeanne Corrompue",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "it_IT": {
+      "name": "Giovanna Corrotta",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Verderbte Jeanne",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "en_US": {
+      "name": "Corrupted Jeanne",
+      "image": null,
+      "locale": "en_US"
+    },
+    "es_ES": {
+      "name": "Jeanne corrompida",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT3G62ZPR5NC1DHRX638",
+  "mainFaction": {
+    "reference": "OR",
+    "color": "#0f6593",
+    "id": "01GE7AC9X78DXSNKNB15KCF69X",
+    "name": "Ordis"
+  },
+  "allImagePath": null,
+  "name": "Corrupted Jeanne",
+  "elements": {
+    "MAIN_COST": "3",
+    "RECALL_COST": "3",
+    "OCEAN_POWER": "#2#",
+    "FOREST_POWER": "#2#",
+    "MOUNTAIN_POWER": "#2#",
+    "MAIN_EFFECT": "#I can't be played# unless there's another Character in each of your Expeditions.  When I leave the Expedition zone — Create an [Ordis Recruit 1/1/1] Soldier token in each of your Expeditions.",
+    "ECHO_EFFECT": "#{D} : Create an [Ordis Recruit 1/1/1] Soldier token in target Expedition.#"
+  },
+  "collectorNumberFormatted": "ROCOP-A-084-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}
