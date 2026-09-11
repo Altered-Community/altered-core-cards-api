@@ -709,9 +709,20 @@ class CardGroupBuilder
         return $this->effectCache[$cacheKey] = $effect;
     }
 
+    /**
+     * PERMANENT and LANDMARK_PERMANENT were the same design intent in practice and have
+     * been folded into one type — Equinox JSON can still carry the raw "PERMANENT"
+     * reference for older cards, so every import path is normalized here rather than
+     * relying on each caller to know about the merge.
+     */
+    private function normalizeCardTypeReference(string $reference): string
+    {
+        return $reference === 'PERMANENT' ? 'LANDMARK_PERMANENT' : $reference;
+    }
+
     private function findOrCreateCardType(array $data, string $locale): CardType
     {
-        $reference = $data['reference'];
+        $reference = $this->normalizeCardTypeReference($data['reference']);
 
         if (!isset($this->cardTypeCache[$reference])) {
             $cardType = $this->cardTypeRepository->findOneByReference($reference);
