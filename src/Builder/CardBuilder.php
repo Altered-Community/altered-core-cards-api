@@ -114,7 +114,7 @@ class CardBuilder
         $card->setIsParentSerialized((bool) ($data['isParentSerialized'] ?? false));
         $card->setIsOwnerless((bool) ($data['isOwnerless'] ?? false));
 
-        $variation = 'standard';
+        $variation = $this->deriveVariationFromReference($data['reference']);
         if (!empty($data['ks'])) $variation = 'kickstarter';
         if (!empty($data['isSerialized'])) $variation = 'serialized';
         $card->setVariation($variation);
@@ -148,6 +148,24 @@ class CardBuilder
         }
     }
 
+    /**
+     * Reference format: ALT_SET_VARIANT_FACTION_NUM_RARITY[_UNIQUENUM] — the 3rd
+     * underscore-separated segment is the true printing variant (B=standard,
+     * P=promo, A=alt-art), independent of locale and reliable for every set,
+     * unlike the collectorNumberFormatted-position heuristic below (which only
+     * ever ran for fr-fr and never detected alt-art at all).
+     */
+    private function deriveVariationFromReference(string $reference): string
+    {
+        $parts = explode('_', $reference);
+
+        return match ($parts[2] ?? null) {
+            'P' => 'promo',
+            'A' => 'alt-art',
+            default => 'standard',
+        };
+    }
+
     private function applyFrFrFields(Card $card, array $data): void
     {
         if (array_key_exists('imagePath', $data)) {
@@ -159,7 +177,6 @@ class CardBuilder
 
             if (isset($cnf[4]) && $cnf[4] === 'P') {
                 $card->setPromo(true);
-                $card->setVariation('promo');
             }
             if (isset($cnf[8]) && $cnf[8] === 'F') {
                 $card->setTransfuge(true);
