@@ -1,0 +1,327 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "\"It's not time to billet yet, but take the opportunity to stock up.\"",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "„Wir haben noch kein Quartier, aber deckt euch schon mal ein.“",
+          "locale": "de_DE"
+        },
+        "fr_FR": {
+          "text": "« C'est pas l'heure de cantonner, mais profitez-en pour faire le plein. »",
+          "locale": "fr_FR"
+        },
+        "it_IT": {
+          "text": "\"Non è il momento di accamparsi, ma approfittatene per fare provviste.\"",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«Aún no es hora de acantonarse, pero aprovechad para reabasteceros».",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HQ8B035C8QV1VHDBMWVP",
+      "text": "\"It's not time to billet yet, but take the opportunity to stock up.\""
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ADVENTURER",
+      "id": "01HKAGPC92CGHANVSRSC8R8ES6",
+      "name": "Adventurer"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT4BYDNY3RTBCBWVDHB2"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYHRGY03A57RH2GVXKXA3C"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYHRQF9JQ6F5ZRJHFCPQZN"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYHRXY9PBCFXGZVNF635W3"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01K9YYHS4PTW7YXSWBYWPRK97Q"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYHSBBR6BAHWMGGQYVN2NA"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5N1YJ9MPESQHH23HFC6DY4",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "de_DE": {
+                          "displayWeb": "Nachschub",
+                          "locale": "de_DE",
+                          "description": "Lege die oberste Karte deines Decks in die Reserve."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Rifornisci",
+                          "locale": "it_IT",
+                          "description": "Metti la prima carta del tuo mazzo nella Riserva."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Ravitaillez",
+                          "locale": "fr_FR",
+                          "description": "Mettez la première carte de votre deck en Réserve."
+                        },
+                        "en_US": {
+                          "displayWeb": "Resupply",
+                          "locale": "en_US",
+                          "description": "Put the top card of your deck in Reserve."
+                        },
+                        "es_ES": {
+                          "displayWeb": "reabastece",
+                          "locale": "es_ES",
+                          "description": "Coloca la primera carta de tu mazo en la reserva."
+                        }
+                      },
+                      "id": "01HPFHC15Y9ARSV51SMJKFZ8CY",
+                      "reference": "RESUPPLY_LOW"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7K8RD4D2QGGD9SR15FVTBF"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "{R} Si vous contrôlez une Prouesse, [RESUPPLY_LOW]. (Mettez la première carte de votre deck en Réserve.)",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "{R} If you control a Feat, [RESUPPLY_LOW]. (Put the top card of your deck in Reserve.)",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "{R} Falls du eine Heldentat kontrollierst, nutze [RESUPPLY_LOW]. (Lege die oberste Karte deines Decks in die Reserve.)",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{R} Se controlli una Prodezza, [RESUPPLY_LOW]. (Metti la prima carta del tuo mazzo nella Riserva.)",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{R} Si controlas una proeza, [RESUPPLY_LOW]. (Coloca la primera carta de tu mazo en la reserva.)",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "{R} If you control a Feat, [RESUPPLY_LOW]. (Put the top card of your deck in Reserve.)"
+              }
+            ],
+            "reference": "02805"
+          },
+          "sequence": 0,
+          "id": "01KJ5N208NF8ZSHB9W2B0JMGKB"
+        }
+      ],
+      "value": "{R} If you control a Feat, [Resupply]. (Put the top card of your deck in Reserve.)",
+      "id": "01KJ5N1YJ9MPESQHH23HFC6DY4"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5N21SRHQWZW41KGKV2WSFJ",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "de_DE": {
+                    "text": "{D} : Der nächste Charakter, den du in dieser Runde spielst, erhält 1 Verstärkung.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{D}: il prossimo personaggio che giochi in questo turno ottiene 1 rinforzo.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{D} : El siguiente personaje que juegues este turno gana 1 potenciador.",
+                    "locale": "es_ES"
+                  },
+                  "en_US": {
+                    "text": "{D} : The next Character you play this turn gains 1 boost.",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "{D} : Le prochain Personnage que vous jouez ce tour-ci gagne 1 boost.",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "{D} : The next Character you play this turn gains 1 boost."
+              }
+            ],
+            "reference": "01429"
+          },
+          "sequence": 0,
+          "id": "01KJ5N23AEWW16Q676CY173ZXS"
+        }
+      ],
+      "value": "{D} : The next Character you play this turn gains 1 boost.",
+      "id": "01KJ5N21SRHQWZW41KGKV2WSFJ"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "025",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Andy Jauffrit"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_P_BR_115_C",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_P_BR_115_C",
+  "translations": {
+    "it_IT": {
+      "name": "Risolutore Reka",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Reka-Zwischenhändler",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "en_US": {
+      "name": "Reka Fixer",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Ravitailleur Reka",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "es_ES": {
+      "name": "Abastecedor reka",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT4BWGG16WQRX86V604F",
+  "mainFaction": {
+    "reference": "BR",
+    "color": "#c32637",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+    "name": "Bravos"
+  },
+  "allImagePath": null,
+  "name": "Reka Fixer",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "3",
+    "OCEAN_POWER": "3",
+    "FOREST_POWER": "0",
+    "MOUNTAIN_POWER": "3",
+    "MAIN_EFFECT": "{R} If you control a Feat, [Resupply]. (Put the top card of your deck in Reserve.)",
+    "ECHO_EFFECT": "{D} : The next Character you play this turn gains 1 boost."
+  },
+  "collectorNumberFormatted": "ROCOP-S-025-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

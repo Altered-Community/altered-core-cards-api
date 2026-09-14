@@ -1,0 +1,278 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "de_DE": {
+          "text": "Diese kleinen Kreaturen leben in den Ruinen und können Harz aus einer Meile Entfernung erschnüffeln.",
+          "locale": "de_DE"
+        },
+        "es_ES": {
+          "text": "Estas criaturitas, habitantes de las ruinas, huelen la savia a kilómetros de distancia.",
+          "locale": "es_ES"
+        },
+        "it_IT": {
+          "text": "Originarie delle rovine, queste piccole creature riescono a fiutare la linfa da oltre un chilometro di distanza.",
+          "locale": "it_IT"
+        },
+        "en_US": {
+          "text": "Indigenous to the ruins, these little creatures can smell Sap from a mile away.",
+          "locale": "en_US"
+        },
+        "fr_FR": {
+          "text": "Ces petites créatures indigènes peuvent flairer la Sève à des kilomètres à la ronde.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JBT1A43DSG4RFCF0HV6EF70M",
+      "text": "Indigenous to the ruins, these little creatures can smell Sap from a mile away."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ANIMAL",
+      "id": "01HKAGQS36Z3DP166MZW8KRAEK",
+      "name": "Animal"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5MWYZY9K637GMEEVW2"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JB22EB9YC3XEYRWZTCGK9A7W"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JB22EBCD132VYQFH8QWF2A7F"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JB22EBF2W6CR5FCPSFJ82G43"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "0",
+      "id": "01JB22EBHCSD80KPRJJKZ1XG49"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JB22EBKHW1WF0ZT5AWFR4FPY"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01K4JNHZDV9K83R9QEFR10Q6MV",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "en_US": {
+                          "displayWeb": "Augment",
+                          "locale": "en_US",
+                          "description": "If it has counters, it gains 1 more."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Aumentar",
+                          "locale": "es_ES",
+                          "description": "Si tiene contadores, gana 1 más."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Amplifier",
+                          "locale": "fr_FR",
+                          "description": "Si elle a des compteurs, elle en gagne 1 de plus."
+                        },
+                        "de_DE": {
+                          "displayWeb": "Erweitern",
+                          "locale": "de_DE",
+                          "description": "Falls sie Zähler hat, erhält sie 1 weiteren."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Accrescere",
+                          "locale": "it_IT",
+                          "description": "Se ha dei segnalini, ne ottiene 1 altro."
+                        }
+                      },
+                      "id": "01JB22EAHEDHFVNN41CN45TJ35",
+                      "reference": "AUGMENT"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JCY67MC5PVK7T6KTMFM96SP8"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "it_IT": {
+                    "text": "#{J}# Puoi [AUGMENT] una carta bersaglio in gioco o nella Riserva. (Se ha dei segnalini, ne ottiene un altro. Il bersaglio non può essere una carta eroe.)",
+                    "locale": "it_IT"
+                  },
+                  "fr_FR": {
+                    "text": "#{J}# Vous pouvez [AUGMENT] une carte ciblée en jeu ou en Réserve. (Si elle a des compteurs, elle en gagne 1 de plus. Cet effet ne peut cibler une carte Héros.)",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "#{J}# You may [AUGMENT] target card in play or in Reserve. (If it has counters, it gains 1 more. This can't target Hero cards.)",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "#{J}# Du darfst eine Karte deiner Wahl im Spiel oder in der Reserve [AUGMENT]. (Falls sie Zähler hat, erhält sie 1 weiteren. Heldenkarten sind davon ausgenommen.)",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "#{J}# Puedes [AUGMENT] una carta objetivo en juego o en reserva. (Si tiene contadores, gana uno más. Esto no puede hacer objetivo a cartas de héroe.)",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "#{J}# You may [AUGMENT] target card in play or in Reserve. (If it has counters, it gains 1 more. This can't target Hero cards.)"
+              }
+            ],
+            "reference": "01061"
+          },
+          "sequence": 0,
+          "id": "01K4JNHZWM4HXJEQ4AXPQRH0QR"
+        }
+      ],
+      "value": "{J} You may [Augment] target card in play or in Reserve. (If it has counters, it gains 1 more. This can't target Hero cards.)",
+      "id": "01K4JNHZDV9K83R9QEFR10Q6MV"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "003",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Kevin Sidharta"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_AX_49_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_AX_49_R1",
+  "translations": {
+    "de_DE": {
+      "name": "Harzschnüffler",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "es_ES": {
+      "name": "Rastreador de savia",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "it_IT": {
+      "name": "Fiutalinfa",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "en_US": {
+      "name": "Sap Sniffer",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Renifleur de Sève",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT5MQT7EERQ9FYX2EA89",
+  "mainFaction": {
+    "reference": "AX",
+    "color": "#8c432a",
+    "id": "01GE7AC9XBG707G19F03A95TH1",
+    "name": "Axiom"
+  },
+  "allImagePath": null,
+  "name": "Sap Sniffer",
+  "elements": {
+    "MAIN_COST": "1",
+    "RECALL_COST": "1",
+    "OCEAN_POWER": "1",
+    "FOREST_POWER": "0",
+    "MOUNTAIN_POWER": "1",
+    "MAIN_EFFECT": "#{J}# You may [Augment] target card in play or in Reserve. (If it has counters, it gains 1 more. This can't target Hero cards.)"
+  },
+  "collectorNumberFormatted": "ROCTOP-X-001-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

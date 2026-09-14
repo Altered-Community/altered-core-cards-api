@@ -1,0 +1,244 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "de_DE": {
+          "text": "Wissenschaft soll den Menschen dienen, nicht umgekehrt.",
+          "locale": "de_DE"
+        },
+        "fr_FR": {
+          "text": "C'est à la science d'être au service du peuple, pas l'inverse.",
+          "locale": "fr_FR"
+        },
+        "it_IT": {
+          "text": "La scienza deve servire il popolo, non il contrario.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "La ciencia está al servicio de las personas, no al revés.",
+          "locale": "es_ES"
+        },
+        "en_US": {
+          "text": "Science's role is to serve the people, not the other way around",
+          "locale": "en_US"
+        }
+      },
+      "id": "01KC94HPS6VPJRQTE02MVBK9MZ",
+      "text": "Science's role is to serve the people, not the other way around"
+    }
+  ],
+  "cardType": {
+    "reference": "HERO",
+    "translations": {
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Held"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Hero"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Héros"
+      },
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Héroe de"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Eroe"
+      }
+    },
+    "id": "01GE7AC9WGQTNRP28T63FH8TZD",
+    "name": "Hero"
+  },
+  "cardSubTypes": [],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT4F9SMKW6QS4ENM5N70"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "PERMANENT",
+        "id": "01HGG84FWN1B2ZZ2MKMAV0EYR6"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01KBQMFVA1XJGZZ7A2RA1PAGC0"
+    },
+    {
+      "cardElementType": {
+        "reference": "RESERVE",
+        "id": "01HGG84RC3BAGK8ZB60PVCGWGJ"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01KBQMFVA1XJGZZ7A2RA1PAGC1"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5MFZ5P8QNMEHAABFFC76T3",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Aérolithe",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Aerolith",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Aerolit",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Aerolite",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Aerolito",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JN9V2BFTDBEPJRRHWC5YM548",
+                      "reference": "AEROLITH"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7K3TM6MPGZD2GPTG172KGH"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "At Noon — If you are first player, create an [AEROLITH] token in your Landmarks. (It's a Permanent with \"When I'm sacrificed — Resupply. {T}, {1}: Sacrifice me.\")",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "À Midi — Si vous êtes le premier joueur, créez un jeton [AEROLITH] dans vos Repères. (C'est un Permanent avec « Lorsque je suis sacrifié — Ravitaillez. {T}, {1} : Sacrifiez-moi. »)",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "Zum Mittag — Falls du der Startspieler bist, erschaffe eine [AEROLITH]-Marke in deinem Wahrzeichen-Bereich. (Sie ist eine Bleibende Karte mit „Wenn ich geopfert werde — Nachschub. {T}, {1}: Opfere mich.“)",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "Al mediodía — Si eres el primer jugador, crea una ficha de [AEROLITH] en tus hitos. (Es un permanente con \"Cuando me sacrifiques — Reabastece. {T}, {1}: Sacrifícame.\")",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "A mezzogiorno — Se sei il primo giocatore, crea una pedina [AEROLITH] nei tuoi fulcri. (È un permanente con \"Quando mi sacrifichi — Rifornisci. {T}, {1}: sacrificami.\")",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "At Noon — If you are first player, create an [AEROLITH] token in your Landmarks. (It's a Permanent with \"When I'm sacrificed — Resupply. {T}, {1}: Sacrifice me.\")"
+              }
+            ],
+            "reference": "02780"
+          },
+          "sequence": 0,
+          "id": "01KJ5MG9WEG14EQCS3J3X2Z2QS"
+        }
+      ],
+      "value": "At Noon — If you are first player, create an [Aerolith] token in your Landmarks. (It's a Permanent with \"When I'm sacrificed — Resupply. {T}, {1}: Sacrifice me.\")",
+      "id": "01KJ5MFZ5P8QNMEHAABFFC76T3"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "001",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "A",
+    "name": "AltArt"
+  },
+  "illustrator": {
+    "nickName": "Justice Wong"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_A_AX_65_C",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLETOP_A_AX_65_C",
+  "translations": {
+    "it_IT": {
+      "name": "Isaree e Sassolino",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Isaree & Kiesel",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "es_ES": {
+      "name": "Isaree y Petro",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "fr_FR": {
+      "name": "Isaree & Pebble",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "en_US": {
+      "name": "Isaree & Pebble",
+      "image": null,
+      "locale": "en_US"
+    }
+  },
+  "id": "01M28EMT4FEFKJJEQW3Q4QVRER",
+  "mainFaction": {
+    "reference": "AX",
+    "color": "#8c432a",
+    "id": "01GE7AC9XBG707G19F03A95TH1",
+    "name": "Axiom"
+  },
+  "allImagePath": null,
+  "name": "Isaree & Pebble",
+  "elements": {
+    "MAIN_COST": "0",
+    "RECALL_COST": "0",
+    "PERMANENT": "2",
+    "RESERVE": "2",
+    "MAIN_EFFECT": "At Noon — If you are first player, create an [Aerolith] token in your Landmarks. (It's a Permanent with \"When I'm sacrificed — Resupply. {T}, {1}: Sacrifice me.\")"
+  },
+  "collectorNumberFormatted": "ROCTOP-XA-025-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

@@ -1,0 +1,192 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "\"Calling the Tengu means submitting to anger and vanity, no?\" - Basira",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "„Den Tengu zu rufen bedeutet, sich seinem Zorn und seiner Eitelkeit zu unterwerfen, nicht wahr?“ – Basira",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"Chiamare il Tengu significa sottomettersi alla rabbia e alla vanità, no?\" - Basira",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«Llamar al Tengu significa someterse a la ira y la vanidad, ¿no?». — Basira",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "« Appeler le Tengu ne veut-il pas dire céder à la colère et à la vanité ? » - Basira",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JNRGBX0JKP2EVPXP2FBAKHKH",
+      "text": "\"Calling the Tengu means submitting to anger and vanity, no?\" - Basira"
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ADVENTURER",
+      "id": "01HKAGPC92CGHANVSRSC8R8ES6",
+      "name": "Adventurer"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5SVH10KK30ZWJYRB63"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V6P0N6JMH0020Z94D8F2W"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V6P4PVM4T493605CEBKAW"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V6P8REAFX1S7GD5VKQ58T"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9V6PCYJRRGGMQ8YWWE507F"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JN9V6PGY6XQ035Y4DWJHM695"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "022",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Gamon Studio"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_BR_70_C",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_BR_70_C",
+  "translations": {
+    "es_ES": {
+      "name": "Tengu",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "en_US": {
+      "name": "Tengu",
+      "image": null,
+      "locale": "en_US"
+    },
+    "it_IT": {
+      "name": "Tengu",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Tengu",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "fr_FR": {
+      "name": "Tengu",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT5SKETJPSZBZDTGAK5N",
+  "mainFaction": {
+    "reference": "BR",
+    "color": "#c32637",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T4",
+    "name": "Bravos"
+  },
+  "allImagePath": null,
+  "name": "Tengu",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "2",
+    "FOREST_POWER": "2",
+    "MOUNTAIN_POWER": "3"
+  },
+  "collectorNumberFormatted": "ROCTOP-X-007-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

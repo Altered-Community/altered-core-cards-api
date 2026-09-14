@@ -1,0 +1,371 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "fr_FR": {
+          "text": "« La peur ne passera pas ! »",
+          "locale": "fr_FR"
+        },
+        "en_US": {
+          "text": "\"Fear shall not pass!\"",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "„Die Angst kommt hier nicht vorbei!“",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"La paura non passerà!\"",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«¡El miedo no pasará!».",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HZX43TWAAWFS8ENMSF5C",
+      "text": "\"Fear shall not pass!\""
+    }
+  ],
+  "cardType": {
+    "reference": "LANDMARK_PERMANENT",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Permanente hito"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Permanente Fulcro"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Bleibende Wahrzeichenkarte"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Landmark Permanent"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Repère Permanent"
+      }
+    },
+    "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+    "name": "Landmark Permanent"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "FEAT",
+      "id": "01KA0Z8VM97X93CWTMFTM976E4",
+      "name": "Feat"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT3W64Y0JEQHFA62EJB8"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZK1EKKNX6VQQSDPGXNK8V"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZK1PZAGZ2PPPNX1CKKTP9"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5QMQXX6R41MEA9C0Z0R65R",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{J} Draw a card, #then discard a card from your hand.#",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "{J} Pesca una carta, #poi scarta una carta dalla tua mano.#",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{J} Roba una carta y #luego descarta una carta de tu mano.#",
+                    "locale": "es_ES"
+                  },
+                  "de_DE": {
+                    "text": "{J} Ziehe eine Karte, #dann lege eine Karte aus deiner Hand ab.#",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "{J} Piochez une carte, #puis défaussez une carte de votre main.#",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "{J} Draw a card, #then discard a card from your hand.#"
+              }
+            ],
+            "reference": "03004"
+          },
+          "sequence": 0,
+          "id": "01KJ5QMS6Q6V2JQ7PTQE4XF16Z"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5QMQXX6R41MEA9C0Z0R65R",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "At Noon — If six or more cards are in your discard pile, complete me.",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "A mezzogiorno — Se ci sono sei o più carte nella tua pila degli scarti, eseguimi.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "Al mediodía — Si hay seis o más cartas en tu pila de descartes, complétame.",
+                    "locale": "es_ES"
+                  },
+                  "de_DE": {
+                    "text": "Zum Mittag — Falls sich mindestens sechs Karten auf deinem Ablagestapel befinden, vollbringe mich.",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "À Midi — S'il y a au moins six cartes dans votre défausse, accomplissez-moi.",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "At Noon — If six or more cards are in your discard pile, complete me."
+              }
+            ],
+            "reference": "03002"
+          },
+          "sequence": 1,
+          "id": "01KJ5QMTN2EYDZW6XDPK7Q8F2T"
+        }
+      ],
+      "value": "{J} Draw a card, then discard a card from your hand.  At Noon — If six or more cards are in your discard pile, complete me.",
+      "id": "01KJ5QMQXX6R41MEA9C0Z0R65R"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5QMWJV3S3HAM0187H59AR3",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "de_DE": {
+                          "displayWeb": "Mana-Motte 2/2/2",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "fr_FR": {
+                          "displayWeb": "2/2/2 Phalène de Mana",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Polilla de maná 2/2/2",
+                          "locale": "es_ES",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Mana Moth 2/2/2",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Falena di Mana 2/2/2",
+                          "locale": "it_IT",
+                          "description": ""
+                        }
+                      },
+                      "id": "01J1QBE0WTGPC1NV3KZ8A7GMYT",
+                      "reference": "MANA_MOTH"
+                    },
+                    "sequence": 1,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7MND0Q87B7E0EDDTSTDC00"
+                  },
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Accomplie",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Completed",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Eseguita",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Vollbracht",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Completada",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01K9YYDGN54D4PHVKNMQW4R9NQ",
+                      "reference": "COMPLETED"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7MNC9SA267EJNEZZFMEMVD"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "[COMPLETED]: When a card is discarded from your hand — You may exhaust me ({T}) to create a [MANA_MOTH] Illusion token in target Expedition.",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "[COMPLETED]: quando una carta viene scartata dalla tua mano — Puoi consumarmi ({T}) per creare una pedina Illusione [MANA_MOTH] in una spedizione bersaglio.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "[COMPLETED]: Cuando descartes una carta de tu mano — Puedes agotarme ({T}) para crear una ficha de ilusión [MANA_MOTH] en una expedición objetivo.",
+                    "locale": "es_ES"
+                  },
+                  "de_DE": {
+                    "text": "[COMPLETED]: Wenn eine Karte aus deiner Hand abgelegt wird — Du darfst mich erschöpfen ({T}), um eine [MANA_MOTH]-Illusionsmarke in einer Expedition deiner Wahl zu erschaffen.",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "[COMPLETED] : Lorsqu'une carte est défaussée de votre main — Vous pouvez m'épuiser ({T}) pour créer un jeton Illusion [MANA_MOTH] dans une Expédition ciblée.",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "[COMPLETED]: When a card is discarded from your hand — You may exhaust me ({T}) to create a [MANA_MOTH] Illusion token in target Expedition."
+              }
+            ],
+            "reference": "03003"
+          },
+          "sequence": 0,
+          "id": "01KJ5QMYJ3D7372YRVHDFDQFFN"
+        }
+      ],
+      "value": "[[Completed]]: When a card is discarded from your hand — You may exhaust me ({T}) to create a [Mana Moth 2/2/2] Illusion token in target Expedition.",
+      "id": "01KJ5QMWJV3S3HAM0187H59AR3"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "112",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Justice Wong"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_P_YZ_121_R1",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_P_YZ_121_R1",
+  "translations": {
+    "it_IT": {
+      "name": "Respingere la Notte",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Drängt das Dunkel zurück",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "fr_FR": {
+      "name": "Repousser la Nuit",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "en_US": {
+      "name": "Push Back the Night",
+      "image": null,
+      "locale": "en_US"
+    },
+    "es_ES": {
+      "name": "Repeler las tinieblas",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT3W2SW5X9ZWKBJP19EM",
+  "mainFaction": {
+    "reference": "YZ",
+    "color": "#764891",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+    "name": "Yzmir"
+  },
+  "allImagePath": null,
+  "name": "Push Back the Night",
+  "elements": {
+    "MAIN_COST": "#2#",
+    "RECALL_COST": "#2#",
+    "MAIN_EFFECT": "{J} Draw a card, #then discard a card from your hand.#  At Noon — If six or more cards are in your discard pile, complete me.",
+    "ECHO_EFFECT": "[[Completed]]: When a card is discarded from your hand — You may exhaust me ({T}) to create a [Mana Moth 2/2/2] Illusion token in target Expedition."
+  },
+  "collectorNumberFormatted": "ROCOP-S-112-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

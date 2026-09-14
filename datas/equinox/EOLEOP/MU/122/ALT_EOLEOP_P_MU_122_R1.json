@@ -1,0 +1,408 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "fr_FR": {
+          "text": "L'âme d'un loup se dissimule souvent sous la laine d'un mouton.",
+          "locale": "fr_FR"
+        },
+        "en_US": {
+          "text": "A wolf's strength is in its pack.",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Die Stärke des Wolfs liegt im Rudel.",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "La forza del lupo risiede nel suo branco.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "La fuerza del lobo reside en la manada.",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HTHVTNG4BNM83BRDC7WH",
+      "text": "A wolf's strength is in its pack."
+    }
+  ],
+  "cardType": {
+    "reference": "LANDMARK_PERMANENT",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Permanente hito"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Permanente Fulcro"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Bleibende Wahrzeichenkarte"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Landmark Permanent"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Repère Permanent"
+      }
+    },
+    "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+    "name": "Landmark Permanent"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "FEAT",
+      "id": "01KA0Z8VM97X93CWTMFTM976E4",
+      "name": "Feat"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT41B9GNTHWZ5WSEYADB"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZ3HTHEPPKJ0BB7NYGKCPG"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZ3J1ZGAT27MSQPNZHNHFN"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5PG1HYVYFP26JFKGWSGYK0",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "en_US": {
+                          "displayWeb": "Anchored",
+                          "locale": "en_US",
+                          "description": "During Rest, I don't go to Reserve and I lose Anchored."
+                        },
+                        "de_DE": {
+                          "displayWeb": "Verankert",
+                          "locale": "de_DE",
+                          "description": "Während der Ruhepause gehe ich nicht in die Reserve und verliere Verankert."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Anclaje",
+                          "locale": "es_ES",
+                          "description": "Durante el descanso, no voy a la reserva y pierdo anclaje."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Ancorato",
+                          "locale": "it_IT",
+                          "description": "Durante il riposo, non vado nella Riserva e perdo Ancorato."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Ancré",
+                          "locale": "fr_FR",
+                          "description": "Au Repos, je ne vais pas en Réserve et je perds Ancré."
+                        }
+                      },
+                      "id": "01HKAGQQK91PRVXQ5ARQWWQQ9T",
+                      "reference": "ANCHORED"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7M0J7W1027MGYVR9D49RJ5"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{J} Target Character with Base Cost #{4} or less# gains [ANCHORED].",
+                    "locale": "en_US"
+                  },
+                  "es_ES": {
+                    "text": "{J} Un personaje objetivo con coste base de #{4} o menos# gana [ANCHORED].",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "{J} Un Personnage ciblé de Coût de Base #{4} ou moins# gagne [ANCHORED].",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "{J} Ein Charakter deiner Wahl mit Basiskosten #{4} oder weniger# erhält [ANCHORED].",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{J} Un personaggio bersaglio con costo base #pari o inferiore a {4}# ottiene [ANCHORED].",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "{J} Target Character with Base Cost #{4} or less# gains [ANCHORED]."
+              }
+            ],
+            "reference": "02917"
+          },
+          "sequence": 0,
+          "id": "01KJ5PG2F75KJBHR7JAGJZ1CRB"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5PG1HYVYFP26JFKGWSGYK0",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "When you pass — If three or more Animals in your Expeditions have a different Base Cost, complete me.",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "Lorsque vous passez — Si au moins trois Animaux dans vos Expéditions ont un Coût de Base différent, accomplissez-moi.",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "Wenn du passt — Falls mindestens drei Tiere in deinen Expeditionen verschiedene Basiskosten haben, vollbringe mich.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "Quando passi — Se tre o più Animali nelle tue spedizioni hanno un costo base diverso, eseguimi.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "Cuando pases — Si tres o más animales en tus expediciones tienen un coste base diferente, complétame.",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "When you pass — If three or more Animals in your Expeditions have a different Base Cost, complete me."
+              }
+            ],
+            "reference": "02915"
+          },
+          "sequence": 1,
+          "id": "01KJ5PG3QR7ZP0SGMXPNS40238"
+        }
+      ],
+      "value": "{J} Target Character with Base Cost {4} or less gains [[Anchored]].  When you pass — If three or more Animals in your Expeditions have a different Base Cost, complete me.",
+      "id": "01KJ5PG1HYVYFP26JFKGWSGYK0"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5PG5FMX22DXFQBZA2BKGKX",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Coriaces 1",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Tough 1",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Robust 1",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Tenace 1",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Resistencia 1",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JN9V93R4X2QDP6CPHFSR8DWC",
+                      "reference": "TOUGH_CHA_P_1"
+                    },
+                    "sequence": 1,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KGJ871A1JRM0EVWFS0M3VYH4"
+                  },
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Accomplie",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Completed",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Eseguita",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Vollbracht",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Completada",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01K9YYDGN54D4PHVKNMQW4R9NQ",
+                      "reference": "COMPLETED"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KGJ870SE8KZK0YAGJ31YHZ4E"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "[COMPLETED] : #Tous les Personnages# dans vos Expéditions sont [TOUGH_CHA_P_1].",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "[COMPLETED]: #Alle Charaktere# in deinen Expeditionen sind [TOUGH_CHA_P_1].",
+                    "locale": "de_DE"
+                  },
+                  "en_US": {
+                    "text": "[COMPLETED]: #All Characters# in your Expeditions are [TOUGH_CHA_P_1].",
+                    "locale": "en_US"
+                  },
+                  "es_ES": {
+                    "text": "[COMPLETED]: #Todos los personajes# en tus expediciones tienen [TOUGH_CHA_P_1].",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "[COMPLETED]: #tutti i personaggi# nelle tue spedizioni hanno [TOUGH_CHA_P_1].",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "[COMPLETED]: #All Characters# in your Expeditions are [TOUGH_CHA_P_1]."
+              }
+            ],
+            "reference": "03010"
+          },
+          "sequence": 0,
+          "id": "01KJ5PG7BYN77PW5YPF49VMNQ1"
+        }
+      ],
+      "value": "[[Completed]]: All Characters in your Expeditions are [Tough 1].",
+      "id": "01KJ5PG5FMX22DXFQBZA2BKGKX"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "073",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Fahmi Fauzi"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_P_MU_122_R1",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_P_MU_122_R1",
+  "translations": {
+    "fr_FR": {
+      "name": "Rassembler la Meute",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "de_DE": {
+      "name": "Versammelt das Rudel",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "it_IT": {
+      "name": "Radunare il Branco",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "en_US": {
+      "name": "Gather the Pack",
+      "image": null,
+      "locale": "en_US"
+    },
+    "es_ES": {
+      "name": "Reunir a la manada",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT41FQE66JEW93B26GTA",
+  "mainFaction": {
+    "reference": "MU",
+    "color": "#3d6b42",
+    "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+    "name": "Muna"
+  },
+  "allImagePath": null,
+  "name": "Gather the Pack",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "MAIN_EFFECT": "{J} Target Character with Base Cost #{4} or less# gains [[Anchored]].  When you pass — If three or more Animals in your Expeditions have a different Base Cost, complete me.",
+    "ECHO_EFFECT": "[[Completed]]: #All Characters# in your Expeditions are [Tough 1]."
+  },
+  "collectorNumberFormatted": "ROCOP-S-073-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

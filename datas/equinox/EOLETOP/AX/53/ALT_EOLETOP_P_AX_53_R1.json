@@ -1,0 +1,354 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "de_DE": {
+          "text": "Es ist keine Zerstörung, sondern „Recycling“. Behaupten sie zumindest.",
+          "locale": "de_DE"
+        },
+        "es_ES": {
+          "text": "No destrozan, reciclan... O eso dicen.",
+          "locale": "es_ES"
+        },
+        "it_IT": {
+          "text": "Non è demolizione, bensì semplice riciclaggio. O almeno così dicono.",
+          "locale": "it_IT"
+        },
+        "fr_FR": {
+          "text": "Ce n'est pas de la destruction, c'est du recyclage. Du moins, c'est ce qu'ils disent.",
+          "locale": "fr_FR"
+        },
+        "en_US": {
+          "text": "It's not demolition, but basic recycling. Or so they say.",
+          "locale": "en_US"
+        }
+      },
+      "id": "01JBT1A46YME7K4XD93ADYY8QJ",
+      "text": "It's not demolition, but basic recycling. Or so they say."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ENGINEER",
+      "id": "01HKAGPA9AS71JN0H9HQZTBNCD",
+      "name": "Engineer"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5P112W9D0CH3Y734J7"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22EZ51QCQ32Z7WHGHHZGTX"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22EZ7AT6FB9FYATWZDXBY4"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22EZ9MWGA9D4NNV8295G88"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22EZBV6SEBY7CXWCGCG2SN"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22EZE24JZNMBYQ1ZG4WVFW"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01K4JNK9S0HYWVRE5CG8EHCNYS",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "it_IT": {
+                    "text": "{R} Scegli fino a uno:",
+                    "locale": "it_IT"
+                  },
+                  "de_DE": {
+                    "text": "{R} Wähle bis zu eine Aktion:",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "{R} Elige hasta una opción:",
+                    "locale": "es_ES"
+                  },
+                  "en_US": {
+                    "text": "{R} Choose up to one:",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "{R} Choisissez jusqu’à l'un :",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "{R} Choose up to one:"
+              }
+            ],
+            "reference": "00808"
+          },
+          "sequence": 0,
+          "id": "01K4JNKA7T8C96VYNPE8RAVH21"
+        },
+        {
+          "cardElement": "/card_elements/01K4JNK9S0HYWVRE5CG8EHCNYS",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "es_ES": {
+                    "text": "• Descarta un permanente objetivo con coste desde la mano de #{5} o menos.#",
+                    "locale": "es_ES"
+                  },
+                  "de_DE": {
+                    "text": "• Lege eine Bleibende Karte deiner Wahl mit Handkosten #{5} oder weniger# ab.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "• Scarta un permanente bersaglio con costo dalla mano #pari o inferiore a {5}.#",
+                    "locale": "it_IT"
+                  },
+                  "en_US": {
+                    "text": "• Discard target Permanent with Hand Cost #{5} or less.#",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "• Défaussez un Permanent ciblé de Coût de Main #{5} ou moins.#",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "• Discard target Permanent with Hand Cost #{5} or less.#"
+              }
+            ],
+            "reference": "00812"
+          },
+          "sequence": 1,
+          "id": "01K4JNKAN55KJV9FX4Z6DED2VZ"
+        },
+        {
+          "cardElement": "/card_elements/01K4JNK9S0HYWVRE5CG8EHCNYS",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "de_DE": {
+                          "displayWeb": "Blechkäfer 2/2/2",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Ottonblatta 2/2/2",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Bicholata 2/2/2",
+                          "locale": "es_ES",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Brassbug 2/2/2",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "fr_FR": {
+                          "displayWeb": "2/2/2 Scarabot",
+                          "locale": "fr_FR",
+                          "description": ""
+                        }
+                      },
+                      "id": "01HKAGP9T12ATT2K44GARJZTC9",
+                      "reference": "BRASSBUG"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JCY68AD74M2MRFG68P1SPPKB"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "• Sacrifice a Permanent. If you do, create a [BRASSBUG] Robot token in target Expedition.",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "• Sacrifica un permanente. Se lo fai, crea una pedina Robot [BRASSBUG] in una spedizione bersaglio.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "• Sacrifica un permanente. Si lo haces, crea una ficha de robot [BRASSBUG] en una expedición objetivo.",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "• Sacrifiez un Permanent. Si vous le faites, créez un jeton Robot [BRASSBUG] dans une Expédition ciblée.",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "• Opfere eine Bleibende Karte. Falls du das tust, erschaffe eine [BRASSBUG]-Robotermarke in einer Expedition deiner Wahl.",
+                    "locale": "de_DE"
+                  }
+                },
+                "text": "• Sacrifice a Permanent. If you do, create a [BRASSBUG] Robot token in target Expedition."
+              }
+            ],
+            "reference": "01069"
+          },
+          "sequence": 2,
+          "id": "01K4JNKB1D9WZ7E2K9QNCN9T0B"
+        }
+      ],
+      "value": "{R} Choose up to one:  • Discard target Permanent with Hand Cost {5} or less.  • Sacrifice a Permanent. If you do, create a [Brassbug 2/2/2] Robot token in target Expedition.",
+      "id": "01K4JNK9S0HYWVRE5CG8EHCNYS"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "005",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Atanas Lozanski"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_AX_53_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_AX_53_R1",
+  "translations": {
+    "es_ES": {
+      "name": "Los grems",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "it_IT": {
+      "name": "Grem",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Die Grems",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "en_US": {
+      "name": "The Grems",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Les Grems",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT5P3JRBNY7K9NKD08G4",
+  "mainFaction": {
+    "reference": "AX",
+    "color": "#8c432a",
+    "id": "01GE7AC9XBG707G19F03A95TH1",
+    "name": "Axiom"
+  },
+  "allImagePath": null,
+  "name": "The Grems",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "2",
+    "FOREST_POWER": "#2#",
+    "MOUNTAIN_POWER": "2",
+    "MAIN_EFFECT": "{R} Choose up to one:  • Discard target Permanent with Hand Cost #{5} or less.#  • Sacrifice a Permanent. If you do, create a [Brassbug 2/2/2] Robot token in target Expedition."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-002-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

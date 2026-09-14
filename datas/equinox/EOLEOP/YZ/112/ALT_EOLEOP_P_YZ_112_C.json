@@ -1,0 +1,241 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "fr_FR": {
+          "text": "« Il ne reste qu'à couvrir les arrières de Sam. »",
+          "locale": "fr_FR"
+        },
+        "en_US": {
+          "text": "\"Now we just need to cover Sam's back.\"",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "„Jetzt müssen wir nur noch Sam Deckung geben.“",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"Ora dobbiamo solo coprire le spalle a Sam.\"",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«Solo queda cubrirle las espaldas a Sam».",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HYBRMQ8R73EG18KF5AH4",
+      "text": "\"Now we just need to cover Sam's back.\""
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "MAGE",
+      "id": "01HKAGXDF5A4KJW7GVC25YQS3H",
+      "name": "Mage"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT43FBVRPR3HF3STTNEX"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZF9WRH2ANETNWCXVYQK6A"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZFA4ZWA0B81EG3922DN2D"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZFADAJ3SZVM4DB04DWB79"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZFANEGA5Y7VM5KSZ0N67X"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YZFAXNTQGT971QJQ238T37"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5Q90FYS9PG1H1KP66H5EBS",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "{H} Défaussez la première carte de votre deck.",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "{H} Discard the top card of your deck.",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "{H} Scarta la prima carta del tuo mazzo.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{H} Descarta la primera carta de tu mazo.",
+                    "locale": "es_ES"
+                  },
+                  "de_DE": {
+                    "text": "{H} Lege die oberste Karte deines Decks ab.",
+                    "locale": "de_DE"
+                  }
+                },
+                "text": "{H} Discard the top card of your deck."
+              }
+            ],
+            "reference": "02984"
+          },
+          "sequence": 0,
+          "id": "01KJ5Q92F1QPYYV4ZH2P59CWG5"
+        }
+      ],
+      "value": "{H} Discard the top card of your deck.",
+      "id": "01KJ5Q90FYS9PG1H1KP66H5EBS"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "100",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Nestor Papatriantafyllou"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_P_YZ_112_C",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_P_YZ_112_C",
+  "translations": {
+    "en_US": {
+      "name": "Qorgan Exorcist",
+      "image": null,
+      "locale": "en_US"
+    },
+    "it_IT": {
+      "name": "Esorcista del Qorgan",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "fr_FR": {
+      "name": "Exorciste du Qorgan",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "es_ES": {
+      "name": "Exorcista del Qorgan",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "de_DE": {
+      "name": "Qorgan-Exorzist",
+      "image": null,
+      "locale": "de_DE"
+    }
+  },
+  "id": "01M28EMT43TVY0DFXNRWT6M2GZ",
+  "mainFaction": {
+    "reference": "YZ",
+    "color": "#764891",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+    "name": "Yzmir"
+  },
+  "allImagePath": null,
+  "name": "Qorgan Exorcist",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "2",
+    "FOREST_POWER": "2",
+    "MOUNTAIN_POWER": "2",
+    "MAIN_EFFECT": "{H} Discard the top card of your deck."
+  },
+  "collectorNumberFormatted": "ROCOP-S-100-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

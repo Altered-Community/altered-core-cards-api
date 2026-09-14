@@ -1,0 +1,241 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "With a simple glance, it reveals your destination.",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Mit einem Blick deckt er dein Ziel auf.",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "Con un semplice sguardo, rivela il tuo destino.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "Con un simple vistazo, revela tu destino.",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "D'un simple regard, il vous dévoile votre destination.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JNRGC5RSYMV2ZVKM18QF2MGQ",
+      "text": "With a simple glance, it reveals your destination."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ANIMAL",
+      "id": "01HKAGQS36Z3DP166MZW8KRAEK",
+      "name": "Animal"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT520S4XYDW805RFX8TH"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JN9VRH1C54KS0DEYK8QDXR5Z"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9VRH6SE6EGFBDHEQSNTNY5"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9VRHDXADPDWK96W2FV0XX4"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9VRHKACZBMCN76DAEEPBF9"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JN9VRHRN57ACGZVMTYC0ECXK"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KGQE4G3YNH1NNXW43QKR6BNM",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "{H} Vous pouvez envoyer en Réserve un Personnage ciblé de Coût de Main {2} ou moins.",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "{H} You may send to Reserve target Character with Hand Cost {2} or less.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "{H} Du darfst einen Charakter deiner Wahl mit Handkosten {2} oder weniger in die Reserve schicken.",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "{H} Puedes enviar a la reserva un personaje objetivo con coste desde la mano de {2} o menos.",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "{H} Puoi mandare nella Riserva un personaggio bersaglio con costo dalla mano pari o inferiore a {2}.",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "{H} You may send to Reserve target Character with Hand Cost {2} or less."
+              }
+            ],
+            "reference": "01455"
+          },
+          "sequence": 0,
+          "id": "01KGQE4GTRQ5339F6ZND79Z2J3"
+        }
+      ],
+      "value": "{H} You may send to Reserve target Character with Hand Cost {2} or less.",
+      "id": "01KGQE4G3YNH1NNXW43QKR6BNM"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "097",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Fahmi Fauzi"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_YZ_72_C",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_YZ_72_C",
+  "translations": {
+    "es_ES": {
+      "name": "Caladrius",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "it_IT": {
+      "name": "Caradrio",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Caladrius",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "en_US": {
+      "name": "Caladrius",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Caladrius",
+      "image": null,
+      "locale": "fr_FR"
+    }
+  },
+  "id": "01M28EMT527RF7DD3BESBTC2HV",
+  "mainFaction": {
+    "reference": "YZ",
+    "color": "#764891",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+    "name": "Yzmir"
+  },
+  "allImagePath": null,
+  "name": "Caladrius",
+  "elements": {
+    "MAIN_COST": "3",
+    "RECALL_COST": "1",
+    "OCEAN_POWER": "2",
+    "FOREST_POWER": "1",
+    "MOUNTAIN_POWER": "1",
+    "MAIN_EFFECT": "{H} You may send to Reserve target Character with Hand Cost {2} or less."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-023-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

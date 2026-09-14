@@ -1,0 +1,278 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "de_DE": {
+          "text": "Sie jagt unerbittlich … nach Leckereien und Streicheleinheiten.",
+          "locale": "de_DE"
+        },
+        "es_ES": {
+          "text": "Busca sin piedad chuches y mimitos.",
+          "locale": "es_ES"
+        },
+        "it_IT": {
+          "text": "È una spietata cacciatrice di dolcetti e coccole.",
+          "locale": "it_IT"
+        },
+        "fr_FR": {
+          "text": "Elle chasse sans relâche les friandises et les gratouilles.",
+          "locale": "fr_FR"
+        },
+        "en_US": {
+          "text": "She hunts mercilessly for treats and snuggles.",
+          "locale": "en_US"
+        }
+      },
+      "id": "01JBT1A75388WZYEWK5B484KJ5",
+      "text": "She hunts mercilessly for treats and snuggles."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "ANIMAL",
+      "id": "01HKAGQS36Z3DP166MZW8KRAEK",
+      "name": "Animal"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5T03ZPV7PEEHRVABM8"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22Q45W40J2H0ZV19HSZMYZ"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22Q492M8NG6NJ387C3EH5N"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JB22Q4C7BZGDRKW0S521BS22"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22Q4FGCJSSXTWG1HACQBJC"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "1",
+      "id": "01JB22Q4JMR4JFC8KJGDE58441"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01K4JNZP6GMBJ91927W1T8BFT4",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "en_US": {
+                          "displayWeb": "Anchored",
+                          "locale": "en_US",
+                          "description": "During Rest, I don't go to Reserve and I lose Anchored."
+                        },
+                        "de_DE": {
+                          "displayWeb": "Verankert",
+                          "locale": "de_DE",
+                          "description": "Während der Ruhepause gehe ich nicht in die Reserve und verliere Verankert."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Anclaje",
+                          "locale": "es_ES",
+                          "description": "Durante el descanso, no voy a la reserva y pierdo anclaje."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Ancorato",
+                          "locale": "it_IT",
+                          "description": "Durante il riposo, non vado nella Riserva e perdo Ancorato."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Ancré",
+                          "locale": "fr_FR",
+                          "description": "Au Repos, je ne vais pas en Réserve et je perds Ancré."
+                        }
+                      },
+                      "id": "01HKAGQQK91PRVXQ5ARQWWQQ9T",
+                      "reference": "ANCHORED"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JB22Q57DSN840MXB67DSP3S6"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "Lorsqu'un Personnage que vous contrôlez gagne [ANCHORED] — Je gagne 1 boost.",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "Cuando un personaje que controles gane [ANCHORED] — Gano 1 potenciador.",
+                    "locale": "es_ES"
+                  },
+                  "en_US": {
+                    "text": "When a Character you control gains [ANCHORED] — I gain 1 boost.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "Wenn ein Charakter, den du kontrollierst, [ANCHORED] erhält — Ich erhalte 1 Verstärkung.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "Quando un personaggio che controlli ottiene [ANCHORED] — Ottengo 1 rinforzo.",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "When a Character you control gains [ANCHORED] — I gain 1 boost."
+              }
+            ],
+            "reference": "00944"
+          },
+          "sequence": 0,
+          "id": "01K4JNZPPS3B9WJVA6EMVQZ7K2"
+        }
+      ],
+      "value": "When a Character you control gains [[Anchored]] — I gain 1 boost.",
+      "id": "01K4JNZP6GMBJ91927W1T8BFT4"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "057",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Zaeliven"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_MU_52_C",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_MU_52_C",
+  "translations": {
+    "it_IT": {
+      "name": "Corgi Coccolona",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "es_ES": {
+      "name": "Corgi mimosón",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "en_US": {
+      "name": "Cuddly Corgi",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Corgi Câline",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "de_DE": {
+      "name": "Knuddeliger Corgi",
+      "image": null,
+      "locale": "de_DE"
+    }
+  },
+  "id": "01M28EMT5TA0JDTWNKGSH9VN07",
+  "mainFaction": {
+    "reference": "MU",
+    "color": "#3d6b42",
+    "id": "01GE7AC9X2BNM40TTAYAEFSZSJ",
+    "name": "Muna"
+  },
+  "allImagePath": null,
+  "name": "Cuddly Corgi",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "1",
+    "FOREST_POWER": "2",
+    "MOUNTAIN_POWER": "1",
+    "MAIN_EFFECT": "When a Character you control gains [[Anchored]] — I gain 1 boost."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-013-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

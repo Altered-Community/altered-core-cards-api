@@ -1,0 +1,353 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "de_DE": {
+          "text": "Die Templer sorgen dafür, dass die Gegend sicher ist.",
+          "locale": "de_DE"
+        },
+        "es_ES": {
+          "text": "Los templarios se aseguran de que la zona sea segura.",
+          "locale": "es_ES"
+        },
+        "en_US": {
+          "text": "The Templars always ensure that the area is safe.",
+          "locale": "en_US"
+        },
+        "it_IT": {
+          "text": "I templari garantiscono sempre la sicurezza dell'area.",
+          "locale": "it_IT"
+        },
+        "fr_FR": {
+          "text": "Les Templiers veillent sans relâche à la sécurité des lieux.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JBT1A9B0WCSN78P4YGC9067B",
+      "text": "The Templars always ensure that the area is safe."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "SOLDIER",
+      "id": "01HKAGQ5CZVEX15T5KTM40KQSA",
+      "name": "Soldier"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5KZZK7J39VC3BCT2T5"
+  },
+  "rarity": {
+    "reference": "COMMON",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY745A",
+    "name": "Common"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JB22TRZ1KXK4Q2EJ4QHMHWWV"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JB22TS2K6N084C3K9T0TRCZW"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JB22TS650NHM77CTB8H684S4"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22TS9QFCQ05KEERABATJYC"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JB22TSDMMX20YHCWT4WJ1BQ3"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01K4JP54ND05NXK2DAM3WMMZ73",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "es_ES": {
+                          "displayWeb": "Explorar",
+                          "locale": "es_ES",
+                          "description": "Puedes jugarme desde la mano por {1} con «{h} Envíame a la reserva»."
+                        },
+                        "de_DE": {
+                          "displayWeb": "Spähen",
+                          "locale": "de_DE",
+                          "description": "Du darfst mich für {1} mit „{h} Schicke mich in die Reserve“ aus der Hand spielen."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Repérage",
+                          "locale": "fr_FR",
+                          "description": "Vous pouvez me jouer de votre main pour {1} avec «{h} Envoyez-moi en Réserve »."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Esploratore",
+                          "locale": "it_IT",
+                          "description": "Puoi giocarmi dalla mano per {1} con \"{h} Mandami nella Riserva\"."
+                        },
+                        "en_US": {
+                          "displayWeb": "Scout",
+                          "locale": "en_US",
+                          "description": "You may play me from hand for {1} with \"{h} Send me to Reserve\"."
+                        }
+                      },
+                      "id": "01JB22F341Z4AYBVFE2JB4MP2C",
+                      "reference": "SCOUT_1"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": true,
+                    "id": "01K3TNRADQ8DT7A94DKRE2VBGW"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "$[SCOUT_1] {1}.",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "$[SCOUT_1] {1}.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "$[SCOUT_1] {1}.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "$[SCOUT_1] {1}.",
+                    "locale": "es_ES"
+                  },
+                  "en_US": {
+                    "text": "$[SCOUT_1] {1}.",
+                    "locale": "en_US"
+                  }
+                },
+                "text": "$[SCOUT_1] {1}."
+              }
+            ],
+            "reference": "02028"
+          },
+          "sequence": 0,
+          "id": "01K4JP557ZK5DQ95QQH9X47GRS"
+        },
+        {
+          "cardElement": "/card_elements/01K4JP54ND05NXK2DAM3WMMZ73",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "es_ES": {
+                          "displayWeb": "Recluta de Ordis 1/1/1",
+                          "locale": "es_ES",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Ordis-Rekrut 1/1/1",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Recluta Ordis 1/1/1",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Ordis Recruit 1/1/1",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "fr_FR": {
+                          "displayWeb": "1/1/1 Recrue Ordis",
+                          "locale": "fr_FR",
+                          "description": ""
+                        }
+                      },
+                      "id": "01HKAGPSQ705KBWY8B8JQME52T",
+                      "reference": "ORDIS_RECRUIT"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JB22TTEEDKBCF4B4ZG5GNA1M"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "When I leave the Expedition zone — Create an [ORDIS_RECRUIT] Soldier token in my Expedition.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "Wenn ich die Expeditionszone verlasse — Erschaffe eine [ORDIS_RECRUIT]-Soldatenmarke in meiner Expedition.",
+                    "locale": "de_DE"
+                  },
+                  "fr_FR": {
+                    "text": "Lorsque je quitte la zone d'Expédition — Créez un jeton Soldat [ORDIS_RECRUIT] dans mon Expédition.",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "Cuando abandone la zona de expedición — Crea una ficha de soldado [ORDIS_RECRUIT] en mi expedición.",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "Quando lascio l'area delle spedizioni — Crea una pedina Soldato [ORDIS_RECRUIT] nella mia spedizione.",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "When I leave the Expedition zone — Create an [ORDIS_RECRUIT] Soldier token in my Expedition."
+              }
+            ],
+            "reference": "00990"
+          },
+          "sequence": 1,
+          "id": "01K4JP55PXTP8EX3FVQY0QZGP4"
+        }
+      ],
+      "value": "[Scout] {1}. (You may play me from hand for {1} with \"{h} Send me to Reserve\".)  When I leave the Expedition zone — Create an [Ordis Recruit 1/1/1] Soldier token in my Expedition.",
+      "id": "01K4JP54ND05NXK2DAM3WMMZ73"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "075",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Taras Susak"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_OR_54_C",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_OR_54_C",
+  "translations": {
+    "es_ES": {
+      "name": "Templaria de la Égida",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "en_US": {
+      "name": "Aegis Templar",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Templier de l'Aegis",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "it_IT": {
+      "name": "Templare Aegis",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Aegis-Templerin",
+      "image": null,
+      "locale": "de_DE"
+    }
+  },
+  "id": "01M28EMT5KFEZANVTAWKX2887J",
+  "mainFaction": {
+    "reference": "OR",
+    "color": "#0f6593",
+    "id": "01GE7AC9X78DXSNKNB15KCF69X",
+    "name": "Ordis"
+  },
+  "allImagePath": null,
+  "name": "Aegis Templar",
+  "elements": {
+    "MAIN_COST": "3",
+    "RECALL_COST": "3",
+    "OCEAN_POWER": "3",
+    "FOREST_POWER": "2",
+    "MOUNTAIN_POWER": "2",
+    "MAIN_EFFECT": "[Scout] {1}. (You may play me from hand for {1} with \"{h} Send me to Reserve\".)  When I leave the Expedition zone — Create an [Ordis Recruit 1/1/1] Soldier token in my Expedition."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-017-C-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

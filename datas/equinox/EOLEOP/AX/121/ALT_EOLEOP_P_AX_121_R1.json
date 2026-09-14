@@ -1,0 +1,371 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "\"Come on, almost there, you've got this!\"",
+          "locale": "en_US"
+        },
+        "fr_FR": {
+          "text": "« Allez, t'y es presque ma cocotte ! »",
+          "locale": "fr_FR"
+        },
+        "de_DE": {
+          "text": "„Komm schon, du kriegst das hin!“",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "\"Andiamo, ci sei quasi, puoi farcela!\"",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "«¡Venga, ya casi estás, tú puedes!».",
+          "locale": "es_ES"
+        }
+      },
+      "id": "01KC94HPPYQPGVVK4S8BZXQ4GC",
+      "text": "\"Come on, almost there, you've got this!\""
+    }
+  ],
+  "cardType": {
+    "reference": "LANDMARK_PERMANENT",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Permanente hito"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Permanente Fulcro"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Bleibende Wahrzeichenkarte"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Landmark Permanent"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Repère Permanent"
+      }
+    },
+    "id": "01J1Q78N4S1E64PN4T7GB4T59F",
+    "name": "Landmark Permanent"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "FEAT",
+      "id": "01KA0Z8VM97X93CWTMFTM976E4",
+      "name": "Feat"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT49WCA90PQEK4GEKQ4N"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYDP56AAYC8559W2CAT2Z3"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYDPBDE7M51496N9035XK3"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5MWYYQ029MJF2SS75F9AKV",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "fr_FR": {
+                    "text": "{J} Mettez une carte de votre main en Réserve.",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "{J} Put a card from your hand in Reserve.",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "{J} Lege eine Karte aus deiner Hand in die Reserve.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{J} Metti una carta dalla tua mano nella Riserva.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{J} Coloca 1 carta de tu mano en la reserva.",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "{J} Put a card from your hand in Reserve."
+              }
+            ],
+            "reference": "02775"
+          },
+          "sequence": 0,
+          "id": "01KJ5MX0QMQKH8B3T25WGFA0XY"
+        },
+        {
+          "cardElement": "/card_elements/01KJ5MWYYQ029MJF2SS75F9AKV",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "When you pass — If your hand is empty, complete me.",
+                    "locale": "en_US"
+                  },
+                  "it_IT": {
+                    "text": "Quando passi — Se la tua mano è vuota, eseguimi.",
+                    "locale": "it_IT"
+                  },
+                  "de_DE": {
+                    "text": "Wenn du passt — Falls deine Hand leer ist, vollbringe mich.",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "Cuando pases — Si tu mano está vacía, complétame.",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "Lorsque vous passez — Si votre main est vide, accomplissez-moi.",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "When you pass — If your hand is empty, complete me."
+              }
+            ],
+            "reference": "02776"
+          },
+          "sequence": 1,
+          "id": "01KJ5MX1ZTHFQB0PNX8XS101WC"
+        }
+      ],
+      "value": "{J} Put a card from your hand in Reserve.  When you pass — If your hand is empty, complete me.",
+      "id": "01KJ5MWYYQ029MJF2SS75F9AKV"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5MX3GBBEWMSZ67CJ8N74N4",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "de_DE": {
+                          "displayWeb": "Nachschub",
+                          "locale": "de_DE",
+                          "description": "Lege die oberste Karte deines Decks in die Reserve."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Rifornisci",
+                          "locale": "it_IT",
+                          "description": "Metti la prima carta del tuo mazzo nella Riserva."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Ravitaillez",
+                          "locale": "fr_FR",
+                          "description": "Mettez la première carte de votre deck en Réserve."
+                        },
+                        "en_US": {
+                          "displayWeb": "Resupply",
+                          "locale": "en_US",
+                          "description": "Put the top card of your deck in Reserve."
+                        },
+                        "es_ES": {
+                          "displayWeb": "reabastece",
+                          "locale": "es_ES",
+                          "description": "Coloca la primera carta de tu mazo en la reserva."
+                        }
+                      },
+                      "id": "01HPFHC15Y9ARSV51SMJKFZ8CY",
+                      "reference": "RESUPPLY_LOW"
+                    },
+                    "sequence": 1,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KHBE6T2RW66412A6TCSR84VS"
+                  },
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "Accomplie",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Completed",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Eseguita",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Vollbracht",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Completada",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01K9YYDGN54D4PHVKNMQW4R9NQ",
+                      "reference": "COMPLETED"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KHBE6SHRS985SJDT180AK57K"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "[COMPLETED], {T} : If your hand is empty, [RESUPPLY_LOW].",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "[COMPLETED], {T} : Falls deine Hand leer ist, nutze [RESUPPLY_LOW].",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "[COMPLETED], {T}: se la tua mano è vuota, [RESUPPLY_LOW].",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "[COMPLETED], {T} : Si tu mano está vacía, [RESUPPLY_LOW].",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "[COMPLETED], {T} : Si votre main est vide, [RESUPPLY_LOW].",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "[COMPLETED], {T} : If your hand is empty, [RESUPPLY_LOW]."
+              }
+            ],
+            "reference": "02998"
+          },
+          "sequence": 0,
+          "id": "01KJ5MX54PZK1C651CBXE9SDZZ"
+        }
+      ],
+      "value": "[[Completed]], {T} : If your hand is empty, [Resupply].",
+      "id": "01KJ5MX3GBBEWMSZ67CJ8N74N4"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "018",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Zero Wen"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_P_AX_121_R1",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_P_AX_121_R1",
+  "translations": {
+    "it_IT": {
+      "name": "Trovare una Soluzione",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Macht es möglich",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "es_ES": {
+      "name": "Lograr que funcione",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "fr_FR": {
+      "name": "Quand Faut y Aller",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "en_US": {
+      "name": "Make it Work",
+      "image": null,
+      "locale": "en_US"
+    }
+  },
+  "id": "01M28EMT4940HAR720438TW5BP",
+  "mainFaction": {
+    "reference": "AX",
+    "color": "#8c432a",
+    "id": "01GE7AC9XBG707G19F03A95TH1",
+    "name": "Axiom"
+  },
+  "allImagePath": null,
+  "name": "Make it Work",
+  "elements": {
+    "MAIN_COST": "#2#",
+    "RECALL_COST": "#2#",
+    "MAIN_EFFECT": "{J} Put a card from your hand in Reserve.  When you pass — If your hand is empty, complete me.",
+    "ECHO_EFFECT": "[[Completed]], {T} : If your hand is empty, [Resupply]."
+  },
+  "collectorNumberFormatted": "ROCOP-S-018-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

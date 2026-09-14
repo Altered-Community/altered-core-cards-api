@@ -1,0 +1,246 @@
+{
+  "loreEntries": [],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "DEITY",
+      "id": "01HKAGPAJFS4YDQVKY6AB16614",
+      "name": "Deity"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLEOP",
+    "name": "Roots of Corruption - Organized Play",
+    "id": "01M28EMT37KWM0900PN3TPSPT2"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYQTFH31R6K54QVMGX1SVV"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01K9YYQTPEBEQWH68CDZ02HVGD"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "4",
+      "id": "01K9YYQTXAJR923F5QNC9Q3XZZ"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "4",
+      "id": "01K9YYQVB0QDMRVES2NJTHJ1KF"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01K9YYQV43E6EZ06NRAKCWWCT2"
+    },
+    {
+      "cardElementType": {
+        "reference": "ECHO_EFFECT",
+        "id": "01H3CC15N8DB3H650XME16304G"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KJ5NP9CSRTE745X663Z0RCQZ",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "en_US": {
+                          "displayWeb": "Anchored",
+                          "locale": "en_US",
+                          "description": "During Rest, I don't go to Reserve and I lose Anchored."
+                        },
+                        "de_DE": {
+                          "displayWeb": "Verankert",
+                          "locale": "de_DE",
+                          "description": "Während der Ruhepause gehe ich nicht in die Reserve und verliere Verankert."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Anclaje",
+                          "locale": "es_ES",
+                          "description": "Durante el descanso, no voy a la reserva y pierdo anclaje."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Ancorato",
+                          "locale": "it_IT",
+                          "description": "Durante il riposo, non vado nella Riserva e perdo Ancorato."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Ancré",
+                          "locale": "fr_FR",
+                          "description": "Au Repos, je ne vais pas en Réserve et je perds Ancré."
+                        }
+                      },
+                      "id": "01HKAGQQK91PRVXQ5ARQWWQQ9T",
+                      "reference": "ANCHORED"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01KG7KGWEX9GFPMQEDR53N1Y99"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "{D} : The next Character with Base Cost {3} or less you play this turn gains [ANCHORED].",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "{D} : Der nächste Charakter, den du in dieser Runde mit Basiskosten {3} oder weniger spielst, erhält [ANCHORED].",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{D}: il prossimo personaggio con costo base pari o inferiore a {3} che giochi in questo turno ottiene [ANCHORED].",
+                    "locale": "it_IT"
+                  },
+                  "fr_FR": {
+                    "text": "{D} : Le prochain Personnage de Coût de Base {3} ou moins que vous jouez ce tour-ci gagne [ANCHORED].",
+                    "locale": "fr_FR"
+                  },
+                  "es_ES": {
+                    "text": "{D} : El siguiente personaje que juegues este turno con coste base de {3} o menos gana [ANCHORED].",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "{D} : The next Character with Base Cost {3} or less you play this turn gains [ANCHORED]."
+              }
+            ],
+            "reference": "02845"
+          },
+          "sequence": 0,
+          "id": "01KJ5NPB2XAVES2K7SJESKBPGD"
+        }
+      ],
+      "value": "{D} : The next Character with Base Cost {3} or less you play this turn gains [[Anchored]].",
+      "id": "01KJ5NP9CSRTE745X663Z0RCQZ"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "045",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "A",
+    "name": "AltArt"
+  },
+  "illustrator": {
+    "nickName": "Khoa Viet"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLEOP_A_LY_111_R1",
+  "isExclusive": true,
+  "isOwnerless": true,
+  "reference": "ALT_EOLEOP_A_LY_111_R1",
+  "translations": {
+    "it_IT": {
+      "name": "Bastet",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "de_DE": {
+      "name": "Bastet",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "es_ES": {
+      "name": "Bastet",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "fr_FR": {
+      "name": "Bastet",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "en_US": {
+      "name": "Bastet",
+      "image": null,
+      "locale": "en_US"
+    }
+  },
+  "id": "01M28EMT371NNC44TM7ZFJWA0R",
+  "mainFaction": {
+    "reference": "LY",
+    "color": "#cf4171",
+    "id": "01GE7AC9XGB6JE2V63WXWN4FB3",
+    "name": "Lyra"
+  },
+  "allImagePath": null,
+  "name": "Bastet",
+  "elements": {
+    "MAIN_COST": "3",
+    "RECALL_COST": "3",
+    "OCEAN_POWER": "#4#",
+    "MOUNTAIN_POWER": "#4#",
+    "FOREST_POWER": "2",
+    "ECHO_EFFECT": "{D} : The next Character with Base Cost {3} or less you play this turn gains [[Anchored]]."
+  },
+  "collectorNumberFormatted": "ROCOP-A-045-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

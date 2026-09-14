@@ -1,0 +1,278 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "en_US": {
+          "text": "After months of expeditions, Aedyt felt she had finally spread her wings.",
+          "locale": "en_US"
+        },
+        "de_DE": {
+          "text": "Nach Monaten voller Expeditionen hatte Aedyt das Gefühl, endlich ihre Flügel ausgebreitet zu haben.",
+          "locale": "de_DE"
+        },
+        "it_IT": {
+          "text": "Dopo mesi di spedizioni, Aedyt sentiva di aver finalmente spiegato le sue ali.",
+          "locale": "it_IT"
+        },
+        "es_ES": {
+          "text": "Tras meses de expediciones, Aedyt sintió que por fin había desplegado sus alas.",
+          "locale": "es_ES"
+        },
+        "fr_FR": {
+          "text": "Après plusieurs mois d'expéditions, Aedyt sentit qu'elle était enfin parvenue à déployer ses ailes.",
+          "locale": "fr_FR"
+        }
+      },
+      "id": "01JNRGC22HP5Z13NM1N61WQKYP",
+      "text": "After months of expeditions, Aedyt felt she had finally spread her wings."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "SOLDIER",
+      "id": "01HKAGQ5CZVEX15T5KTM40KQSA",
+      "name": "Soldier"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5AY0MG7D2B5VRWM9K3"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9VJDEBH873Y48QCY4YYK8B"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9VJDK9S46KG6FHBC3XKW61"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9VJDRAY20HG3QKRYZYKS7W"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9VJDX7ZAHNFTVS4ERM9TEY"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "2",
+      "id": "01JN9VJE24D25XDQXK799VN4JS"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01KGQDW103DEN857Z876FM70NQ",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "fr_FR": {
+                          "displayWeb": "s'Élève",
+                          "locale": "fr_FR",
+                          "description": ""
+                        },
+                        "en_US": {
+                          "displayWeb": "Ascends",
+                          "locale": "en_US",
+                          "description": ""
+                        },
+                        "de_DE": {
+                          "displayWeb": "Aufsteigend",
+                          "locale": "de_DE",
+                          "description": ""
+                        },
+                        "it_IT": {
+                          "displayWeb": "Ascende",
+                          "locale": "it_IT",
+                          "description": ""
+                        },
+                        "es_ES": {
+                          "displayWeb": "Asciende",
+                          "locale": "es_ES",
+                          "description": ""
+                        }
+                      },
+                      "id": "01JN9V6RJTMG7BZB84M6HA21S4",
+                      "reference": "ASCENDS"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JRA9K37S6WGXEJP1AGF9BG8M"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "#{J}# If I'm in an Ascended Expedition, I gain 1 boost. Otherwise, my Expedition [ASCENDS].",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "#{J}# Falls ich in einer Aufgestiegenen Expedition bin, erhalte ich 1 Verstärkung. Andernfalls ist meine Expedition [ASCENDS].",
+                    "locale": "de_DE"
+                  },
+                  "es_ES": {
+                    "text": "#{J}# Si estoy en una expedición ascendida, gano 1 potenciador. De lo contrario, mi expedición [ASCENDS].",
+                    "locale": "es_ES"
+                  },
+                  "it_IT": {
+                    "text": "#{J}# Se sono in una spedizione Ascesa, ottengo 1 rinforzo. Altrimenti, la mia spedizione [ASCENDS].",
+                    "locale": "it_IT"
+                  },
+                  "fr_FR": {
+                    "text": "#{J}# Si je suis dans une Expédition Élevée, je gagne 1 boost. Sinon, mon Expédition [ASCENDS].",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "#{J}# If I'm in an Ascended Expedition, I gain 1 boost. Otherwise, my Expedition [ASCENDS]."
+              }
+            ],
+            "reference": "01564"
+          },
+          "sequence": 0,
+          "id": "01KGQDW1PHQKAW38TDVJGZ75V6"
+        }
+      ],
+      "value": "{J} If I'm in an Ascended Expedition, I gain 1 boost. Otherwise, my Expedition [Ascends].",
+      "id": "01KGQDW103DEN857Z876FM70NQ"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Jefrey Yonathan"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_OR_67_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_OR_67_R1",
+  "translations": {
+    "en_US": {
+      "name": "Ascended Trooper",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "Troupière Élevée",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "de_DE": {
+      "name": "Aufgestiegene Kämpferin",
+      "image": null,
+      "locale": "de_DE"
+    },
+    "it_IT": {
+      "name": "Fante Asceso",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "es_ES": {
+      "name": "Tropa ascendida",
+      "image": null,
+      "locale": "es_ES"
+    }
+  },
+  "id": "01M28EMT5ATQH4JC1PVD9GBW8A",
+  "mainFaction": {
+    "reference": "OR",
+    "color": "#0f6593",
+    "id": "01GE7AC9X78DXSNKNB15KCF69X",
+    "name": "Ordis"
+  },
+  "allImagePath": null,
+  "name": "Ascended Trooper",
+  "elements": {
+    "MAIN_COST": "2",
+    "RECALL_COST": "2",
+    "OCEAN_POWER": "2",
+    "FOREST_POWER": "2",
+    "MOUNTAIN_POWER": "2",
+    "MAIN_EFFECT": "#{J}# If I'm in an Ascended Expedition, I gain 1 boost. Otherwise, my Expedition [Ascends]."
+  },
+  "collectorNumberFormatted": "ROCTOP-X-020-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}

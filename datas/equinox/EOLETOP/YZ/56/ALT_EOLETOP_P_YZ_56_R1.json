@@ -1,0 +1,390 @@
+{
+  "loreEntries": [
+    {
+      "loreEntryElementType": {
+        "id": "01GR6AENPX6HQP8G16KNV7BNA2",
+        "reference": "FLAVOR_TEXT",
+        "subject": "Flavor Text"
+      },
+      "translations": {
+        "de_DE": {
+          "text": "Die Stadt hat eine Seele, und sie ist hungrig.",
+          "locale": "de_DE"
+        },
+        "es_ES": {
+          "text": "La Ciudad tiene alma, un alma hambrienta.",
+          "locale": "es_ES"
+        },
+        "it_IT": {
+          "text": "La città ha un'anima ed è affamata.",
+          "locale": "it_IT"
+        },
+        "fr_FR": {
+          "text": "La Cité a une âme, et elle est affamée.",
+          "locale": "fr_FR"
+        },
+        "en_US": {
+          "text": "The City has a soul, and it is famished.",
+          "locale": "en_US"
+        }
+      },
+      "id": "01JBT1ABYQD5MWADP5JVWK9PNE",
+      "text": "The City has a soul, and it is famished."
+    }
+  ],
+  "cardType": {
+    "reference": "CHARACTER",
+    "translations": {
+      "es_ES": {
+        "locale": "es_ES",
+        "name": "Personaje"
+      },
+      "it_IT": {
+        "locale": "it_IT",
+        "name": "Personaggio"
+      },
+      "de_DE": {
+        "locale": "de_DE",
+        "name": "Charakter"
+      },
+      "en_US": {
+        "locale": "en_US",
+        "name": "Character"
+      },
+      "fr_FR": {
+        "locale": "fr_FR",
+        "name": "Personnage"
+      }
+    },
+    "id": "01H19NWA92A4ERAC4ATMSZNASS",
+    "name": "Character"
+  },
+  "cardSubTypes": [
+    {
+      "reference": "SPIRIT",
+      "id": "01HKAGQ2CRATX32S1PS2GBXYV7",
+      "name": "Spirit"
+    }
+  ],
+  "cardSet": {
+    "reference": "EOLETOP",
+    "name": "Roots of Corruption - Box Topper",
+    "id": "01M28EMT5BAMYYQQR1VDP7BSFK"
+  },
+  "rarity": {
+    "reference": "RARE",
+    "id": "01GE7AC9WY6PK56RADXXD6P1T5",
+    "name": "Rare"
+  },
+  "cardElements": [
+    {
+      "cardElementType": {
+        "reference": "MAIN_COST",
+        "id": "01H3CC15HETBMNE1NJT9F5T3W9"
+      },
+      "cardEffectDisplays": [],
+      "value": "8",
+      "id": "01JB22Z21WEQ29FCYRM49K28GY"
+    },
+    {
+      "cardElementType": {
+        "reference": "RECALL_COST",
+        "id": "01H3CC15J3R3E63842D2V8CDVA"
+      },
+      "cardEffectDisplays": [],
+      "value": "6",
+      "id": "01JB22Z264Y5QWYD4BX30CRMNS"
+    },
+    {
+      "cardElementType": {
+        "reference": "OCEAN_POWER",
+        "id": "01H3CC15K51PQ0XXYBAQBKFBQG"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JB22Z2A4VKV3S8M1T78JB01A"
+    },
+    {
+      "cardElementType": {
+        "reference": "FOREST_POWER",
+        "id": "01H3CC15MDGJNQSNT73NNGEQSP"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JB22Z2EDMKCX3ZXQ17C6SJ86"
+    },
+    {
+      "cardElementType": {
+        "reference": "MOUNTAIN_POWER",
+        "id": "01H3CC15KVHBZQMH6P9FPQ2XC7"
+      },
+      "cardEffectDisplays": [],
+      "value": "3",
+      "id": "01JB22Z2JGZTDFY180QMJBRCT2"
+    },
+    {
+      "cardElementType": {
+        "reference": "MAIN_EFFECT",
+        "id": "01H3CC15MXR9S51BVK0YFX81C1"
+      },
+      "cardEffectDisplays": [
+        {
+          "cardElement": "/card_elements/01K4JPASQVT8RASYAVJCWP2Z1J",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "de_DE": {
+                    "text": "{H} Lege alle anderen Karten im Spiel oder in der Reserve ab.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "{H} Scarta tutte le altre carte in gioco o nella Riserva.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "{H} Descarta todas las otras cartas en juego o en reserva.",
+                    "locale": "es_ES"
+                  },
+                  "en_US": {
+                    "text": "{H} Discard all other cards in play and in Reserve.",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "{H} Défaussez toutes les autres cartes en jeu ou en Réserve.",
+                    "locale": "fr_FR"
+                  }
+                },
+                "text": "{H} Discard all other cards in play and in Reserve."
+              }
+            ],
+            "reference": "01626"
+          },
+          "sequence": 0,
+          "id": "01K4JPAT9RWX4MAYGX99RRBDPG"
+        },
+        {
+          "cardElement": "/card_elements/01K4JPASQVT8RASYAVJCWP2Z1J",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [],
+                "type": "OUTPUT",
+                "translations": {
+                  "en_US": {
+                    "text": "When a card joins the discard pile — I gain 1 boost.",
+                    "locale": "en_US"
+                  },
+                  "fr_FR": {
+                    "text": "Lorsqu'une carte va dans la défausse — Je gagne 1 boost.",
+                    "locale": "fr_FR"
+                  },
+                  "de_DE": {
+                    "text": "Wenn eine Karte auf den Ablagestapel gelegt wird — Ich erhalte 1 Verstärkung.",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "Quando una carta finisce nella pila degli scarti — Ottengo 1 rinforzo.",
+                    "locale": "it_IT"
+                  },
+                  "es_ES": {
+                    "text": "Cuando una carta vaya a la pila de descartes — Gano 1 potenciador.",
+                    "locale": "es_ES"
+                  }
+                },
+                "text": "When a card joins the discard pile — I gain 1 boost."
+              }
+            ],
+            "reference": "02036"
+          },
+          "sequence": 1,
+          "id": "01K4JPATS1482XS08EB9S9TZMZ"
+        },
+        {
+          "cardElement": "/card_elements/01K4JPASQVT8RASYAVJCWP2Z1J",
+          "cardEffect": {
+            "cardEffectElements": [
+              {
+                "idGd": 0,
+                "cardEffectElementDisplays": [
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "en_US": {
+                          "displayWeb": "Fleeting",
+                          "locale": "en_US",
+                          "description": "Send me to Discard instead of Reserve after my effect resolves."
+                        },
+                        "de_DE": {
+                          "displayWeb": "Vergänglich",
+                          "locale": "de_DE",
+                          "description": "Lege mich auf die Ablage statt in die Reserve, nachdem mein Effekt abgeklungen ist."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Fugace",
+                          "locale": "it_IT",
+                          "description": "Mandami negli Scarti invece che nella Riserva dopo che il mio effetto si è risolto."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Fugacidad",
+                          "locale": "es_ES",
+                          "description": "Una vez resuelto mi efecto, envíame a la pila de descartes en lugar de a la reserva."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Fugace",
+                          "locale": "fr_FR",
+                          "description": "Envoyez-moi à la Défausse plutôt qu'en Réserve une fois mon effet résolu."
+                        }
+                      },
+                      "id": "01HKAGPHBY4EPW8TR9VTCHZG5Q",
+                      "reference": "FLEETING"
+                    },
+                    "sequence": 0,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JB22Z3VRDGBZ8D8RKFQZ6M1A"
+                  },
+                  {
+                    "cardKeyword": {
+                      "translations": {
+                        "de_DE": {
+                          "displayWeb": "Gigantisch",
+                          "locale": "de_DE",
+                          "description": "Ich werde in jeder deiner Expeditionen als anwesend betrachtet."
+                        },
+                        "it_IT": {
+                          "displayWeb": "Colossale",
+                          "locale": "it_IT",
+                          "description": "Considerami presente in ciascuna delle tue spedizioni."
+                        },
+                        "es_ES": {
+                          "displayWeb": "Gigante",
+                          "locale": "es_ES",
+                          "description": "Estoy presente en todas tus expediciones."
+                        },
+                        "en_US": {
+                          "displayWeb": "Gigantic",
+                          "locale": "en_US",
+                          "description": "I am considered present in each of your Expeditions."
+                        },
+                        "fr_FR": {
+                          "displayWeb": "Gigantesque",
+                          "locale": "fr_FR",
+                          "description": "Je suis considéré présent dans chacune de vos Expéditions."
+                        }
+                      },
+                      "id": "01HKAGQA3G27EJQXMTP7QNSZKD",
+                      "reference": "GIGANTIC"
+                    },
+                    "sequence": 1,
+                    "isDescriptionDisplayed": false,
+                    "id": "01JB22Z43T96EYRM400YW54B2X"
+                  }
+                ],
+                "type": "OUTPUT",
+                "translations": {
+                  "es_ES": {
+                    "text": "#Si tengo [FLEETING], soy [GIGANTIC].#",
+                    "locale": "es_ES"
+                  },
+                  "fr_FR": {
+                    "text": "#Si je suis [FLEETING], je suis [GIGANTIC].#",
+                    "locale": "fr_FR"
+                  },
+                  "en_US": {
+                    "text": "#If I'm [FLEETING], I am [GIGANTIC].#",
+                    "locale": "en_US"
+                  },
+                  "de_DE": {
+                    "text": "#Falls ich [FLEETING] bin, bin ich [GIGANTIC].#",
+                    "locale": "de_DE"
+                  },
+                  "it_IT": {
+                    "text": "#Se ho [FLEETING], ho [GIGANTIC].#",
+                    "locale": "it_IT"
+                  }
+                },
+                "text": "#If I'm [FLEETING], I am [GIGANTIC].#"
+              }
+            ],
+            "reference": "01036"
+          },
+          "sequence": 2,
+          "id": "01K4JPAV8GSYHC63259STBD41S"
+        }
+      ],
+      "value": "{H} Discard all other cards in play and in Reserve.  When a card joins the discard pile — I gain 1 boost.  If I'm [[Fleeting]], I am [Gigantic].",
+      "id": "01K4JPASQVT8RASYAVJCWP2Z1J"
+    }
+  ],
+  "isPublic": true,
+  "collectorNumber": "096",
+  "serializedNumber": null,
+  "cardProduct": {
+    "reference": "P",
+    "name": "Promotion"
+  },
+  "illustrator": {
+    "nickName": "Taras Susak"
+  },
+  "imagePath": null,
+  "assets": null,
+  "lowerPrice": 0,
+  "qrUrlDetail": "https://qr.loc.equinox-ccg.io/ALT_EOLETOP_P_YZ_56_R1",
+  "isExclusive": true,
+  "isOwnerless": false,
+  "reference": "ALT_EOLETOP_P_YZ_56_R1",
+  "translations": {
+    "es_ES": {
+      "name": "El Ansia",
+      "image": null,
+      "locale": "es_ES"
+    },
+    "it_IT": {
+      "name": "Voracità",
+      "image": null,
+      "locale": "it_IT"
+    },
+    "en_US": {
+      "name": "The Hunger",
+      "image": null,
+      "locale": "en_US"
+    },
+    "fr_FR": {
+      "name": "L'Affamé",
+      "image": null,
+      "locale": "fr_FR"
+    },
+    "de_DE": {
+      "name": "Der Hunger",
+      "image": null,
+      "locale": "de_DE"
+    }
+  },
+  "id": "01M28EMT5BCGEHR44V4KKVPQY0",
+  "mainFaction": {
+    "reference": "YZ",
+    "color": "#764891",
+    "id": "01GE7AC9WEQKW1Y1BF8SCY7459",
+    "name": "Yzmir"
+  },
+  "allImagePath": null,
+  "name": "The Hunger",
+  "elements": {
+    "MAIN_COST": "#8#",
+    "RECALL_COST": "#6#",
+    "OCEAN_POWER": "3",
+    "FOREST_POWER": "3",
+    "MOUNTAIN_POWER": "3",
+    "MAIN_EFFECT": "{H} Discard all other cards in play and in Reserve.  When a card joins the discard pile — I gain 1 boost.  #If I'm [[Fleeting]], I am [Gigantic].#"
+  },
+  "collectorNumberFormatted": "ROCTOP-X-022-R-EN",
+  "isSuspended": false,
+  "isErrated": false,
+  "isBanned": false,
+  "isSerialized": false,
+  "isParentSerialized": false
+}
