@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-11",
+  "description": "Fix wrong sub-types on 4 non-unique prints (COREKS AX_28 family, EOLE LY_108_R2) per CardsData review",
+  "updates": [
+    { "reference": "ALT_COREKS_B_AX_28_C", "fields": { "subTypes": ["CONSTRUCTION"] } },
+    { "reference": "ALT_COREKS_B_AX_28_R1", "fields": { "subTypes": ["CONSTRUCTION"] } },
+    { "reference": "ALT_COREKS_B_AX_28_R2", "fields": { "subTypes": ["CONSTRUCTION"] } },
+    { "reference": "ALT_EOLE_B_LY_108_R2", "fields": { "subTypes": ["ANIMAL", "ARTIST"] } }
+  ]
+}

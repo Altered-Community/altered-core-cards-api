@@ -5,11 +5,13 @@ namespace App\Service;
 use App\Entity\Card;
 use App\Entity\CardGroup;
 use App\Entity\CardPatchLog;
+use App\Entity\CardTranslation;
 use App\EventListener\CardSearchListener;
 use App\EventListener\MeilisearchSyncListener;
 use App\Repository\CardDocumentRepository;
 use App\Repository\CardPatchLogRepository;
 use App\Repository\CardRepository;
+use App\Repository\CardSubTypeRepository;
 use Doctrine\DBAL\Exception\UniqueConstraintViolationException;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
@@ -20,8 +22,11 @@ use Psr\Log\LoggerInterface;
  * only ever processes files it hasn't seen yet, in filename (date) order.
  *
  * Fields are routed to the entity that actually owns them:
- *  - CardPatchValidator::CARD_FIELDS       -> Card, exact reference only.
- *  - CardPatchValidator::CARD_GROUP_FIELDS -> CardGroup, exact or trailing-wildcard reference.
+ *  - CardPatchValidator::CARD_FIELDS            -> Card, exact reference only.
+ *  - CardPatchValidator::CARD_GROUP_FIELDS      -> CardGroup, exact or trailing-wildcard reference.
+ *  - CardPatchValidator::LOCALIZED_CARD_FIELDS  -> Card's per-locale CardTranslation, exact reference only.
+ *  - CardPatchValidator::LIST_CARD_GROUP_FIELDS -> CardGroup, exact or trailing-wildcard reference,
+ *    applied as a full replacement of the existing list.
  * A wildcard match can span many Card rows sharing the same CardGroup (e.g. every
  * serialized instance of a unique) — those are deduplicated before writing.
  */
@@ -36,6 +41,7 @@ final readonly class CardPatchService
         private CardSearchUpdater $cardSearchUpdater,
         private MeilisearchService $meilisearch,
         private CardDocumentRepository $cardDocumentRepository,
+        private CardSubTypeRepository $cardSubTypeRepository,
         private EntityManagerInterface $em,
         private LoggerInterface $logger,
     ) {}
@@ -190,6 +196,10 @@ final readonly class CardPatchService
 
                 if ($applyChanges) {
                     foreach ($update['fields'] as $field => $value) {
+                        if (in_array($field, CardPatchValidator::LIST_CARD_GROUP_FIELDS, true)) {
+                            $this->setCardGroupListField($cardGroup, $field, $value);
+                            continue;
+                        }
                         $this->setCardGroupField($cardGroup, $field, $value);
                     }
                     $touchedCardGroupIds[] = $cardGroup->getId();
@@ -205,6 +215,24 @@ final readonly class CardPatchService
     private function applyFieldsToCard(Card $card, array $fields, array &$touchedCardGroupIds): void
     {
         foreach ($fields as $field => $value) {
+            if (in_array($field, CardPatchValidator::LOCALIZED_CARD_FIELDS, true)) {
+                $this->setCardLocalizedField($card, $field, $value);
+                if ($cardGroup = $card->getCardGroup()) {
+                    $touchedCardGroupIds[] = $cardGroup->getId();
+                }
+                continue;
+            }
+
+            if (in_array($field, CardPatchValidator::LIST_CARD_GROUP_FIELDS, true)) {
+                $cardGroup = $card->getCardGroup();
+                if ($cardGroup === null) {
+                    continue;
+                }
+                $this->setCardGroupListField($cardGroup, $field, $value);
+                $touchedCardGroupIds[] = $cardGroup->getId();
+                continue;
+            }
+
             if (in_array($field, CardPatchValidator::CARD_GROUP_FIELDS, true)) {
                 $cardGroup = $card->getCardGroup();
                 if ($cardGroup === null) {
@@ -239,6 +267,64 @@ final readonly class CardPatchService
             'isErrated'   => $cardGroup->setIsErrated($value),
             default => throw new \LogicException("Champ CardGroup non géré par CardPatchService : $field"),
         };
+    }
+
+    /** @param array<string, string> $localizedValues locale (fr_FR, en_US, ...) => text */
+    private function setCardLocalizedField(Card $card, string $field, array $localizedValues): void
+    {
+        match ($field) {
+            'name' => $this->setCardName($card, $localizedValues),
+            default => throw new \LogicException("Champ localisé non géré par CardPatchService : $field"),
+        };
+    }
+
+    /** @param array<string, string> $localizedNames locale (fr_FR, en_US, ...) => name */
+    private function setCardName(Card $card, array $localizedNames): void
+    {
+        foreach ($localizedNames as $localeKey => $name) {
+            $locale      = $this->shortLocale($localeKey);
+            $translation = $card->getTranslation($locale);
+
+            if ($translation === null) {
+                $translation = new CardTranslation();
+                $translation->setLocale($locale);
+                $translation->setCard($card);
+                $card->addTranslation($translation);
+            }
+
+            $translation->setName($name);
+        }
+    }
+
+    /** @param string[] $value */
+    private function setCardGroupListField(CardGroup $cardGroup, string $field, array $value): void
+    {
+        match ($field) {
+            'subTypes' => $this->replaceSubTypes($cardGroup, $value),
+            default => throw new \LogicException("Champ liste non géré par CardPatchService : $field"),
+        };
+    }
+
+    /** @param string[] $references full replacement of the CardGroup's sub-types */
+    private function replaceSubTypes(CardGroup $cardGroup, array $references): void
+    {
+        foreach ($cardGroup->getSubTypes()->toArray() as $existing) {
+            $cardGroup->removeSubType($existing);
+        }
+
+        foreach ($references as $reference) {
+            $subType = $this->cardSubTypeRepository->findOneByReference($reference);
+            if ($subType === null) {
+                throw new \LogicException("CardSubType inconnu : $reference");
+            }
+            $cardGroup->addSubType($subType);
+        }
+    }
+
+    /** fr_FR / en_US / ... -> fr / en / ... (internal storage format, see CardTranslation::locale) */
+    private function shortLocale(string $localeKey): string
+    {
+        return strtolower(explode('_', $localeKey)[0]);
     }
 
     /** Translates a trailing-wildcard reference into an escaped SQL LIKE pattern. */
