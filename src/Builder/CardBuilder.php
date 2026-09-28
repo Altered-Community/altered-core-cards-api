@@ -137,7 +137,8 @@ class CardBuilder
         }
 
         if (!$card->getSet()) {
-            $dbSet = $this->setRepository->findOneByReference($data['cardSet']['reference'] ?? '');
+            $setReference = $data['cardSet']['reference'] ?? $this->deriveSetReferenceFromReference($data['reference']);
+            $dbSet = $this->setRepository->findOneByReference($setReference ?? '');
             if ($dbSet) {
                 $card->setSet($dbSet);
             }
@@ -164,6 +165,17 @@ class CardBuilder
             'A' => 'alt-art',
             default => 'standard',
         };
+    }
+
+    /**
+     * Fallback used when the source payload has no cardSet.reference (seen on some
+     * promo/collector-booster prints from the Altered API, e.g. ALT_EOLECB_A_AX_106_C).
+     * Reference format: ALT_SET_VARIANT_FACTION_NUM_RARITY — the 2nd segment is the
+     * set reference and matches Set::reference for every set (CORE, ALIZE, EOLECB, …).
+     */
+    private function deriveSetReferenceFromReference(string $reference): ?string
+    {
+        return explode('_', $reference)[1] ?? null;
     }
 
     private function applyFrFrFields(Card $card, array $data): void
