@@ -29,6 +29,9 @@ final class SearchAwareCollectionProvider implements ProviderInterface
         'collectorNumberFormatedId' => 'collector_number_formated_id',
         'mainCost'                  => 'main_cost',
         'recallCost'                => 'recall_cost',
+        'reference'                 => 'reference',
+        'name.fr'                   => 'name_fr',
+        'name.en'                   => 'name_en',
     ];
 
     public function __construct(
