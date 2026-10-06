@@ -21,10 +21,62 @@ final class CardDocumentRepository
         'all_triggers', 'all_conditions', 'all_effects',
     ];
 
+    /** Joins available to partial updates, in dependency order (cg before f/r/ct). */
+    private const PARTIAL_JOINS = [
+        'cg' => 'LEFT JOIN card_group cg ON cg.id = c.card_group_id',
+        'cs' => 'LEFT JOIN card_set   cs ON cs.id = c.set_id',
+        'f'  => 'LEFT JOIN faction    f  ON f.id  = cg.faction_id',
+        'r'  => 'LEFT JOIN rarity     r  ON r.id  = cg.rarity_id',
+        'ct' => 'LEFT JOIN card_type  ct ON ct.id = cg.card_type_id',
+    ];
+
+    /**
+     * Scalar fields supported by partial updates: field => [SQL expression, joins, cast].
+     * Expressions mirror buildSql() so partial and full documents stay identical.
+     */
+    private const PARTIAL_FIELDS = [
+        'reference'                    => ['c.reference',                          [],           null],
+        'variation'                    => ['c.variation',                          [],           null],
+        'collector_number_formated_id' => ['c.collector_number_formated_id',       [],           null],
+        'kickstarter'                  => ['c.kickstarter',                        [],           'bool'],
+        'promo'                        => ['c.promo',                              [],           'bool'],
+        'is_serialized'                => ['c.is_serialized',                      [],           'bool'],
+        'set_date'                     => ['COALESCE(c.set_date, cs.date::date)',  ['cs'],       null],
+        'set_reference'                => ['cs.reference',                         ['cs'],       null],
+        'card_type'                    => ['ct.reference',                         ['cg', 'ct'], null],
+        'faction_code'                 => ['f.code',                               ['cg', 'f'],  null],
+        'rarity'                       => ['r.reference',                          ['cg', 'r'],  null],
+        'main_cost'                    => ['cg.main_cost',                         ['cg'],       'int'],
+        'recall_cost'                  => ['cg.recall_cost',                       ['cg'],       'int'],
+        'ocean_power'                  => ['cg.ocean_power',                       ['cg'],       'int'],
+        'mountain_power'               => ['cg.mountain_power',                    ['cg'],       'int'],
+        'forest_power'                 => ['cg.forest_power',                      ['cg'],       'int'],
+        'is_banned'                    => ['cg.is_banned',                         ['cg'],       'bool'],
+        'is_suspended'                 => ['cg.is_suspended',                      ['cg'],       'bool'],
+        'is_errated'                   => ['cg.is_errated',                        ['cg'],       'bool'],
+    ];
+
     public function __construct(private readonly Connection $connection) {}
 
     /**
-     * Stream only specific card columns.
+     * Fields that cannot be used with streamPartialDocuments() (e.g. aggregated names / sub_types).
+     *
+     * @param  string[] $fields
+     * @return string[]
+     */
+    public function unsupportedPartialFields(array $fields): array
+    {
+        return array_values(array_filter(
+            $fields,
+            fn($f) => !isset(self::PARTIAL_FIELDS[$f])
+                && $f !== 'cost_relation'
+                && $f !== 'gameplay_format'
+                && !in_array($f, self::EFFECT_FIELDS, true),
+        ));
+    }
+
+    /**
+     * Stream only specific card fields, in id-range chunks.
      * Use for partial Meilisearch updates when only a few fields changed.
      *
      * @param string[] $fields
@@ -32,25 +84,30 @@ final class CardDocumentRepository
      */
     public function streamPartialDocuments(array $fields, int $batchSize = 2000): \Generator
     {
+        $unsupported = $this->unsupportedPartialFields($fields);
+        if ($unsupported) {
+            throw new \InvalidArgumentException(sprintf('Unsupported partial field(s): %s', implode(', ', $unsupported)));
+        }
+
         $needsCostRelation    = in_array('cost_relation', $fields, true);
         $needsEffects         = (bool) array_intersect($fields, self::EFFECT_FIELDS);
         $needsGameplayFormat  = in_array('gameplay_format', $fields, true);
-        $directFields         = array_filter(
-            $fields,
-            fn($f) => $f !== 'cost_relation' && $f !== 'gameplay_format' && !in_array($f, self::EFFECT_FIELDS, true)
-        );
+        $scalarFields         = array_values(array_filter($fields, fn($f) => isset(self::PARTIAL_FIELDS[$f])));
 
-        $cols  = $directFields ? implode(', ', array_map(fn($f) => "c.$f AS $f", $directFields)) : '';
-        $joins = [];
+        $cols     = array_map(fn($f) => self::PARTIAL_FIELDS[$f][0] . " AS $f", $scalarFields);
+        $joinKeys = array_merge([], ...array_map(fn($f) => self::PARTIAL_FIELDS[$f][1], $scalarFields));
 
         if ($needsCostRelation || $needsEffects || $needsGameplayFormat) {
-            $joins[] = 'LEFT JOIN card_group cg ON cg.id = c.card_group_id';
-            $cols   .= ($cols !== '' ? ', ' : '') . 'cg.main_cost, cg.recall_cost';
+            $joinKeys[] = 'cg';
+            $cols[]     = 'cg.main_cost AS _main_cost';
+            $cols[]     = 'cg.recall_cost AS _recall_cost';
         }
 
         if ($needsGameplayFormat) {
-            $cols .= ', cg.gameplay_format';
+            $cols[] = 'cg.gameplay_format';
         }
+
+        $joins = array_values(array_intersect_key(self::PARTIAL_JOINS, array_flip($joinKeys)));
 
         if ($needsEffects) {
             $joins[] = 'LEFT JOIN card_search   cks ON cks.card_id = c.id';
@@ -66,74 +123,90 @@ final class CardDocumentRepository
             $joins[] = 'LEFT JOIN ability_trigger   ate ON ate.id = cks.et1';
             $joins[] = 'LEFT JOIN ability_condition ace ON ace.id = cks.ec1';
             $joins[] = 'LEFT JOIN ability_effect    aee ON aee.id = cks.ee1';
-            $cols   .= ', at1.altered_id AS slot1_trigger, ac1.altered_id AS slot1_condition, ae1.altered_id AS slot1_effect'
+            $cols[]  = 'at1.altered_id AS slot1_trigger, ac1.altered_id AS slot1_condition, ae1.altered_id AS slot1_effect'
                 . ', at2.altered_id AS slot2_trigger, ac2.altered_id AS slot2_condition, ae2.altered_id AS slot2_effect'
                 . ', at3.altered_id AS slot3_trigger, ac3.altered_id AS slot3_condition, ae3.altered_id AS slot3_effect'
                 . ', ate.altered_id AS echo_trigger, ace.altered_id AS echo_condition, aee.altered_id AS echo_effect'
                 . ', cks.has_effect, cks.keywords, c.transfuge';
         }
 
-        $joinSql = implode(' ', $joins);
-        $result  = $this->connection->executeQuery("SELECT c.id, $cols FROM card c $joinSql ORDER BY c.id");
+        $sql = sprintf(
+            'SELECT c.id%s FROM card c %s WHERE c.id BETWEEN :fromId AND :toId ORDER BY c.id',
+            $cols ? ', ' . implode(', ', $cols) : '',
+            implode(' ', $joins),
+        );
 
-        $batch = [];
-        while (($row = $result->fetchAssociative()) !== false) {
-            $doc = ['id' => (int) $row['id']] + array_intersect_key($row, array_flip($directFields));
+        foreach ($this->idRanges($batchSize) as [$fromId, $toId]) {
+            $result = $this->connection->executeQuery($sql, ['fromId' => $fromId, 'toId' => $toId]);
 
-            if ($needsCostRelation || $needsEffects) {
-                $doc['cost_relation'] = $this->computeCostRelation($row['main_cost'], $row['recall_cost']);
+            $batch = [];
+            while (($row = $result->fetchAssociative()) !== false) {
+                $doc = ['id' => (int) $row['id']];
+
+                foreach ($scalarFields as $f) {
+                    $doc[$f] = match (self::PARTIAL_FIELDS[$f][2]) {
+                        'int'   => $row[$f] !== null ? (int) $row[$f] : null,
+                        'bool'  => (bool) $row[$f],
+                        default => $row[$f],
+                    };
+                }
+
+                if ($needsCostRelation || $needsEffects) {
+                    $doc['cost_relation'] = $this->computeCostRelation($row['_main_cost'], $row['_recall_cost']);
+                }
+
+                if ($needsEffects) {
+                    $doc += $this->hydrateEffectFields($row);
+                }
+
+                if ($needsGameplayFormat) {
+                    $doc['gameplay_format'] = $this->parsePgTextArray($row['gameplay_format']);
+                }
+
+                $batch[] = $doc;
             }
 
-            if ($needsEffects) {
-                $doc += $this->hydrateEffectFields($row);
-            }
-
-            if ($needsGameplayFormat) {
-                $doc['gameplay_format'] = $this->parsePgTextArray($row['gameplay_format']);
-            }
-
-            $batch[] = $doc;
-
-            if (count($batch) >= $batchSize) {
+            if ($batch) {
                 yield $batch;
-                $batch = [];
             }
-        }
-
-        if (!empty($batch)) {
-            yield $batch;
         }
     }
 
     /**
-     * Stream all card documents as flat arrays, batched for memory efficiency.
-     * Pass $setReferences to restrict to the cards of those sets (e.g. ['EOLEOP', 'EOLETOP']).
+     * Stream all card documents as flat arrays, in id-range chunks of $batchSize ids.
+     * Chunking keeps each query small so Postgres never sorts / groups the whole table at once
+     * (a single query over all cards fills pgsql_tmp on prod).
+     * Pass $setReferences to restrict to the cards of those sets (e.g. ['EOLEOP', 'EOLETOP']):
+     * their ids are fetched first and queried in chunks of $batchSize.
      *
      * @param  string[] $setReferences
      * @return \Generator<int, array<int, array<string, mixed>>>
      */
     public function streamDocuments(int $batchSize = 2000, array $setReferences = []): \Generator
     {
-        $result = $setReferences
-            ? $this->connection->executeQuery(
-                $this->buildSql(whereSetReferences: true),
+        if ($setReferences) {
+            // Sets are scattered across the id space: fetch their ids first, then query by id list.
+            $ids = $this->connection->fetchFirstColumn(
+                'SELECT c.id FROM card c JOIN card_set cs ON cs.id = c.set_id WHERE cs.reference IN (:setReferences) ORDER BY c.id',
                 ['setReferences' => $setReferences],
                 ['setReferences' => \Doctrine\DBAL\ArrayParameterType::STRING],
-            )
-            : $this->connection->executeQuery($this->buildSql());
+            );
 
-        $batch = [];
-        while (($row = $result->fetchAssociative()) !== false) {
-            $batch[] = $this->hydrate($row);
-
-            if (count($batch) >= $batchSize) {
-                yield $batch;
-                $batch = [];
+            $sql = $this->buildSql('WHERE c.id IN (:ids)');
+            foreach (array_chunk($ids, $batchSize) as $chunk) {
+                yield $this->fetchDocuments($sql, ['ids' => $chunk], ['ids' => \Doctrine\DBAL\ArrayParameterType::INTEGER]);
             }
+
+            return;
         }
 
-        if (!empty($batch)) {
-            yield $batch;
+        $sql = $this->buildSql('WHERE c.id BETWEEN :fromId AND :toId');
+        foreach ($this->idRanges($batchSize) as [$fromId, $toId]) {
+            $batch = $this->fetchDocuments($sql, ['fromId' => $fromId, 'toId' => $toId]);
+
+            if ($batch) {
+                yield $batch;
+            }
         }
     }
 
@@ -146,7 +219,7 @@ final class CardDocumentRepository
     public function findDocument(int $cardId): ?array
     {
         $row = $this->connection->executeQuery(
-            $this->buildSql(whereCardId: true),
+            $this->buildSql('WHERE c.id = :id'),
             ['id' => $cardId]
         )->fetchAssociative();
 
@@ -167,11 +240,21 @@ final class CardDocumentRepository
             return [];
         }
 
-        $result = $this->connection->executeQuery(
-            $this->buildSql(whereCardGroupIds: true),
+        return $this->fetchDocuments(
+            $this->buildSql('WHERE cg.id IN (:cardGroupIds)'),
             ['cardGroupIds' => $cardGroupIds],
             ['cardGroupIds' => \Doctrine\DBAL\ArrayParameterType::INTEGER],
         );
+    }
+
+    /**
+     * @param  array<string, mixed> $params
+     * @param  array<string, mixed> $types
+     * @return array<int, array<string, mixed>>
+     */
+    private function fetchDocuments(string $sql, array $params, array $types = []): array
+    {
+        $result = $this->connection->executeQuery($sql, $params, $types);
 
         $docs = [];
         while (($row = $result->fetchAssociative()) !== false) {
@@ -221,18 +304,26 @@ final class CardDocumentRepository
         return preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/', '', $clean);
     }
 
-    private function buildSql(
-        bool $whereCardId = false,
-        bool $whereCardGroupIds = false,
-        bool $whereSetReferences = false,
-    ): string {
-        $where = match (true) {
-            $whereCardId        => 'WHERE c.id = :id',
-            $whereCardGroupIds  => 'WHERE cg.id IN (:cardGroupIds)',
-            $whereSetReferences => 'WHERE cs.reference IN (:setReferences)',
-            default             => '',
-        };
+    /**
+     * Consecutive [from, to] id ranges covering the card table.
+     *
+     * @return \Generator<int, array{int, int}>
+     */
+    private function idRanges(int $chunkSize): \Generator
+    {
+        $bounds = $this->connection->fetchAssociative('SELECT MIN(id) AS min_id, MAX(id) AS max_id FROM card');
 
+        if ($bounds === false || $bounds['min_id'] === null) {
+            return;
+        }
+
+        for ($from = (int) $bounds['min_id'], $max = (int) $bounds['max_id']; $from <= $max; $from += $chunkSize) {
+            yield [$from, $from + $chunkSize - 1];
+        }
+    }
+
+    private function buildSql(string $where = ''): string
+    {
         return <<<SQL
             SELECT
                 c.id,
