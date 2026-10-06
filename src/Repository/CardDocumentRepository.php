@@ -107,12 +107,20 @@ final class CardDocumentRepository
 
     /**
      * Stream all card documents as flat arrays, batched for memory efficiency.
+     * Pass $setReferences to restrict to the cards of those sets (e.g. ['EOLEOP', 'EOLETOP']).
      *
+     * @param  string[] $setReferences
      * @return \Generator<int, array<int, array<string, mixed>>>
      */
-    public function streamDocuments(int $batchSize = 2000): \Generator
+    public function streamDocuments(int $batchSize = 2000, array $setReferences = []): \Generator
     {
-        $result = $this->connection->executeQuery($this->buildSql());
+        $result = $setReferences
+            ? $this->connection->executeQuery(
+                $this->buildSql(whereSetReferences: true),
+                ['setReferences' => $setReferences],
+                ['setReferences' => \Doctrine\DBAL\ArrayParameterType::STRING],
+            )
+            : $this->connection->executeQuery($this->buildSql());
 
         $batch = [];
         while (($row = $result->fetchAssociative()) !== false) {
@@ -181,6 +189,20 @@ final class CardDocumentRepository
         return (int) $this->connection->fetchOne('SELECT COUNT(*) FROM card');
     }
 
+    /**
+     * Count cards belonging to the given set references.
+     *
+     * @param string[] $setReferences
+     */
+    public function countBySetReferences(array $setReferences): int
+    {
+        return (int) $this->connection->fetchOne(
+            'SELECT COUNT(*) FROM card c JOIN card_set cs ON cs.id = c.set_id WHERE cs.reference IN (:setReferences)',
+            ['setReferences' => $setReferences],
+            ['setReferences' => \Doctrine\DBAL\ArrayParameterType::STRING],
+        );
+    }
+
     // ── Private ──────────────────────────────────────────────────────────────
 
     private function sanitize(?string $text): ?string
@@ -199,12 +221,16 @@ final class CardDocumentRepository
         return preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/', '', $clean);
     }
 
-    private function buildSql(bool $whereCardId = false, bool $whereCardGroupIds = false): string
-    {
+    private function buildSql(
+        bool $whereCardId = false,
+        bool $whereCardGroupIds = false,
+        bool $whereSetReferences = false,
+    ): string {
         $where = match (true) {
-            $whereCardId       => 'WHERE c.id = :id',
-            $whereCardGroupIds => 'WHERE cg.id IN (:cardGroupIds)',
-            default            => '',
+            $whereCardId        => 'WHERE c.id = :id',
+            $whereCardGroupIds  => 'WHERE cg.id IN (:cardGroupIds)',
+            $whereSetReferences => 'WHERE cs.reference IN (:setReferences)',
+            default             => '',
         };
 
         return <<<SQL
