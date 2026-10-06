@@ -9,7 +9,9 @@ use App\Service\FilterCacheKeyService;
 use App\Service\MeilisearchFilterBuilderService;
 use App\Service\MeilisearchService;
 use Psr\Cache\CacheItemPoolInterface;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\Attribute\Autowire;
+use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * Wraps CardCollectionProvider and resolves the total item count via Meilisearch
@@ -19,9 +21,20 @@ use Symfony\Component\DependencyInjection\Attribute\Autowire;
  * without fetching any documents. The total is injected into the context under
  * '_meili_total' so CachedCountCollectionProvider can use it directly and skip
  * the expensive Doctrine COUNT query.
+ *
+ * The backend that answered is stored on the request (BACKEND_ATTRIBUTE) so
+ * SearchBackendResponseSubscriber can expose it and, when a full-text search
+ * fell back to SQL (name only, no effect texts), prevent caching the
+ * degraded response.
  */
 final class SearchAwareCollectionProvider implements ProviderInterface
 {
+    public const BACKEND_ATTRIBUTE  = '_search_backend';
+    public const DEGRADED_ATTRIBUTE = '_search_degraded';
+
+    public const BACKEND_MEILISEARCH = 'meilisearch';
+    public const BACKEND_SQL         = 'sql';
+
     /** API Platform order key → Meilisearch sortable attribute */
     private const ORDER_MAP = [
         'set.date'                  => 'set_date',
@@ -32,13 +45,16 @@ final class SearchAwareCollectionProvider implements ProviderInterface
     ];
 
     public function __construct(
-        private readonly CardCollectionProvider $inner,
+        #[Autowire(service: CardCollectionProvider::class)]
+        private readonly ProviderInterface $inner,
         private readonly MeilisearchService $meilisearch,
         private readonly FilterCacheKeyService $cacheKeyService,
         #[Autowire(service: 'cache.card_counts')]
         private readonly CacheItemPoolInterface $cachePool,
         private readonly FilteredCardCountRepository $filteredCountRepo,
         private readonly MeilisearchFilterBuilderService $filterBuilder,
+        private readonly RequestStack $requestStack,
+        private readonly LoggerInterface $logger,
     ) {}
 
     public function provide(Operation $operation, array $uriVariables = [], array $context = []): object|array|null
@@ -49,10 +65,12 @@ final class SearchAwareCollectionProvider implements ProviderInterface
         $hasFilters  = $meiliFilter !== null;
 
         if ($nameQuery === null && !$hasFilters) {
+            $this->markBackend(self::BACKEND_SQL);
             return $this->inner->provide($operation, $uriVariables, $context);
         }
 
         if ($this->filterBuilder->hasUnmappedFilters($filters)) {
+            $this->markBackend(self::BACKEND_SQL);
             return $this->inner->provide($operation, $uriVariables, $context);
         }
 
@@ -80,6 +98,12 @@ final class SearchAwareCollectionProvider implements ProviderInterface
                 unset($context['filters'][$filterKey]);
             }
             unset($context['filters']['name']);
+
+            $this->markBackend(self::BACKEND_MEILISEARCH);
+        } else {
+            // The SQL fallback only matches card names, not effect texts:
+            // a full-text search answered this way is incomplete.
+            $this->markBackend(self::BACKEND_SQL, degraded: $nameQuery !== null);
         }
 
         return $this->inner->provide($operation, $uriVariables, $context);
@@ -106,7 +130,13 @@ final class SearchAwareCollectionProvider implements ProviderInterface
     {
         try {
             return $this->meilisearch->searchIds($query, $attributesToSearchOn, $filter, $limit, $offset, $sort);
-        } catch (\Throwable) {
+        } catch (\Throwable $e) {
+            $this->logger->warning('Meilisearch search failed, falling back to SQL: {message}', [
+                'message'   => $e->getMessage(),
+                'query'     => $query,
+                'filter'    => $filter,
+                'exception' => $e,
+            ]);
             return null;
         }
     }
@@ -122,8 +152,27 @@ final class SearchAwareCollectionProvider implements ProviderInterface
                 $params['attributesToSearchOn'] = $attributesToSearchOn;
             }
             return $this->meilisearch->getIndex()->search($query ?: null, $params)->getEstimatedTotalHits() ?? 0;
-        } catch (\Throwable) {
+        } catch (\Throwable $e) {
+            $this->logger->warning('Meilisearch total count failed, falling back to SQL count: {message}', [
+                'message'   => $e->getMessage(),
+                'query'     => $query,
+                'filter'    => $filter,
+                'exception' => $e,
+            ]);
             return null;
+        }
+    }
+
+    private function markBackend(string $backend, bool $degraded = false): void
+    {
+        $request = $this->requestStack->getCurrentRequest();
+        if ($request === null) {
+            return;
+        }
+
+        $request->attributes->set(self::BACKEND_ATTRIBUTE, $backend);
+        if ($degraded) {
+            $request->attributes->set(self::DEGRADED_ATTRIBUTE, true);
         }
     }
 
