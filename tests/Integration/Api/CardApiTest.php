@@ -123,4 +123,32 @@ final class CardApiTest extends WebTestCase
         $data = json_decode($this->client->getResponse()->getContent(), true);
         $this->assertSame([], $data);
     }
+
+    public function testCollectionIsCacheable(): void
+    {
+        $this->client->request('GET', '/api/cards');
+
+        $this->assertResponseIsSuccessful();
+        $response = $this->client->getResponse();
+
+        $this->assertSame('sql', $response->headers->get('X-Search-Backend'));
+        $this->assertTrue($response->headers->hasCacheControlDirective('public'));
+        $this->assertSame('3600', $response->headers->getCacheControlDirective('max-age'));
+        $this->assertFalse($response->headers->hasCacheControlDirective('no-store'));
+    }
+
+    public function testNameSearchFallbackIsNotCached(): void
+    {
+        // Meilisearch is not configured in the test environment: the full-text
+        // search falls back to SQL (names only) and must not be cached.
+        $this->client->request('GET', '/api/cards?name[fr]=aérolithe');
+
+        $this->assertResponseIsSuccessful();
+        $response = $this->client->getResponse();
+
+        $this->assertSame('sql', $response->headers->get('X-Search-Backend'));
+        $this->assertTrue($response->headers->hasCacheControlDirective('no-store'));
+        $this->assertFalse($response->headers->hasCacheControlDirective('public'));
+        $this->assertFalse($response->headers->hasCacheControlDirective('max-age'));
+    }
 }
