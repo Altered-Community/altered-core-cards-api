@@ -447,6 +447,7 @@ final class CardDocumentRepository
             'variation'                    => $row['variation'],
             'collector_number_formated_id' => $row['collector_number_formated_id'],
             'set_date'                     => $row['set_date'],
+            'cost_relation'                => $this->computeCostRelation($row['main_cost'], $row['recall_cost']),
         ] + $this->hydrateEffectFields($row);
     }
 
