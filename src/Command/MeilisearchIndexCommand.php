@@ -50,6 +50,18 @@ final class MeilisearchIndexCommand extends Command
             return Command::INVALID;
         }
 
+        $fields       = $input->getOption('fields');
+        $partialFields = $fields ? array_values(array_filter(array_map('trim', explode(',', $fields)))) : null;
+        $isPartial     = $partialFields !== null;
+
+        if ($isPartial && $unsupported = $this->cardDocumentRepository->unsupportedPartialFields($partialFields)) {
+            $io->error(sprintf(
+                'Field(s) not supported by --fields: %s. Run a full index (optionally with --set) instead.',
+                implode(', ', $unsupported),
+            ));
+            return Command::INVALID;
+        }
+
         if ($input->getOption('configure')) {
             $io->text('Configuring index attributes…');
             $this->meilisearch->configureIndex();
@@ -59,10 +71,6 @@ final class MeilisearchIndexCommand extends Command
             $io->text('Clearing existing documents…');
             $this->meilisearch->getIndex()->deleteAllDocuments();
         }
-
-        $fields       = $input->getOption('fields');
-        $partialFields = $fields ? array_map('trim', explode(',', $fields)) : null;
-        $isPartial     = $partialFields !== null;
 
         if ($isPartial) {
             $io->text(sprintf('Partial update — fields: %s', implode(', ', $partialFields)));

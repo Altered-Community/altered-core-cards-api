@@ -62,6 +62,19 @@ final class MeilisearchIndexCommandTest extends TestCase
         $this->assertStringContainsString('--set cannot be combined with --fields', $tester->getDisplay());
     }
 
+    public function testUnsupportedFieldIsRejectedBeforeAnyCall(): void
+    {
+        $conn = $this->createMock(Connection::class);
+        $conn->expects($this->never())->method($this->anything());
+
+        $tester = $this->tester($conn);
+        $code   = $tester->execute(['--fields' => 'card_type,name_fr', '--clear' => true]);
+
+        $this->assertSame(Command::INVALID, $code);
+        $this->assertStringContainsString('not supported by --fields: name_fr', $tester->getDisplay());
+        $this->assertSame([], $this->httpCalls);
+    }
+
     // ── set filter ──────────────────────────────────────────────────────────
 
     public function testSetOptionCountsAndStreamsOnlyThoseSets(): void
@@ -75,8 +88,12 @@ final class MeilisearchIndexCommandTest extends TestCase
             ->with($this->stringContains('cs.reference IN'), ['setReferences' => ['EOLEOP', 'EOLETOP']])
             ->willReturn('3');
         $conn->expects($this->once())
+            ->method('fetchFirstColumn')
+            ->with($this->stringContains('cs.reference IN'), ['setReferences' => ['EOLEOP', 'EOLETOP']])
+            ->willReturn([1, 2, 3]);
+        $conn->expects($this->once())
             ->method('executeQuery')
-            ->with($this->stringContains('WHERE cs.reference IN (:setReferences)'), ['setReferences' => ['EOLEOP', 'EOLETOP']])
+            ->with($this->stringContains('WHERE c.id IN (:ids)'), ['ids' => [1, 2, 3]])
             ->willReturn($result);
 
         $tester = $this->tester($conn);
