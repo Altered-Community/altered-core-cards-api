@@ -334,6 +334,17 @@ class CardGroup implements TimestampInterface
         return $this;
     }
 
+    public function removeSubType(CardSubType $subType): self
+    {
+        foreach ($this->subTypes as $existing) {
+            if ($existing->getReference() === $subType->getReference()) {
+                $this->subTypes->removeElement($existing);
+                break;
+            }
+        }
+        return $this;
+    }
+
     public function getMainCost(): ?int { return $this->mainCost; }
     public function setMainCost(?int $mainCost): self { $this->mainCost = $mainCost; return $this; }
 
