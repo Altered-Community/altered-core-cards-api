@@ -22,6 +22,21 @@ final class CardDocumentRepositoryTest extends TestCase
         return $result;
     }
 
+    /** Minimal row as returned by buildSql(), with every column hydrate() reads. */
+    private function fullRow(array $overrides = []): array
+    {
+        $columns = [
+            'id', 'reference', 'kickstarter', 'promo', 'transfuge', 'is_serialized', 'variation',
+            'collector_number_formated_id', 'set_date', 'set_reference', 'main_cost', 'recall_cost',
+            'ocean_power', 'mountain_power', 'forest_power', 'is_banned', 'is_suspended', 'is_errated',
+            'faction_code', 'rarity', 'card_type', 'has_effect', 'keywords',
+            'name_fr', 'name_en', 'main_effect_fr', 'main_effect_en', 'echo_effect_fr', 'echo_effect_en',
+            'gameplay_format',
+        ];
+
+        return array_merge(array_fill_keys($columns, null), ['id' => 1, 'sub_types' => '[]'], $overrides);
+    }
+
     private function connectionWithIdBounds(?int $min, ?int $max): Connection
     {
         $conn = $this->createMock(Connection::class);
@@ -95,6 +110,18 @@ final class CardDocumentRepositoryTest extends TestCase
         $conn->expects($this->never())->method('executeQuery');
 
         $this->assertSame([], iterator_to_array((new CardDocumentRepository($conn))->streamDocuments()));
+    }
+
+    public function testFullDocumentIncludesCostRelation(): void
+    {
+        $conn = $this->createMock(Connection::class);
+        $conn->expects($this->once())
+            ->method('executeQuery')
+            ->willReturn($this->dbResult([$this->fullRow(['main_cost' => 3, 'recall_cost' => 1])]));
+
+        $doc = (new CardDocumentRepository($conn))->findDocument(1);
+
+        $this->assertSame('mainHigher', $doc['cost_relation']);
     }
 
     // ── streamPartialDocuments ──────────────────────────────────────────────
