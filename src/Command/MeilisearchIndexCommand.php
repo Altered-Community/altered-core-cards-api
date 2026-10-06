@@ -29,12 +29,26 @@ final class MeilisearchIndexCommand extends Command
         $this->addOption('configure', null, InputOption::VALUE_NONE, 'Configure index settings before indexing');
         $this->addOption('clear', null, InputOption::VALUE_NONE, 'Delete all documents before re-indexing');
         $this->addOption('fields', null, InputOption::VALUE_REQUIRED, 'Comma-separated fields for partial update (e.g. set_date,collector_number_formated_id)');
+        $this->addOption('set', null, InputOption::VALUE_REQUIRED, 'Comma-separated set references to index only those sets (e.g. EOLEOP,EOLETOP)');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
         $io->title('Indexing cards into Meilisearch…');
+
+        $setOption     = $input->getOption('set');
+        $setReferences = $setOption ? array_values(array_filter(array_map('trim', explode(',', $setOption)))) : [];
+
+        if ($setReferences && $input->getOption('fields')) {
+            $io->error('--set cannot be combined with --fields.');
+            return Command::INVALID;
+        }
+
+        if ($setReferences && $input->getOption('clear')) {
+            $io->error('--set cannot be combined with --clear (it would wipe every other set).');
+            return Command::INVALID;
+        }
 
         if ($input->getOption('configure')) {
             $io->text('Configuring index attributes…');
@@ -54,7 +68,21 @@ final class MeilisearchIndexCommand extends Command
             $io->text(sprintf('Partial update — fields: %s', implode(', ', $partialFields)));
         }
 
-        $total = $this->cardDocumentRepository->countAll();
+        if ($setReferences) {
+            $io->text(sprintf('Sets: %s', implode(', ', $setReferences)));
+        }
+
+        $total = $setReferences
+            ? $this->cardDocumentRepository->countBySetReferences($setReferences)
+            : $this->cardDocumentRepository->countAll();
+
+        if ($total === 0) {
+            $io->warning($setReferences
+                ? sprintf('No cards found for set(s) %s — check the references.', implode(', ', $setReferences))
+                : 'No cards to index.');
+            return Command::SUCCESS;
+        }
+
         $io->text(sprintf('Streaming %d cards…', $total));
 
         $progressBar = $io->createProgressBar($total);
@@ -64,7 +92,7 @@ final class MeilisearchIndexCommand extends Command
         $indexed  = 0;
         $stream   = $isPartial
             ? $this->cardDocumentRepository->streamPartialDocuments($partialFields)
-            : $this->cardDocumentRepository->streamDocuments();
+            : $this->cardDocumentRepository->streamDocuments(setReferences: $setReferences);
 
         foreach ($stream as $batch) {
             $json = json_encode($batch, JSON_INVALID_UTF8_IGNORE);
